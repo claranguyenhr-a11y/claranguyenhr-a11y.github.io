@@ -689,6 +689,14 @@ dialog.lb .lb-mock{width:min(1400px,94vw)}
 .hw p{color:var(--s-mut);font-size:15px;line-height:1.6;margin:0}
 
 
+.sc-cap{margin:56px auto -28px;text-align:center;font:600 13px var(--f-body);letter-spacing:.04em;color:var(--s-mut)}
+.tv-does{list-style:none;padding:0;margin:0 auto 48px;max-width:980px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px}
+@media (max-width:700px){.tv-does{grid-template-columns:1fr}}
+.tv-does li{position:relative;padding-left:22px;color:#e4e1f3;font-size:15px;line-height:1.5}
+.tv-does li::before{content:"";position:absolute;left:0;top:.5em;width:8px;height:8px;border-radius:2px;background:#ffb86b}
+.wall-lab{font:700 12px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:#ff7ab0;margin:0 0 16px}
+.sc-tools{justify-content:center;margin-top:6px}
+
 .real{margin-top:80px}
 .real-h{display:flex;gap:12px;align-items:baseline;justify-content:center;flex-wrap:wrap;font:700 15px var(--f-body);color:#e4e1f3;margin-bottom:16px}
 .real-h small{color:var(--s-mut);font-weight:500;font-size:13px}
@@ -708,10 +716,10 @@ dialog.lb .lb-mock .scr{border-radius:12px}
   <div class="wrap">
     <div class="brand"><span class="mark">NK</span><span>Nguyễn Kiều</span></div>
     <nav class="nav" aria-label="Mục lục">
-      <a href="#ket-qua"><span class="l-vi">Kết quả</span><span class="l-en">Results</span></a>
       <a href="#cach-lam"><span class="l-vi">Năng lực</span><span class="l-en">Skills</span></a>
+      <a href="#ket-qua"><span class="l-vi">Thuần Việt</span><span class="l-en">Thuan Viet</span></a>
       <a href="#san-pham"><span class="l-vi">Công cụ</span><span class="l-en">Tool</span></a>
-      <a href="#vai-tro"><span class="l-vi">Vai trò</span><span class="l-en">Role</span></a>
+      <a href="#hanh-trinh"><span class="l-vi">Hành trình</span><span class="l-en">Career</span></a>
       <a href="#lien-he"><span class="l-vi">Liên hệ</span><span class="l-en">Contact</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Ngôn ngữ / Language">
@@ -725,22 +733,15 @@ dialog.lb .lb-mock .scr{border-radius:12px}
 <!-- HERO -->
 <section class="stage hero3">
   <div class="wrap">
-    <div class="pill"><i></i><span class="l-vi">Trưởng nhóm Tuyển dụng · Thuần Việt Group</span><span class="l-en">Talent Acquisition Lead · Thuan Viet Group</span></div>
+    <div class="pill"><i></i><span class="l-vi">Trưởng nhóm Tuyển dụng · 6 năm kinh nghiệm</span><span class="l-en">Talent Acquisition Lead · 6 years</span></div>
     <h1 class="mega"><span class="l-vi">Số liệu để tuyển nhanh.<br><span class="grad">Hiểu con người để tuyển đúng.</span></span><span class="l-en">Data to hire faster.<br><span class="grad">Knowing people to hire right.</span></span></h1>
-    <p class="h-lede"><span class="l-vi">6 năm tuyển dụng, hiện phụ trách 4 công ty bán lẻ, TMĐT, sản xuất và phân phối. Song song, số hóa quy trình bằng công cụ xây cùng AI (Claude, Codex) để giảm nhập liệu và nhắc việc thủ công.</span><span class="l-en">6 years in recruitment, now hiring for 4 companies in retail, e-commerce, manufacturing and distribution. Alongside that, the process is digitized with a tool built with AI (Claude, Codex) to cut manual data entry and follow-ups.</span></p>
-    <div class="h-methods">
-      <span class="hm-k"><span class="l-vi">Cách chọn người</span><span class="l-en">How people are assessed</span></span>
-      <span><span class="l-vi">Số liệu từng kênh</span><span class="l-en">Channel data</span></span>
-      <span><span class="l-vi">Phỏng vấn hành vi</span><span class="l-en">Behavioral interviews</span></span>
-      <span><span class="l-vi">Bài test năng lực</span><span class="l-en">Skills tests</span></span>
-      <span><span class="l-vi">Khung chấm điểm</span><span class="l-en">Scorecards</span></span>
-      <span>DISC</span><span>MBTI</span><span>HEXACO</span>
-    </div>
+    <p class="h-lede"><span class="l-vi">6 năm tuyển dụng tại doanh nghiệp và công ty cung ứng nhân sự, qua bán lẻ, TMĐT, sản xuất, FMCG và giáo dục. Hiện là Trưởng nhóm Tuyển dụng tại Thuần Việt Group, đồng thời số hóa quy trình bằng công cụ xây cùng AI.</span><span class="l-en">6 years of in-house and agency recruitment across retail, e-commerce, manufacturing, FMCG and education. Now Talent Acquisition Lead at Thuan Viet Group, also digitizing the hiring process with a tool built with AI.</span></p>
     <div class="ctas">
       <a class="btn pri" href="#ket-qua"><span class="l-vi">Xem kết quả</span><span class="l-en">See the results</span></a>
       <a class="btn ghost" href="#san-pham"><span class="l-vi">Xem công cụ</span><span class="l-en">See the tool</span></a>
     </div>
 
+    <div class="sc-cap"><span class="l-vi">Công cụ và kết quả tại Thuần Việt Group · 2025–2026</span><span class="l-en">Tool and results at Thuan Viet Group · 2025–2026</span></div>
     <div class="showcase">
       <div class="tilt" id="tilt"><div class="scr"><div class="in"><header class="m-top"><div class="m-logo"><i>TV</i><div>Thuần Việt Home<small>Người Thuần Việt</small></div></div><div class="m-search">⌕&nbsp; Tìm người, việc, đề xuất, ứng viên…</div><div class="sp"></div><span class="m-ic">◔<em>3</em></span><span class="m-remind">✦ Nhắc việc</span><span class="m-av">K</span></header><nav class="m-side"><div class="m-app"><i>TD</i><div><b>Tuyển dụng</b><small>Frappe HR</small></div></div><a class="on">Tổng quan</a><div class="grp">1 · HOẠCH ĐỊNH</div><a>Đề xuất tuyển dụng</a><div class="grp">2 · THU HÚT</div><a>Jobsite tuyển dụng</a><a>Ứng viên</a><div class="grp">3 · TUYỂN CHỌN</div><a>Quy trình tuyển chọn</a><a>Lịch phỏng vấn</a><a>Đánh giá ứng viên</a><div class="grp">4 · TIẾP NHẬN</div><a>Offer</a><a>Onboarding</a></nav><main class="m-main"><div class="m-ban"><div><small>NHÂN SỰ · TUYỂN DỤNG</small><b>Tổng quan</b><p>Việc hôm nay, việc trễ hạn và phễu tuyển dụng của cả nhóm</p></div><div class="m-row"><span class="m-pill">⟳ Cập nhật 10:00</span><span class="m-seg"><i class="on">Cả nhóm</i><i>Của tôi</i></span><span class="m-btn">⇪ Tải CV lên</span></div></div><div class="m-kpis"><div class="m-card m-kpi"><small>Việc trễ hạn</small><b class="c-or">3</b><span>trên 24 hồ sơ đang xử lý</span></div><div class="m-card m-kpi"><small>CV mới cần đọc</small><b class="c-cr">12</b><span>đã tự lọc trùng</span></div><div class="m-card m-kpi"><small>Phỏng vấn hôm nay</small><b class="c-vi">4</b><span>2 sơ vấn · 2 vòng 1</span></div><div class="m-card m-kpi"><small>Thư mời chờ trả lời</small><b class="c-bl">2</b><span>hạn trả lời 7 ngày</span></div><div class="m-card m-kpi"><small>Nhận việc tuần này</small><b class="c-gr">5</b><span>3 cửa hàng · 2 kho</span></div></div><div class="m-two"><div class="m-card"><div class="m-h">Việc chờ xử lý <span class="m-cnt">6 việc</span><span class="m-leg"><i class="d-hot"></i>Cần làm ngay <i class="d-wait"></i>Đang chờ <i class="d-soon"></i>Sắp tới</span></div><div class="m-tbl"><div class="th"><span>Việc</span><span>Ai làm</span><span>SL</span><span>Trạng thái</span></div><div class="tr"><span class="lk">Hồ sơ quá hạn ở giai đoạn →</span><span>Người phụ trách hồ sơ</span><span class="n">3</span><span><em class="m-chip ch-hot">Cần làm ngay</em></span></div><div class="tr"><span class="lk">Buổi phỏng vấn chưa có phiếu chấm →</span><span>Hội đồng phỏng vấn</span><span class="n">2</span><span><em class="m-chip ch-hot">Cần làm ngay</em></span></div><div class="tr"><span class="lk">CV mới cần đọc →</span><span>Chuyên viên TA</span><span class="n">12</span><span><em class="m-chip ch-hot">Cần làm ngay</em></span></div><div class="tr"><span class="lk">Đồng ý offer, chưa có phiếu tiếp nhận →</span><span>Chuyên viên TA</span><span class="n">1</span><span><em class="m-chip ch-wait">Đang chờ</em></span></div><div class="tr"><span class="lk">Thư mời chờ ứng viên trả lời →</span><span>Chuyên viên TA</span><span class="n">2</span><span><em class="m-chip ch-wait">Đang chờ</em></span></div><div class="tr"><span class="lk">Phỏng vấn 7 ngày tới →</span><span>Chuyên viên TA</span><span class="n">6</span><span><em class="m-chip ch-soon">Sắp tới</em></span></div></div></div><div class="m-card"><div class="m-h">Phễu tuyển dụng <span class="m-cnt">30 ngày</span></div><div class="m-fun"><div class="fr"><span>CV nhận</span><div class="ft"><i style="width:100%"></i></div></div><div class="fr"><span>Đạt sàng lọc</span><div class="ft"><i style="width:62%"></i></div></div><div class="fr"><span>Phỏng vấn</span><div class="ft"><i style="width:36%"></i></div></div><div class="fr"><span>Offer</span><div class="ft"><i style="width:17%"></i></div></div><div class="fr"><span>Nhận việc</span><div class="ft"><i style="width:14%"></i></div></div></div><div class="m-h" style="margin-top:.9em">Nguồn ứng viên</div><div class="m-src"><span><i style="background:#c2185b"></i>TopCV</span><span><i style="background:#6d4bd8"></i>CareerViet</span><span><i style="background:#1f7ae0"></i>Giới thiệu nội bộ</span><span><i style="background:#13a06a"></i>Facebook · Zalo</span></div><div class="m-stack"><i style="flex:34;background:#c2185b"></i><i style="flex:22;background:#6d4bd8"></i><i style="flex:18;background:#1f7ae0"></i><i style="flex:26;background:#13a06a"></i></div></div></div></main></div></div></div>
       <div class="floats">
@@ -752,13 +753,31 @@ dialog.lb .lb-mock .scr{border-radius:12px}
     </div>
 
     <ul class="trust">
-      <li><b>4</b> <span class="l-vi">công ty</span><span class="l-en">companies</span></li>
+      <li><b>6</b> <span class="l-vi">năm</span><span class="l-en">years</span></li>
       <li><span class="l-vi">Bán lẻ</span><span class="l-en">Retail</span></li>
       <li><span class="l-vi">TMĐT</span><span class="l-en">E-commerce</span></li>
       <li><span class="l-vi">Sản xuất</span><span class="l-en">Manufacturing</span></li>
-      <li><span class="l-vi">Phân phối</span><span class="l-en">Distribution</span></li>
+      <li>FMCG</li>
+      <li><span class="l-vi">Giáo dục</span><span class="l-en">Education</span></li>
       <li><span class="l-vi">Vinh → Cà Mau</span><span class="l-en">Vinh → Ca Mau</span></li>
     </ul>
+  </div>
+</section>
+
+<!-- HOW I WORK -->
+<section id="cach-lam" class="stage how-sec">
+  <div class="wrap">
+    <div class="s-head rv">
+      <div class="eyebrow s-eb"><span class="l-vi">Năng lực qua 6 năm</span><span class="l-en">Skills built over 6 years</span></div>
+      <h2><span class="l-vi">Hiểu đúng trước khi tuyển</span><span class="l-en">Understand first, then hire</span></h2>
+      <p><span class="l-vi">Kết quả tốt bắt đầu từ việc hiểu rõ công việc, thị trường và con người, rồi chốt offer cân bằng cho cả hai bên.</span><span class="l-en">Good results start with understanding the job, the market and the people, then closing an offer that works for both sides.</span></p>
+    </div>
+    <div class="how4">
+      <article class="hw rv"><span class="hw-n">01</span><h3><span class="l-vi">Hiểu đúng công việc</span><span class="l-en">Understand the job</span></h3><p><span class="l-vi">Ngồi cùng trưởng bộ phận để chốt việc thật cần làm, chân dung ứng viên, định biên và JD trước khi đăng tuyển.</span><span class="l-en">Sit with the hiring manager to pin down the real work, candidate profile, headcount and JD before posting.</span></p></article>
+      <article class="hw rv"><span class="hw-n">02</span><h3><span class="l-vi">Hiểu thị trường</span><span class="l-en">Understand the market</span></h3><p><span class="l-vi">Nắm mặt bằng lương, nguồn ứng viên và kênh hiệu quả theo từng ngành, từng vùng; tư vấn khung lương sát thực tế.</span><span class="l-en">Know pay levels, talent pools and the channels that work by industry and region; advise on realistic salary bands.</span></p></article>
+      <article class="hw rv"><span class="hw-n">03</span><h3><span class="l-vi">Hiểu con người</span><span class="l-en">Understand people</span></h3><p><span class="l-vi">Phỏng vấn hành vi, bài test và khung chấm điểm; DISC, MBTI, HEXACO để thấy ứng viên hợp với đội nào.</span><span class="l-en">Behavioral interviews, tests and scorecards; DISC, MBTI and HEXACO to see which team a candidate fits.</span></p></article>
+      <article class="hw rv"><span class="hw-n">04</span><h3><span class="l-vi">Đàm phán cân bằng</span><span class="l-en">Balanced negotiation</span></h3><p><span class="l-vi">Nắm đúng điều ứng viên thật sự cần và giới hạn công ty giữ được, chốt offer để cả hai bên cùng thấy hợp lý.</span><span class="l-en">Find what the candidate really needs and what the company can hold, then close an offer both sides find fair.</span></p></article>
+    </div>
   </div>
 </section>
 
@@ -766,10 +785,17 @@ dialog.lb .lb-mock .scr{border-radius:12px}
 <section id="ket-qua" class="stage wall-sec">
   <div class="wrap">
     <div class="s-head rv">
-      <div class="eyebrow s-eb"><span class="l-vi">Kết quả tại Thuần Việt Group · 2025–2026</span><span class="l-en">Results at Thuan Viet Group · 2025–2026</span></div>
-      <h2><span class="l-vi">Kết quả đã đạt được</span><span class="l-en">Results delivered</span></h2>
-      <p><span class="l-vi">Chỉ hiển thị tỷ lệ %. Số hồ sơ và chi phí thực là thông tin nội bộ.</span><span class="l-en">Percentages only. Candidate counts and actual spend are confidential.</span></p>
+      <div class="eyebrow s-eb"><span class="l-vi">Hiện tại · Thuần Việt Group · 12/2024 – nay</span><span class="l-en">Now · Thuan Viet Group · Dec 2024 – present</span></div>
+      <h2><span class="l-vi">Trưởng nhóm Tuyển dụng cho 4 công ty</span><span class="l-en">Recruitment lead for 4 companies</span></h2>
+      <p><span class="l-vi">Hệ sinh thái nệm gồm bán lẻ, TMĐT, sản xuất và phân phối: Nệm Thuần Việt, Thuần Việt Global, Thuần Việt Digital, Nệm Thành Công.</span><span class="l-en">A mattress group spanning retail, e-commerce, manufacturing and distribution: Nem Thuan Viet, Thuan Viet Global, Thuan Viet Digital, Nem Thanh Cong.</span></p>
     </div>
+    <ul class="tv-does rv">
+      <li><span class="l-vi">Lập kế hoạch tuyển theo quý, báo cáo tiến độ và chi phí cho Ban giám đốc</span><span class="l-en">Quarterly hiring plans, progress and cost reported to the Board</span></li>
+      <li><span class="l-vi">Tư vấn quản lý về định biên, JD, khung lương và mức offer</span><span class="l-en">Advise managers on headcount, JDs, salary bands and offers</span></li>
+      <li><span class="l-vi">Phân bổ ngân sách theo hiệu quả từng kênh; khoảng 1/3 nhân sự từ nguồn miễn phí</span><span class="l-en">Budget by channel performance; about one third of hires from zero-cost sources</span></li>
+      <li><span class="l-vi">Tuyển, đào tạo và kèm cặp nhân viên, thực tập sinh trong nhóm</span><span class="l-en">Hire, train and coach recruiters and interns on the team</span></li>
+    </ul>
+    <div class="wall-lab rv"><span class="l-vi">Kết quả 2025–2026</span><span class="l-en">Results 2025–2026</span></div>
     <div class="wall">
       <article class="tile t-feature rv">
         <div class="t-top"><span class="t-tag"><span class="l-vi">Chi phí</span><span class="l-en">Cost</span></span></div>
@@ -816,20 +842,20 @@ dialog.lb .lb-mock .scr{border-radius:12px}
   </div>
 </section>
 
-<!-- HOW I WORK -->
-<section id="cach-lam" class="stage how-sec">
+<!-- BEFORE / AFTER -->
+<section id="truoc-sau" class="ba-sec">
   <div class="wrap">
-    <div class="s-head rv">
-      <div class="eyebrow s-eb"><span class="l-vi">Năng lực tuyển dụng</span><span class="l-en">Recruiting skills</span></div>
-      <h2><span class="l-vi">Hiểu đúng trước khi tuyển</span><span class="l-en">Understand first, then hire</span></h2>
-      <p><span class="l-vi">Kết quả tốt bắt đầu từ việc hiểu rõ công việc, thị trường và con người, rồi chốt offer cân bằng cho cả hai bên.</span><span class="l-en">Good results start with understanding the job, the market and the people, then closing an offer that works for both sides.</span></p>
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="l-vi">Thuần Việt Group · Trước và sau</span><span class="l-en">Thuan Viet Group · Before and after</span></div>
+      <h2><span class="l-vi">Tuyển đúng người hơn, giữ người lâu hơn</span><span class="l-en">Better hires who stay longer</span></h2>
     </div>
-    <div class="how4">
-      <article class="hw rv"><span class="hw-n">01</span><h3><span class="l-vi">Hiểu đúng công việc</span><span class="l-en">Understand the job</span></h3><p><span class="l-vi">Ngồi cùng trưởng bộ phận để chốt việc thật cần làm, chân dung ứng viên, định biên và JD trước khi đăng tuyển.</span><span class="l-en">Sit with the hiring manager to pin down the real work, candidate profile, headcount and JD before posting.</span></p></article>
-      <article class="hw rv"><span class="hw-n">02</span><h3><span class="l-vi">Hiểu thị trường</span><span class="l-en">Understand the market</span></h3><p><span class="l-vi">Nắm mặt bằng lương, nguồn ứng viên và kênh hiệu quả theo từng ngành, từng vùng; tư vấn khung lương sát thực tế.</span><span class="l-en">Know pay levels, talent pools and the channels that work by industry and region; advise on realistic salary bands.</span></p></article>
-      <article class="hw rv"><span class="hw-n">03</span><h3><span class="l-vi">Hiểu con người</span><span class="l-en">Understand people</span></h3><p><span class="l-vi">Phỏng vấn hành vi, bài test và khung chấm điểm; DISC, MBTI, HEXACO để thấy ứng viên hợp với đội nào.</span><span class="l-en">Behavioral interviews, tests and scorecards; DISC, MBTI and HEXACO to see which team a candidate fits.</span></p></article>
-      <article class="hw rv"><span class="hw-n">04</span><h3><span class="l-vi">Đàm phán cân bằng</span><span class="l-en">Balanced negotiation</span></h3><p><span class="l-vi">Nắm đúng điều ứng viên thật sự cần và giới hạn công ty giữ được, chốt offer để cả hai bên cùng thấy hợp lý.</span><span class="l-en">Find what the candidate really needs and what the company can hold, then close an offer both sides find fair.</span></p></article>
+    <div class="ba-grid">
+      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Qua vòng 1</span><span class="l-en">Round-1 pass</span></div><div class="ba-num"><span class="o">24%</span><span class="ar">→</span><span class="n">41%</span><span class="d">+17</span></div><div class="ba-track"><i class="o" style="--w:24%"></i><i class="n fill" style="--w:41%"></i></div></div>
+      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Phỏng vấn → offer</span><span class="l-en">Interview → offer</span></div><div class="ba-num"><span class="o">35%</span><span class="ar">→</span><span class="n">42%</span><span class="d">+7</span></div><div class="ba-track"><i class="o" style="--w:35%"></i><i class="n fill" style="--w:42%"></i></div></div>
+      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Còn làm sau 60 ngày</span><span class="l-en">60-day retention</span></div><div class="ba-num"><span class="o">65%</span><span class="ar">→</span><span class="n">77%</span><span class="d">+12</span></div><div class="ba-track"><i class="o" style="--w:65%"></i><i class="n fill" style="--w:77%"></i></div></div>
+      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Còn làm sau 180 ngày</span><span class="l-en">180-day retention</span></div><div class="ba-num"><span class="o">42%</span><span class="ar">→</span><span class="n">75%</span><span class="d">+33</span></div><div class="ba-track"><i class="o" style="--w:42%"></i><i class="n fill" style="--w:75%"></i></div></div>
     </div>
+    <p class="ba-note"><span class="l-vi">Vạch xám: trước khi thay quy trình. Vạch màu: sau. Số bên phải là mức tăng (điểm %).</span><span class="l-en">Grey mark: before the new process. Colour: after. The figure on the right is the gain in percentage points.</span></p>
   </div>
 </section>
 
@@ -837,9 +863,10 @@ dialog.lb .lb-mock .scr{border-radius:12px}
 <section id="san-pham" class="stage story-sec">
   <div class="wrap">
     <div class="s-head rv">
-      <div class="eyebrow s-eb"><span class="l-vi">Số hóa bằng AI</span><span class="l-en">Digitized with AI</span></div>
+      <div class="eyebrow s-eb"><span class="l-vi">Thuần Việt Group · Số hóa bằng AI</span><span class="l-en">Thuan Viet Group · Digitized with AI</span></div>
       <h2><span class="l-vi">Công cụ tuyển dụng<br>xây cùng AI</span><span class="l-en">A hiring tool<br>built with AI</span></h2>
       <p><span class="l-vi">Công cụ lo phần việc lặp lại: nhập CV, lọc trùng, nhắc hạn, gửi lịch phỏng vấn và cập nhật dashboard. Nhờ vậy đội có thêm thời gian cho phần cần con người: hiểu công việc, gặp ứng viên và đàm phán.</span><span class="l-en">The tool handles the repetitive work: CV entry, de-duplication, deadline reminders, interview invites and the dashboard. That leaves the team more time for what needs people: understanding roles, meeting candidates and negotiating.</span></p>
+      <div class="chipline sc-tools"><span>Claude</span><span>Codex</span><span>Google Apps Script</span><span>ERP</span><span>Google Drive</span></div>
     </div>
 
     <div class="story">
@@ -913,20 +940,43 @@ dialog.lb .lb-mock .scr{border-radius:12px}
   </div>
 </section>
 
-<!-- BEFORE / AFTER -->
-<section id="truoc-sau" class="ba-sec">
+<!-- TIMELINE -->
+<section id="hanh-trinh" style="padding-top:8px">
   <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow"><span class="l-vi">Trước và sau</span><span class="l-en">Before and after</span></div>
-      <h2><span class="l-vi">Tuyển đúng người hơn, giữ người lâu hơn</span><span class="l-en">Better hires who stay longer</span></h2>
+    <div class="sec-head">
+      <div class="eyebrow"><span class="l-vi">Hành trình</span><span class="l-en">Career</span></div>
+      <h2><span class="l-vi">6 năm, từ cung ứng nhân sự đến tuyển dụng nội bộ</span><span class="l-en">6 years, from agency to in-house</span></h2>
     </div>
-    <div class="ba-grid">
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Qua vòng 1</span><span class="l-en">Round-1 pass</span></div><div class="ba-num"><span class="o">24%</span><span class="ar">→</span><span class="n">41%</span><span class="d">+17</span></div><div class="ba-track"><i class="o" style="--w:24%"></i><i class="n fill" style="--w:41%"></i></div></div>
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Phỏng vấn → offer</span><span class="l-en">Interview → offer</span></div><div class="ba-num"><span class="o">35%</span><span class="ar">→</span><span class="n">42%</span><span class="d">+7</span></div><div class="ba-track"><i class="o" style="--w:35%"></i><i class="n fill" style="--w:42%"></i></div></div>
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Còn làm sau 60 ngày</span><span class="l-en">60-day retention</span></div><div class="ba-num"><span class="o">65%</span><span class="ar">→</span><span class="n">77%</span><span class="d">+12</span></div><div class="ba-track"><i class="o" style="--w:65%"></i><i class="n fill" style="--w:77%"></i></div></div>
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Còn làm sau 180 ngày</span><span class="l-en">180-day retention</span></div><div class="ba-num"><span class="o">42%</span><span class="ar">→</span><span class="n">75%</span><span class="d">+33</span></div><div class="ba-track"><i class="o" style="--w:42%"></i><i class="n fill" style="--w:75%"></i></div></div>
+    <div class="tl-scroll">
+      <div class="tl">
+        <svg viewBox="0 0 760 210" role="img" aria-label="Dòng thời gian công việc 2020 đến 2026">
+          <!-- x = 20 + months_since_2020-09 * 10.5 ; 2020-09 -> 20 ; 2026-11 -> 20+74*10.5=797 -> scale 9.9 -->
+          <g>
+            <line class="tl-grid" x1="62" y1="24" x2="62" y2="186"/><line class="tl-grid" x1="181" y1="24" x2="181" y2="186"/><line class="tl-grid" x1="300" y1="24" x2="300" y2="186"/><line class="tl-grid" x1="418" y1="24" x2="418" y2="186"/><line class="tl-grid" x1="537" y1="24" x2="537" y2="186"/><line class="tl-grid" x1="656" y1="24" x2="656" y2="186"/>
+            <text class="tl-year" x="62" y="202" text-anchor="middle">2021</text><text class="tl-year" x="181" y="202" text-anchor="middle">2022</text><text class="tl-year" x="300" y="202" text-anchor="middle">2023</text><text class="tl-year" x="418" y="202" text-anchor="middle">2024</text><text class="tl-year" x="537" y="202" text-anchor="middle">2025</text><text class="tl-year" x="656" y="202" text-anchor="middle">2026</text>
+          </g>
+          <!-- intern 09/2020-06/2021 -->
+          <rect class="tl-bar" x="20" y="150" width="89" height="14" fill="var(--muted)" opacity=".45"/>
+          <text class="tl-lab" x="20" y="144"><tspan class="l-vi">Thực tập sinh</tspan><tspan class="l-en">Intern</tspan></text>
+          <!-- manpower 06/2021-08/2022 -->
+          <rect class="tl-bar" x="112" y="120" width="139" height="14" fill="var(--ink-2)"/>
+          <text class="tl-lab" x="112" y="114">ManpowerGroup</text>
+          <!-- marathon 09/2022-06/2023 -->
+          <rect class="tl-bar" x="260" y="90" width="89" height="14" fill="var(--ink-2)"/>
+          <text class="tl-lab" x="260" y="84">Marathon Education</text>
+          <!-- headhunter 06/2023-11/2024 -->
+          <rect class="tl-bar" x="350" y="150" width="169" height="14" fill="var(--muted)" opacity=".45"/>
+          <text class="tl-lab" x="350" y="144"><tspan class="l-vi">Tư vấn tuyển dụng (CTV)</tspan><tspan class="l-en">Recruitment consultant (freelance)</tspan></text>
+          <!-- msc 01/2024-10/2024 -->
+          <rect class="tl-bar" x="418" y="120" width="94" height="14" fill="var(--ink-2)"/>
+          <text class="tl-lab" x="418" y="114">MSC Group</text>
+          <!-- thuan viet 12/2024-now -->
+          <rect class="tl-bar" x="527" y="60" width="227" height="16" fill="var(--signal)"/>
+          <text class="tl-lab" x="527" y="52">Thuần Việt Group</text>
+          <text class="tl-sub" x="527" y="94"><tspan class="l-vi">Trưởng nhóm Tuyển dụng · 12/2024 – nay</tspan><tspan class="l-en">Talent Acquisition Lead · Dec 2024 – present</tspan></text>
+        </svg>
+      </div>
     </div>
-    <p class="ba-note"><span class="l-vi">Vạch xám: trước khi thay quy trình. Vạch màu: sau. Số bên phải là mức tăng (điểm %).</span><span class="l-en">Grey mark: before the new process. Colour: after. The figure on the right is the gain in percentage points.</span></p>
   </div>
 </section>
 
@@ -937,11 +987,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
       <div class="sec-head" style="margin-bottom:0">
         <div class="eyebrow"><span class="l-vi">Khu vực tuyển dụng</span><span class="l-en">Hiring regions</span></div>
         <h2><span class="l-vi">Từ Vinh đến Cà Mau</span><span class="l-en">From Vinh down to Ca Mau</span></h2>
-        <p><span class="l-vi">Đã tuyển dụng trên cả nước, nhiều nhất từ Vinh trở vào Nam; miền Bắc ít hơn. Hiện tuyển cho 4 công ty trong hệ sinh thái nệm: bán lẻ, TMĐT, sản xuất và phân phối.</span><span class="l-en">Hiring experience nationwide, mostly from Vinh southward, with less in the North. Currently hiring for 4 companies in a mattress group: retail, e-commerce, manufacturing and distribution.</span></p>
-      </div>
-      <div class="bigfig">
-        <div><b class="mono">95%</b><span><span class="l-vi">nhân sự nhận việc đúng hạn, kể cả cửa hàng ở tỉnh</span><span class="l-en">of hires started on time, provinces included</span></span></div>
-        <div><b class="mono">100%</b><span><span class="l-vi">nhu cầu kho vận được đáp ứng</span><span class="l-en">of warehouse roles filled</span></span></div>
+        <p><span class="l-vi">Đã tuyển dụng trên cả nước, nhiều nhất từ Vinh trở vào Nam; miền Bắc ít hơn.</span><span class="l-en">Hiring experience nationwide, mostly from Vinh southward, with less in the North.</span></p>
       </div>
       <div class="roles">
         <span><span class="l-vi">Bán hàng cửa hàng</span><span class="l-en">Store sales</span></span>
@@ -981,68 +1027,6 @@ dialog.lb .lb-mock .scr{border-radius:12px}
         <text class="city-s" x="18" y="372"><tspan class="l-vi">Sơ đồ minh họa,</tspan><tspan class="l-en">Illustrative,</tspan></text>
         <text class="city-s" x="18" y="386"><tspan class="l-vi">không theo tỷ lệ</tspan><tspan class="l-en">not to scale</tspan></text>
       </svg>
-    </div>
-  </div>
-</section>
-
-<!-- ROLE -->
-<section id="vai-tro">
-  <div class="wrap">
-    <div class="role-band">
-      <div class="eyebrow"><span class="l-vi">Vai trò</span><span class="l-en">Role</span></div>
-      <div class="role-grid">
-        <div>
-          <h2><span class="l-vi">Trưởng nhóm tuyển dụng cho 4 công ty</span><span class="l-en">Recruitment lead for 4 companies</span></h2>
-          <p style="margin-top:12px"><span class="l-vi">Phụ trách kế hoạch, ngân sách và đội ngũ tuyển dụng. Phần số hóa: mỗi việc lặp lại được thử từng bước cùng AI rồi mới đưa vào dùng.</span><span class="l-en">Owns hiring plans, budget and the recruiting team. On the digital side, each repetitive task is tested step by step with AI before it goes into daily use.</span></p>
-          <div class="tools"><span>Claude</span><span>Codex</span><span>Google Apps Script</span><span>ERP</span><span>Google Drive</span><span>DISC · MBTI · HEXACO</span></div>
-        </div>
-        <ul class="does">
-          <li><span><span class="l-vi">Lập kế hoạch tuyển theo quý, báo cáo tiến độ và chi phí cho Ban giám đốc</span><span class="l-en">Quarterly hiring plans, progress and cost reported to the Board</span></span></li>
-          <li><span><span class="l-vi">Tư vấn quản lý về định biên, JD, khung lương và mức offer</span><span class="l-en">Advise managers on headcount, JDs, salary bands and offers</span></span></li>
-          <li><span><span class="l-vi">Phân bổ ngân sách theo hiệu quả từng kênh; khoảng 1/3 nhân sự từ nguồn miễn phí</span><span class="l-en">Budget by channel performance; about one third of hires from zero-cost sources</span></span></li>
-          <li><span><span class="l-vi">Tuyển, đào tạo và kèm cặp nhân viên, thực tập sinh trong nhóm</span><span class="l-en">Hire, train and coach recruiters and interns on the team</span></span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TIMELINE -->
-<section style="padding-top:8px">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow"><span class="l-vi">Hành trình</span><span class="l-en">Career</span></div>
-      <h2><span class="l-vi">6 năm, từ cung ứng nhân sự đến tuyển dụng nội bộ</span><span class="l-en">6 years, from agency to in-house</span></h2>
-    </div>
-    <div class="tl-scroll">
-      <div class="tl">
-        <svg viewBox="0 0 760 210" role="img" aria-label="Dòng thời gian công việc 2020 đến 2026">
-          <!-- x = 20 + months_since_2020-09 * 10.5 ; 2020-09 -> 20 ; 2026-11 -> 20+74*10.5=797 -> scale 9.9 -->
-          <g>
-            <line class="tl-grid" x1="62" y1="24" x2="62" y2="186"/><line class="tl-grid" x1="181" y1="24" x2="181" y2="186"/><line class="tl-grid" x1="300" y1="24" x2="300" y2="186"/><line class="tl-grid" x1="418" y1="24" x2="418" y2="186"/><line class="tl-grid" x1="537" y1="24" x2="537" y2="186"/><line class="tl-grid" x1="656" y1="24" x2="656" y2="186"/>
-            <text class="tl-year" x="62" y="202" text-anchor="middle">2021</text><text class="tl-year" x="181" y="202" text-anchor="middle">2022</text><text class="tl-year" x="300" y="202" text-anchor="middle">2023</text><text class="tl-year" x="418" y="202" text-anchor="middle">2024</text><text class="tl-year" x="537" y="202" text-anchor="middle">2025</text><text class="tl-year" x="656" y="202" text-anchor="middle">2026</text>
-          </g>
-          <!-- intern 09/2020-06/2021 -->
-          <rect class="tl-bar" x="20" y="150" width="89" height="14" fill="var(--muted)" opacity=".45"/>
-          <text class="tl-lab" x="20" y="144"><tspan class="l-vi">Thực tập sinh</tspan><tspan class="l-en">Intern</tspan></text>
-          <!-- manpower 06/2021-08/2022 -->
-          <rect class="tl-bar" x="112" y="120" width="139" height="14" fill="var(--ink-2)"/>
-          <text class="tl-lab" x="112" y="114">ManpowerGroup</text>
-          <!-- marathon 09/2022-06/2023 -->
-          <rect class="tl-bar" x="260" y="90" width="89" height="14" fill="var(--ink-2)"/>
-          <text class="tl-lab" x="260" y="84">Marathon Education</text>
-          <!-- headhunter 06/2023-11/2024 -->
-          <rect class="tl-bar" x="350" y="150" width="169" height="14" fill="var(--muted)" opacity=".45"/>
-          <text class="tl-lab" x="350" y="144"><tspan class="l-vi">Tư vấn tuyển dụng (CTV)</tspan><tspan class="l-en">Recruitment consultant (freelance)</tspan></text>
-          <!-- msc 01/2024-10/2024 -->
-          <rect class="tl-bar" x="418" y="120" width="94" height="14" fill="var(--ink-2)"/>
-          <text class="tl-lab" x="418" y="114">MSC Group</text>
-          <!-- thuan viet 12/2024-now -->
-          <rect class="tl-bar" x="527" y="60" width="227" height="16" fill="var(--signal)"/>
-          <text class="tl-lab" x="527" y="52">Thuần Việt Group</text>
-          <text class="tl-sub" x="527" y="94"><tspan class="l-vi">Trưởng nhóm Tuyển dụng · 12/2024 – nay</tspan><tspan class="l-en">Talent Acquisition Lead · Dec 2024 – present</tspan></text>
-        </svg>
-      </div>
     </div>
   </div>
 </section>
