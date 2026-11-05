@@ -697,6 +697,444 @@ dialog.lb .lb-mock{width:min(1400px,94vw)}
 .wall-lab{font:700 12px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:#ff7ab0;margin:0 0 16px}
 .sc-tools{justify-content:center;margin-top:6px}
 
+/* v4: two pillars */
+.pnum{font:800 clamp(56px,7vw,92px)/.9 var(--f-display);letter-spacing:-.04em;background:linear-gradient(92deg,#ffd36b,#ff5c9d 60%,#9b7bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.p-lab{font:700 12px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:#ff7ab0;margin:0 0 16px}
+.p-gap{margin-top:72px}
+.prods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:800px){.prods{grid-template-columns:1fr}}
+.prod{border:1px solid var(--s-line);border-radius:22px;padding:26px;background:var(--s-card);min-width:0;display:grid;gap:12px;align-content:start}
+.prod-k{justify-self:start;font:700 11px var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:#0a0c1d;background:#ffd36b;padding:5px 10px;border-radius:999px}
+.prod h3{font:800 clamp(21px,2.2vw,26px)/1.2 var(--f-display);letter-spacing:-.01em;color:var(--s-ink);margin:0}
+.prod p{color:var(--s-mut);font-size:15px;line-height:1.6;margin:0}
+.p-more{margin:44px 0 0;text-align:center;font:600 14px var(--f-body);color:var(--s-mut)}
+.p1{padding-bottom:40px}
+.p1-story{border-top:0;padding-top:8px}
+.p2{padding:104px 0 88px;border-top:1px solid var(--line)}
+.p2-head{margin:0 auto 44px;text-align:center;max-width:760px;justify-items:center}
+.p2-head h2{font:800 clamp(30px,4.6vw,56px)/1.05 var(--f-display);letter-spacing:-.03em}
+.p2-head p{color:var(--muted)}
+.p2 .p-lab{color:var(--signal)}
+.how-l .hw{background:var(--card);border-color:var(--line);box-shadow:var(--shadow)}
+.how-l .hw h3{color:var(--ink)}
+.how-l .hw p{color:var(--muted)}
+.kit{display:flex;flex-wrap:wrap;gap:10px}
+.kit>span{font:600 14px var(--f-body);padding:9px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow)}
+.ba-hero{border-color:color-mix(in srgb,var(--signal) 45%,var(--line))}
+.tv-now{padding-top:8px}
+@media (max-width:1000px){.how4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.how4{grid-template-columns:1fr}.p-gap{margin-top:52px}}
+
+/* v4 round 2: each skill paired with its proof */
+.fc-src{display:block;margin-top:8px;font:700 10px var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:#ffb3d1;opacity:.9}
+.sc-cap2{margin:18px auto 0;text-align:center;font:500 12px var(--f-body);color:var(--s-mut)}
+.caps{display:grid;gap:16px}
+.cap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:center;border:1px solid var(--s-line);border-radius:22px;padding:30px;background:var(--s-card);min-width:0}
+.cap-l{display:grid;gap:10px;align-content:start;min-width:0}
+.cap h3{font:800 clamp(22px,2.4vw,28px)/1.2 var(--f-display);letter-spacing:-.01em;color:var(--s-ink);margin:0}
+.cap p{color:var(--s-mut);font-size:15.5px;line-height:1.6;margin:0}
+.cap .chipline{margin-top:6px}
+.proofs{display:grid;gap:18px;min-width:0}
+.pf{display:grid;gap:4px;padding-left:18px;border-left:2px solid rgba(255,120,180,.45);min-width:0}
+.pf b{font:800 clamp(38px,4vw,54px)/1 var(--f-display);letter-spacing:-.03em;color:var(--s-ink)}
+.pf b small{font-size:.5em;letter-spacing:0;margin-left:2px}
+.pf b .was{font-size:.48em;color:var(--s-mut);letter-spacing:0;vertical-align:.45em;text-decoration:line-through;text-decoration-color:rgba(255,92,157,.6)}
+.pf.sm{border-left-color:var(--s-line)}
+.pf.sm b{font-size:clamp(24px,2.4vw,30px)}
+.pf-w{font:600 14.5px/1.45 var(--f-body);color:#e4e1f3}
+.pf-s{font:700 10.5px var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:#ffb3d1;margin-top:2px}
+.pf .ba-track{height:10px;margin:6px 0 2px;max-width:320px}
+.s-sub h2{font-size:clamp(26px,3.4vw,40px)}
+.p2 .cap{background:var(--card);border-color:var(--line);box-shadow:var(--shadow)}
+.p2 .cap h3,.p2 .pf b{color:var(--ink)}
+.p2 .pf:not(.sm) b{color:var(--signal)}
+.p2 .cap p{color:var(--muted)}
+.p2 .pf{border-left-color:color-mix(in srgb,var(--signal) 45%,transparent)}
+.p2 .pf.sm{border-left-color:var(--line)}
+.p2 .pf b .was{color:var(--muted)}
+.p2 .pf-w{color:var(--ink)}
+.p2 .pf-s{color:var(--muted)}
+.p2 .chipline>span{background:var(--soft);border-color:var(--line);color:var(--ink)}
+.p2 .ba-note{text-align:center}
+@media (max-width:820px){.cap{grid-template-columns:1fr;gap:22px;padding:22px}}
+
+/* v4 round 3: three zones, each opens with a manager question + one signature number */
+.qidx-k{margin:72px auto 16px;text-align:center;font:700 12px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--s-mut)}
+.qidx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1080px;margin:0 auto;text-align:left}
+.q{position:relative;display:grid;gap:8px;align-content:start;padding:22px 22px 20px;border-radius:20px;border:1px solid var(--s-line);background:var(--s-card);text-decoration:none;color:var(--s-ink);overflow:hidden;transition:transform .25s,border-color .25s,background .25s;min-width:0}
+.q::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--qc)}
+.q:hover{transform:translateY(-3px);border-color:var(--qc);background:rgba(255,255,255,.07)}
+.q1{--qc:linear-gradient(90deg,#ffd36b,#ff5c9d)}.q2{--qc:linear-gradient(90deg,#ff5c9d,#ff9ccf)}.q3{--qc:linear-gradient(90deg,#a493ff,#5fe3ad)}
+.q1:hover{border-color:#ff8f7a}.q2:hover{border-color:#ff7ab0}.q3:hover{border-color:#8fb6ff}
+.q-n{font:800 13px var(--f-display);letter-spacing:.08em;color:var(--s-mut)}
+.q-k{font:700 11px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:#ffb3d1}
+.q3 .q-k{color:#b9adff}
+.q-q{font:800 19px/1.3 var(--f-display);letter-spacing:-.01em}
+.q-a{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-top:6px;padding-top:12px;border-top:1px dashed var(--s-line);font:600 13px var(--f-body);color:var(--s-mut)}
+.q-a b{font:800 24px/1 var(--f-display);color:#fff;white-space:nowrap}
+.q1 .q-a b{color:#ffd36b}.q2 .q-a b{color:#ff7ab0}.q3 .q-a b{color:#5fe3ad}
+
+.zone{padding:112px 0 104px;position:relative}
+.z1{background:radial-gradient(60% 50% at 85% 0%,rgba(255,92,157,.16),transparent 70%),#090a1a}
+.z3{background:radial-gradient(60% 50% at 15% 0%,rgba(123,92,255,.22),transparent 70%),#0b0a20}
+.z3-story{background:#0b0a20;border-top:0;padding-top:24px}
+.z-head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px 44px;align-items:start;padding-top:34px;border-top:1px solid var(--s-line);margin-bottom:48px;position:relative}
+.z-head::before{content:"";position:absolute;left:0;top:-1px;width:180px;height:3px;background:linear-gradient(90deg,#ffd36b,#ff5c9d)}
+.z3 .z-head::before{background:linear-gradient(90deg,#a493ff,#5fe3ad)}
+.z-num{font:800 clamp(88px,12vw,168px)/.8 var(--f-display);letter-spacing:-.06em;background:linear-gradient(180deg,#ffd36b,#ff5c9d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.z3 .z-num{background-image:linear-gradient(180deg,#a493ff,#5fe3ad)}
+.z-txt{display:grid;gap:14px;min-width:0;padding-top:6px}
+.z-k{justify-self:start;font:700 12px var(--f-body);letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:rgba(255,92,157,.14);color:#ffb3d1}
+.z3 .z-k{background:rgba(164,147,255,.16);color:#cfc6ff}
+.z-q{margin:0;font:800 clamp(32px,4.8vw,62px)/1.05 var(--f-display);letter-spacing:-.03em;color:var(--s-ink)}
+.z-a{margin:0;max-width:60ch;font-size:clamp(16px,1.5vw,18px);line-height:1.6;color:var(--s-mut)}
+
+.sig{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px 40px;align-items:center;padding:36px 40px;border-radius:26px;margin-bottom:18px;
+  background:linear-gradient(135deg,rgba(255,211,107,.12),rgba(255,92,157,.10) 55%,rgba(255,255,255,.03));border:1px solid rgba(255,140,170,.28)}
+.z3 .sig{background:linear-gradient(135deg,rgba(164,147,255,.16),rgba(95,227,173,.08) 60%,rgba(255,255,255,.03));border-color:rgba(164,147,255,.3)}
+.sig-n{font:800 clamp(72px,10vw,140px)/.9 var(--f-display);letter-spacing:-.05em;color:#fff;white-space:nowrap}
+.sig-n small{font-size:.45em;letter-spacing:0;margin-left:4px}
+.sig-n .was{font-size:.36em;letter-spacing:0;vertical-align:.9em;color:var(--s-mut);text-decoration:line-through;text-decoration-color:rgba(255,92,157,.6)}
+.sig-t{display:grid;gap:10px;min-width:0}
+.sig-t b{font:800 clamp(20px,2.2vw,26px)/1.25 var(--f-display);color:var(--s-ink)}
+.sig-t>span{color:var(--s-mut);font-size:15.5px;line-height:1.6}
+.sig-t em{font:700 11px var(--f-body);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:#ffb3d1}
+.z3 .sig-t em{color:#b9adff}
+
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pc{display:grid;gap:8px;align-content:start;padding:26px 24px;border-radius:22px;border:1px solid var(--s-line);background:var(--s-card);min-width:0}
+.pc-k{font:700 12px var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:#ffb3d1;margin-bottom:6px}
+.pc-n{font:800 clamp(40px,4.4vw,56px)/1 var(--f-display);letter-spacing:-.03em;color:var(--s-ink)}
+.pc-n small{font-size:.5em;letter-spacing:0;margin-left:2px}
+.pc-n .was{font-size:.45em;letter-spacing:0;vertical-align:.5em;color:var(--s-mut);text-decoration:line-through;text-decoration-color:rgba(255,92,157,.6)}
+.pc-w{font:600 15px/1.45 var(--f-body);color:#e4e1f3}
+.pc-s{font:700 10.5px var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--s-mut)}
+.pc-how{margin:8px 0 0;font-size:14.5px;line-height:1.55;color:var(--s-mut)}
+.pc .chipline{margin-top:8px}.pc .chipline>span{font-size:12px;padding:5px 10px}
+.pc-sub{list-style:none;margin:10px 0 0;padding:14px 0 0;border-top:1px dashed var(--s-line);display:grid;gap:10px}
+.pc-sub li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:baseline;font-size:13.5px;line-height:1.45;color:var(--s-mut)}
+.pc-sub b{font:800 18px var(--f-display);color:var(--s-ink);white-space:nowrap}
+.z3 .prods{margin-top:0}
+
+/* zone 2: light */
+.z2{background:var(--bg,#fff);border-top:1px solid var(--line)}
+.z2 .z-head{border-top-color:var(--line)}
+.z2 .z-head::before{background:linear-gradient(90deg,var(--signal),#7b5cff)}
+.z2 .z-num{background-image:linear-gradient(180deg,var(--signal),#7b5cff)}
+.z2 .z-k{background:color-mix(in srgb,var(--signal) 12%,transparent);color:var(--signal)}
+.z2 .z-q{color:var(--ink)}
+.z2 .z-a{color:var(--muted)}
+.z2 .sig{background:linear-gradient(135deg,color-mix(in srgb,var(--signal) 9%,var(--card)),var(--card));border-color:color-mix(in srgb,var(--signal) 30%,var(--line));box-shadow:var(--shadow)}
+.z2 .sig-n{color:var(--signal)}
+.z2 .sig-n .was,.z2 .pc-n .was{color:var(--muted)}
+.z2 .sig-t b,.z2 .pc-n{color:var(--ink)}
+.z2 .sig-t>span,.z2 .pc-how,.z2 .pc-sub li{color:var(--muted)}
+.z2 .sig-t em,.z2 .pc-k{color:var(--signal)}
+.z2 .pc{background:var(--card);border-color:var(--line);box-shadow:var(--shadow)}
+.z2 .pc-w{color:var(--ink)}.z2 .pc-s{color:var(--muted)}
+.z2 .pc-sub{border-top-color:var(--line)}.z2 .pc-sub b{color:var(--ink)}
+.z2 .chipline>span{background:var(--soft);border-color:var(--line);color:var(--ink)}
+.bars{display:grid;gap:8px;max-width:520px}
+.bar{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;gap:12px;align-items:center;font:700 13px var(--f-body);color:var(--muted)}
+.bar .ba-track{margin:0;height:14px}
+.bar .bv{color:var(--ink);text-align:right}
+
+@media (max-width:900px){
+  .qidx,.pgrid{grid-template-columns:1fr}
+  .z-head{grid-template-columns:1fr;gap:6px}
+  .sig{grid-template-columns:1fr;padding:28px 24px}
+  .zone{padding:84px 0 76px}
+}
+
+.scr.wa{background:radial-gradient(80% 70% at 85% 0%,rgba(123,92,255,.28),transparent 60%),radial-gradient(60% 60% at 10% 100%,rgba(255,92,157,.18),transparent 60%),#0e0f24;color:#ecebf7}
+.scr .wa-in{grid-template-columns:15.5em minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+.wa-side{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border-right:1px solid rgba(255,255,255,.08);padding:2em 1.5em;display:flex;flex-direction:column;gap:1.6em;min-height:0}
+.wa-kick{display:block;font:800 .62em var(--f-display);letter-spacing:.16em;color:#ff8fc0;margin-bottom:.7em}
+.wa-brand{display:block;white-space:nowrap;font:800 2.05em/.95 var(--f-display);letter-spacing:-.04em;background:linear-gradient(92deg,#fff,#ffb3d1);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wa-side p{margin:.8em 0 0;font-size:.78em;line-height:1.5;color:#a9a6c4}
+.wa-sm{display:grid;gap:.55em}
+.wa-sm>div{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);border-radius:.6em;padding:.7em .85em}
+.wa-sm small{display:block;font-size:.66em;font-weight:700;color:#a9a6c4}
+.wa-sm b{display:block;margin-top:.25em;font:800 1.5em/1 var(--f-display);color:#fff}
+.wa-nav{margin-top:auto;display:grid;gap:.3em}
+.wa-nav a{display:flex;align-items:center;gap:.65em;padding:.6em .75em;border-radius:.55em;font-size:.8em;font-weight:700;color:#c9c6de}
+.wa-nav a.on{background:linear-gradient(90deg,rgba(255,92,157,.28),rgba(123,92,255,.18));color:#fff;box-shadow:inset 0 0 0 1px rgba(255,140,190,.35)}
+.wa-ic{width:1em;height:1em;border:.13em solid currentColor;border-radius:.3em;opacity:.8;flex:none}
+.wa-main{padding:1.5em 1.7em;display:grid;gap:1.05em;align-content:start;min-width:0;min-height:0;overflow:hidden}
+.wa-top{display:flex;justify-content:space-between;align-items:flex-start}
+.wa-top>div{display:grid;gap:.2em}
+.wa-kick2{font:800 .62em var(--f-display);letter-spacing:.16em;color:#5fe3ad}
+.wa-top b{font:800 1.7em/1.1 var(--f-display);letter-spacing:-.02em;color:#fff}
+.wa-top span{font-size:.75em;color:#a9a6c4}
+.wa-btn{display:inline-flex;align-items:center;font-size:.7em;font-weight:700;padding:.5em .95em;border-radius:.55em;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#e4e1f3;white-space:nowrap}
+.wa-btn.pri{background:linear-gradient(92deg,#ff5c9d,#9b7bff);border:0;color:#fff;font-size:.78em;padding:.65em 1.1em;box-shadow:0 .5em 1.6em rgba(255,92,157,.35)}
+.wa-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8em}
+.wa-stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:.7em;padding:.8em .95em}
+.wa-stat small{display:block;font-size:.66em;font-weight:700;color:#a9a6c4}
+.wa-stat b{display:block;font:800 1.75em/1.05 var(--f-display);margin:.2em 0 .1em;color:#fff}
+.wa-stat span{font-size:.64em;color:#5fe3ad}
+.wa-stat.hl{background:linear-gradient(135deg,rgba(255,92,157,.35),rgba(123,92,255,.3));border-color:rgba(255,140,190,.4)}
+.wa-stat.hl small{color:#ffd6e7}.wa-stat.hl span{color:#ffd36b}
+.wa-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8em}
+.wa-card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:.7em;padding:.85em .95em;min-width:0}
+.wa-h{display:flex;justify-content:space-between;align-items:center;gap:.6em;margin-bottom:.5em}
+.wa-h b{font:800 .9em var(--f-display);color:#fff}
+.wa-h .m{font-size:.66em;color:#a9a6c4}
+.wa-card table{width:100%;border-collapse:collapse;font-size:.68em}
+.wa-card th{text-align:left;color:#8d89ab;font-weight:700;padding:.35em .3em;border-bottom:1px solid rgba(255,255,255,.1)}
+.wa-card td{padding:.5em .3em;border-bottom:1px solid rgba(255,255,255,.05);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:9em;color:#e4e1f3}
+.wa-card td.c{font-weight:700;color:#ffb3d1}.wa-card td.m{color:#a9a6c4}
+.wa-tag{font-style:normal;font-weight:700;font-size:.92em;padding:.18em .55em;border-radius:99em}
+.wa-tag.g{background:rgba(95,227,173,.16);color:#5fe3ad}.wa-tag.b{background:rgba(143,182,255,.16);color:#a8c4ff}.wa-tag.o{background:rgba(255,92,157,.18);color:#ff8fc0}.wa-tag.y{background:rgba(255,211,107,.16);color:#ffd36b}
+.wa-mods{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6em}
+.wa-mod{display:flex;align-items:center;gap:.55em;font-size:.7em;font-weight:700;padding:.75em .8em;border:1px solid rgba(255,255,255,.09);border-radius:.6em;background:rgba(255,255,255,.04);color:#e4e1f3}
+.wa-mod i{width:1.5em;height:1.5em;border-radius:.45em;flex:none}
+.wa-mod i.g{background:linear-gradient(135deg,#5fe3ad,#2bb3a0)}.wa-mod i.o{background:linear-gradient(135deg,#ff5c9d,#ff8a5c)}.wa-mod i.b{background:linear-gradient(135deg,#8fb6ff,#7b5cff)}.wa-mod i.y{background:linear-gradient(135deg,#ffd36b,#ff9f5c)}
+.tilt{transform:rotateX(calc(18deg + var(--ty,0deg))) rotateY(var(--tx,0deg)) scale(.94)}
+.tilt.flat{transform:none}
+@media (max-width:980px),(prefers-reduced-motion:reduce){.tilt{transform:none}}
+
+.wa-grid.g2{grid-template-columns:1.25fr 1fr}
+.wa-grid.g4{grid-template-columns:.8fr 1.4fr}
+.wa-src{display:grid;grid-template-columns:7.2em minmax(0,1fr) 2em auto 4.2em;gap:.6em;align-items:center;font-size:.7em;padding:.48em 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.wa-src span{color:#e4e1f3;white-space:nowrap}
+.wa-src i{height:.55em;border-radius:99em;background:linear-gradient(90deg,#ff5c9d,#9b7bff);width:var(--w);display:block}
+.wa-src b{font-family:var(--f-display);color:#fff;text-align:right}
+.wa-src small{color:#8d89ab;text-align:right}
+.wa-tree{display:grid;gap:.42em;font:500 .7em var(--f-mono);color:#c9c6de}
+.wa-tree .t1{padding-left:1.2em}.wa-tree .t2{padding-left:2.4em;color:#a9a6c4}
+.wa-tree em{font-style:normal;color:#5fe3ad;margin-left:.4em}
+.wa-file{display:grid;grid-template-columns:4.6em minmax(0,1fr) auto;gap:.7em;align-items:center;padding:.55em 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.7em}
+.wa-file .fi{font:700 .85em var(--f-mono);color:#b9adff;background:rgba(164,147,255,.12);border-radius:.4em;padding:.3em .4em;text-align:center}
+.wa-file b{display:block;color:#e4e1f3;font-weight:600;margin-bottom:.35em}
+.wa-file i{display:block;height:.4em;border-radius:99em;background:linear-gradient(90deg,#5fe3ad,#9b7bff);width:var(--w)}
+.wa-dl{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:.55em .8em;margin:0;font-size:.72em}
+.wa-dl dt{color:#8d89ab}.wa-dl dd{margin:0;color:#fff;font-weight:600}.wa-dl dd.c{color:#ffb3d1;font-family:var(--f-mono)}
+.wa-pair{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto auto;gap:.8em;align-items:center;padding:.75em .2em;border-bottom:1px solid rgba(255,255,255,.06);font-size:.72em}
+.wa-pair b{display:block;color:#fff}.wa-pair small{color:#a9a6c4}
+.wa-pair .lk{color:#ff8fc0;font-size:1.3em}
+.wa-rc{display:grid;grid-template-columns:1.4em minmax(0,1fr) auto;gap:.5em;align-items:center;padding:.55em 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.72em}
+.wa-rc i{font-style:normal;display:grid;place-items:center;width:1.3em;height:1.3em;border-radius:.3em;background:#5fe3ad;color:#0e0f24;font-weight:800;font-size:.85em}
+.wa-rc b{color:#fff;font-weight:600}.wa-rc small{color:#a9a6c4;font-family:var(--f-mono)}
+.wa-mail .ml{font-size:.72em;padding:.5em 0 .7em;border-bottom:1px solid rgba(255,255,255,.08)}
+.wa-mail .ml small{display:block;color:#8d89ab}.wa-mail .ml b{color:#fff}
+.wa-mail .mb{font-size:.72em;line-height:1.6;color:#e4e1f3;padding:.7em 0}
+.wa-mail .mb ul{margin:.3em 0;padding-left:1.2em}.wa-mail u{text-decoration:none;color:#ffd36b;font-family:var(--f-mono);font-size:.92em}
+.wa-mail .mf{display:flex;gap:.5em;font-size:.72em}
+
+/* web-app showcase in zone 3 */
+.wsx{margin-top:56px}
+.wsx-h{display:grid;gap:10px;justify-items:center;text-align:center;margin-bottom:24px}
+.wsx-h h3{margin:0;font:800 clamp(26px,3.2vw,38px)/1.15 var(--f-display);letter-spacing:-.02em;color:var(--s-ink)}
+.wsx-h p{margin:0;color:var(--s-mut)}
+.wsx .pflow{margin-bottom:22px}
+.wsx .fl-n{cursor:pointer;background:none;border:0;padding:0;font:inherit;color:inherit}
+.wsx .fl-n.cur i{border-color:#5fe3ad;background:linear-gradient(135deg,rgba(95,227,173,.55),rgba(164,147,255,.45));box-shadow:0 0 0 6px #0b0a20,0 0 36px 4px rgba(95,227,173,.6)}
+.wsx .fl-n.cur b{color:#5fe3ad}
+.wsx .fl-n:focus-visible{outline:2px solid #5fe3ad;outline-offset:6px;border-radius:12px}
+.wsx-frame{position:relative;max-width:1000px;margin:0 auto;border-radius:20px;padding:10px;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.04));box-shadow:0 40px 120px -30px rgba(123,92,255,.6),0 0 0 1px rgba(255,255,255,.1)}
+.wsx-frame::before{content:"";position:absolute;inset:-1px;border-radius:21px;padding:2px;pointer-events:none;
+  background:conic-gradient(from var(--ang),transparent 0 55%,#a493ff 70%,#5fe3ad 82%,transparent 94%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);animation:spin 7s linear infinite}
+.wsx-stack{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;cursor:zoom-in}
+.wsx-stack .scr{position:absolute;inset:0;opacity:0;transform:scale(1.015);transition:opacity .5s ease,transform .7s ease}
+.wsx-stack .scr.on{opacity:1;transform:none}
+.wsx-bar{height:3px;max-width:1000px;margin:14px auto 0;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden}
+.wsx-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#a493ff,#5fe3ad)}
+.wsx-bar i.run{animation:wsxbar 5s linear forwards}
+@keyframes wsxbar{to{width:100%}}
+.prod-go{justify-self:start;margin-top:4px;font:700 14px var(--f-body);color:#5fe3ad;text-decoration:none}
+.prod-go:hover{text-decoration:underline}
+.prod-k.free{background:#5fe3ad}
+.prod-k.low{background:#b9adff}
+.bridge{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:18px;align-items:center;max-width:1000px;margin:0 auto 40px;padding:20px 24px;border-radius:20px;border:1px solid var(--s-line);background:rgba(255,255,255,.03)}
+.bridge>div{display:grid;gap:10px;min-width:0}
+.bridge small{font:700 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:#b9adff}
+.bridge .ar{font-size:26px;color:#5fe3ad}
+@media (max-width:900px){.bridge{grid-template-columns:1fr}.bridge .ar{transform:rotate(90deg);justify-self:center}}
+
+/* v4 round 5: tech layer */
+@property --ang{syntax:'<angle>';initial-value:0deg;inherits:false}
+:root{--f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace}
+
+/* moving grid + drifting glow in hero */
+.hero3::after{animation:gridmove 14s linear infinite}
+@keyframes gridmove{to{background-position:0 64px,64px 0}}
+.hero3::before{animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(0,-30px,0) scale(1.08)}}
+
+/* rotating light around the screen */
+.tilt{position:relative}
+.tilt::before,.tilt::after{content:"";position:absolute;inset:-1px;border-radius:21px;pointer-events:none;
+  background:conic-gradient(from var(--ang),transparent 0 55%,#ff5c9d 68%,#9b7bff 78%,#5fe3ad 86%,transparent 94%);
+  animation:spin 6s linear infinite}
+.tilt::before{padding:2px;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.tilt::after{z-index:-1;filter:blur(26px);opacity:.55}
+@keyframes spin{to{--ang:360deg}}
+
+/* code-style labels */
+.z-k,.pc-k,.pc-s,.sig-t em,.q-n,.q-k,.fc-src,.qidx-k,.prod-k,.sc-cap2,.s-eb,.fl-n i,.fl-k{font-family:var(--f-mono)!important;letter-spacing:.06em!important}
+.z-k::before{content:"// ";opacity:.6}
+.qidx-k::before{content:"> ";color:#5fe3ad}
+.sc-cap2::before{content:"● ";color:#5fe3ad;animation:blink 1.6s steps(2) infinite}
+@keyframes blink{50%{opacity:.2}}
+
+/* signature cards: slow light sweep on the border */
+.sig{position:relative;isolation:isolate}
+.sig::before{content:"";position:absolute;inset:-1px;border-radius:27px;padding:1px;pointer-events:none;
+  background:conic-gradient(from var(--ang),transparent 0 70%,rgba(255,211,107,.9) 80%,rgba(255,92,157,.9) 88%,transparent 96%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);
+  animation:spin 9s linear infinite}
+.z3 .sig::before{background:conic-gradient(from var(--ang),transparent 0 70%,rgba(164,147,255,.95) 80%,rgba(95,227,173,.95) 88%,transparent 96%)}
+.z2 .sig::before{background:conic-gradient(from var(--ang),transparent 0 70%,color-mix(in srgb,var(--signal) 85%,transparent) 82%,rgba(123,92,255,.8) 90%,transparent 97%)}
+.pc{transition:transform .3s,border-color .3s,box-shadow .3s}
+.pc:hover{transform:translateY(-4px);border-color:rgba(255,140,190,.45);box-shadow:0 20px 60px -20px rgba(255,92,157,.45)}
+.z3 .pc:hover,.z3 .prod:hover{border-color:rgba(164,147,255,.5)}
+
+/* live web app mock */
+.wa-main{position:relative}
+.wa-live{display:inline-flex;align-items:center;gap:.45em;font:700 .62em var(--f-mono);letter-spacing:.08em;color:#5fe3ad;padding:.35em .7em;border-radius:99em;background:rgba(95,227,173,.1);border:1px solid rgba(95,227,173,.3);margin-right:.6em}
+.wa-live i{width:.6em;height:.6em;border-radius:50%;background:#5fe3ad;box-shadow:0 0 .8em #5fe3ad;animation:blink 1.2s steps(2) infinite}
+.wa-acts{display:flex;align-items:center}
+.wa-toasts{position:absolute;left:1.7em;bottom:1.4em;display:grid;gap:.45em;justify-items:start;pointer-events:none;z-index:3}
+.wa-toast{display:flex;align-items:center;gap:.6em;font:600 .7em var(--f-body);color:#fff;padding:.65em .95em;border-radius:.65em;
+  background:rgba(20,20,48,.92);border:1px solid rgba(255,255,255,.14);box-shadow:0 .8em 2em rgba(0,0,0,.45);
+  animation:toastin .45s cubic-bezier(.2,.8,.2,1) both}
+.wa-toast b{font-family:var(--f-mono);font-size:.9em;color:#5fe3ad}
+.wa-toast small{font:500 .85em var(--f-mono);color:#8d89ab}
+.wa-toast.out{animation:toastout .4s ease both}
+@keyframes toastin{from{opacity:0;transform:translateY(.8em) scale(.96)}to{opacity:1;transform:none}}
+@keyframes toastout{to{opacity:0;transform:translateY(-.5em)}}
+.wa-card.scan{position:relative;overflow:hidden}
+.wa-card.scan::after{content:"";position:absolute;left:0;right:0;height:2.2em;top:-2.2em;pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(95,227,173,.14),transparent);animation:scan 3.4s ease-in-out infinite}
+@keyframes scan{to{top:100%}}
+.wa-stat b.tick{animation:tick .6s ease}
+@keyframes tick{40%{color:#5fe3ad;text-shadow:0 0 .6em rgba(95,227,173,.8)}}
+.wa-new td{animation:rowin 1s ease}
+@keyframes rowin{from{background:rgba(255,92,157,.25)}}
+
+/* zone 3: processing flow */
+.pflow{margin:0 0 18px;padding:30px 28px 26px;border-radius:24px;border:1px solid var(--s-line);background:rgba(255,255,255,.03)}
+.fl-k{font:700 11px var(--f-body);text-transform:uppercase;color:#b9adff;margin-bottom:22px}
+.fl-row{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.fl-line{position:absolute;left:10%;right:10%;top:27px;height:2px;background:linear-gradient(90deg,rgba(164,147,255,.5),rgba(95,227,173,.5));border-radius:2px}
+.fl-line i{position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:#5fe3ad;box-shadow:0 0 12px #5fe3ad;animation:flowdot 4s linear infinite}
+.fl-line i:nth-child(2){animation-delay:-1.33s;background:#ff8fc0;box-shadow:0 0 12px #ff5c9d}
+.fl-line i:nth-child(3){animation-delay:-2.66s;background:#b9adff;box-shadow:0 0 12px #9b7bff}
+@keyframes flowdot{from{left:0}to{left:100%}}
+.fl-n{position:relative;z-index:1;display:grid;justify-items:center;text-align:center;gap:8px;min-width:0}
+.fl-n i{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;font-style:normal;font-weight:700;font-size:15px;color:#fff;
+  background:linear-gradient(135deg,rgba(164,147,255,.35),rgba(95,227,173,.2));border:1px solid rgba(164,147,255,.45);box-shadow:0 0 0 6px #0b0a20,0 10px 30px -8px rgba(123,92,255,.6)}
+.fl-n b{font:800 16px/1.25 var(--f-display);color:var(--s-ink)}
+.fl-n>span{font-size:13px;line-height:1.45;color:var(--s-mut)}
+.fl-n.on i{animation:pulse 2.5s ease-in-out infinite}
+.fl-n:nth-of-type(2) i{animation-delay:.5s}.fl-n:nth-of-type(3) i{animation-delay:1s}.fl-n:nth-of-type(4) i{animation-delay:1.5s}.fl-n:nth-of-type(5) i{animation-delay:2s}
+@keyframes pulse{50%{box-shadow:0 0 0 6px #0b0a20,0 0 34px 2px rgba(95,227,173,.55);border-color:#5fe3ad}}
+@media (max-width:900px){
+  .pflow{padding:24px 20px}
+  .fl-row{grid-template-columns:1fr;gap:18px}
+  .fl-line{display:none}
+  .fl-n{grid-template-columns:56px minmax(0,1fr);justify-items:start;text-align:left;column-gap:16px;row-gap:2px}
+  .fl-n i{grid-row:span 2}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero3::after,.hero3::before,.tilt::before,.tilt::after,.sig::before,.fl-line i,.fl-n i,.wa-card.scan::after,.wa-live i,.sc-cap2::before{animation:none!important}
+}
+
+/* round 6: words for up/down, scoreboard, regions, stronger tail headers */
+.dir{display:inline-block;font:800 .3em/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;vertical-align:.95em;margin-right:.3em;padding:.35em .6em;border-radius:99em;background:rgba(255,255,255,.12);color:inherit}
+.fc .dir{font-size:.42em;vertical-align:.4em}
+.pc-n .dir{font-size:.32em;vertical-align:.8em}
+.sig-board{display:grid;grid-template-columns:1fr;gap:22px}
+.sb-h b{font:800 clamp(20px,2.2vw,26px)/1.25 var(--f-display);color:var(--s-ink)}
+.sb-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.sb-g>div{display:grid;gap:8px;align-content:start;padding:18px 18px 16px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--s-line);min-width:0}
+.sb-g i{font:800 clamp(44px,5vw,68px)/.95 var(--f-display);font-style:normal;letter-spacing:-.04em;color:#fff}
+.sb-g i small{font-size:.5em;letter-spacing:0;margin-left:2px}
+.sb-g span{font-size:14px;line-height:1.45;color:var(--s-mut)}
+.sb-g em{font:700 10.5px var(--f-mono);font-style:normal;letter-spacing:.06em;text-transform:uppercase;color:#ffb3d1}
+.z1 .pgrid .pc-n{white-space:nowrap}
+.tail{padding:96px 0}
+.tail .z-head{margin-bottom:40px}
+.rg-wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px;align-items:center}
+.rg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.rg{display:grid;gap:12px;align-content:start;padding:20px;border-radius:18px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);min-width:0;transition:transform .3s,border-color .3s}
+.rg:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--signal) 45%,var(--line))}
+.rg-h{display:flex;align-items:center;gap:10px}
+.rg-h i{font:700 12px var(--f-mono);font-style:normal;color:#fff;background:linear-gradient(135deg,var(--signal),#7b5cff);border-radius:8px;padding:5px 7px}
+.rg-h b{font:800 17px/1.25 var(--f-display);color:var(--ink)}
+.rg .chipline>span{font-size:12.5px;padding:5px 10px;background:var(--soft);border-color:var(--line);color:var(--ink)}
+.rg small{font:600 11px var(--f-mono);letter-spacing:.04em;color:var(--muted)}
+.lv{margin-top:28px;display:grid;gap:12px}
+.lv small{font:700 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--signal)}
+.lv ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.lv li{position:relative;padding:14px 16px;border-radius:14px;font:700 14.5px var(--f-body);color:#fff;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--signal) calc(35% + var(--k,0)*15%),#1b2a5e),#7b5cff)}
+.lv li:nth-child(1){--k:0;opacity:.72}.lv li:nth-child(2){--k:1;opacity:.8}.lv li:nth-child(3){--k:2;opacity:.88}.lv li:nth-child(4){--k:3;opacity:.94}.lv li:nth-child(5){--k:4}
+.ct-head{display:flex;align-items:center;gap:18px}
+.ct-head .z-num{font-size:clamp(64px,8vw,104px)}
+.tail .z-num,.ct-head .z-num{background-image:linear-gradient(180deg,var(--signal),#7b5cff)}
+@media (max-width:1000px){.sb-g{grid-template-columns:repeat(2,minmax(0,1fr))}.rg-wrap{grid-template-columns:1fr}}
+@media (max-width:640px){.sb-g,.rg-grid{grid-template-columns:1fr}.lv ol{grid-template-columns:1fr}}
+@media (max-width:640px){.sig{grid-template-columns:minmax(0,1fr)}.sig-n{font-size:clamp(48px,15vw,64px);white-space:normal}.sig-n .dir{vertical-align:.5em}}
+
+/* round 7: navigation — numbered menu, scroll-spy, progress, dock, next links */
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:64px}
+.top{--p:0%}
+.top::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:var(--p);background:linear-gradient(90deg,#ffd36b,#ff5c9d,#9b7bff,#5fe3ad);transition:width .1s linear}
+.nav{gap:4px!important}
+.nav a{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border-radius:999px;transition:background .2s,color .2s}
+.nav a i{font:700 10.5px var(--f-mono);font-style:normal;color:#7d79a0;transition:color .2s}
+.top .nav a.on{background:rgba(255,255,255,.1);color:#fff}
+.top .nav a.on i{color:#ff8fc0}
+@media (max-width:1100px){.nav a{padding:7px 7px}.nav a i{display:none}}
+.next-z{display:flex;align-items:center;gap:16px;width:max-content;max-width:100%;margin:44px auto 0;padding:14px 22px 14px 18px;border-radius:999px;text-decoration:none;
+  border:1px solid var(--s-line,var(--line));background:rgba(255,255,255,.04);color:var(--s-ink,var(--ink));transition:transform .25s,border-color .25s,background .25s}
+.next-z:hover{transform:translateY(-2px);border-color:#ff8fc0;background:rgba(255,92,157,.1)}
+.next-z small{font:700 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--s-mut,var(--muted))}
+.next-z b{display:flex;align-items:center;gap:8px;font:800 17px var(--f-display)}
+.next-z b i{font:700 12px var(--f-mono);font-style:normal;color:#ff8fc0}
+.next-z .ar{font-size:18px;color:#5fe3ad;animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateY(3px)}}
+.z2 .next-z,.tail .next-z,.tv-now .next-z{background:var(--card);border-color:var(--line);color:var(--ink);box-shadow:var(--shadow)}
+.z2 .next-z small,.tv-now .next-z small{color:var(--muted)}
+.z2 .next-z b i,.tv-now .next-z b i{color:var(--signal)}
+.z2 .next-z .ar,.tv-now .next-z .ar{color:var(--signal)}
+.dock{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:30;display:flex;align-items:flex-end;gap:8px;
+  opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s}
+.dock.show{opacity:1;transform:none;pointer-events:auto}
+.dock button{font:inherit;cursor:pointer;border:1px solid rgba(255,255,255,.16);background:rgba(13,14,36,.88);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#fff;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+.dock-top{width:46px;height:46px;border-radius:50%;font-size:18px;font-weight:800}
+.dock-top:hover{border-color:#5fe3ad;color:#5fe3ad}
+.dock-cur{display:none;align-items:center;gap:8px;height:46px;padding:0 16px;border-radius:999px;font-weight:700;font-size:14px}
+.dock-cur i{font:700 11px var(--f-mono);font-style:normal;color:#ff8fc0}
+.dock-cur em{font-style:normal;opacity:.7}
+.dock-menu{position:absolute;right:0;bottom:56px;display:grid;gap:2px;min-width:230px;padding:8px;border-radius:18px;background:rgba(13,14,36,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.14);box-shadow:0 20px 50px -12px rgba(0,0,0,.6)}
+.dock-menu[hidden]{display:none}
+.dock-menu a{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:12px;text-decoration:none;color:#e4e1f3;font-weight:600;font-size:15px}
+.dock-menu a i{font:700 11px var(--f-mono);font-style:normal;color:#7d79a0}
+.dock-menu a.on{background:rgba(255,92,157,.16);color:#fff}.dock-menu a.on i{color:#ff8fc0}
+@media (max-width:760px){.dock-cur{display:inline-flex}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.next-z .ar{animation:none}}
+
+/* round 8: same number column for all six sections */
+.z-num{min-width:1.3em;font-variant-numeric:tabular-nums}
+.tail .contact{grid-template-columns:repeat(2,minmax(0,1fr));border-top:0;padding-top:0;align-items:start}
+.tail .contact .cards{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tail .contact .cbox{padding:16px 18px;border-radius:16px;box-shadow:var(--shadow)}
+.tail .contact .cbox b{font-size:18px}
+.tail .znote{grid-column:1/-1}
+@media (max-width:760px){.tail .contact .cards{grid-template-columns:1fr}}
+
+/* round 9: "Tăng từ X lên" label above the big number, no arrows */
+.dir.dir-l{display:table;margin:0 0 .3em;vertical-align:baseline;font-size:.2em;padding:.45em .8em;letter-spacing:.04em}
+.pc-n .dir.dir-l{font-size:.28em}
+.z2 .dir{background:color-mix(in srgb,var(--signal) 12%,transparent);color:var(--signal)}
+.pc-sub li{grid-template-columns:auto minmax(0,1fr)}
+.pc-sub b{white-space:normal}
+
 .real{margin-top:80px}
 .real-h{display:flex;gap:12px;align-items:baseline;justify-content:center;flex-wrap:wrap;font:700 15px var(--f-body);color:#e4e1f3;margin-bottom:16px}
 .real-h small{color:var(--s-mut);font-weight:500;font-size:13px}
@@ -716,11 +1154,12 @@ dialog.lb .lb-mock .scr{border-radius:12px}
   <div class="wrap">
     <div class="brand"><span class="mark">NK</span><span>Nguyễn Kiều</span></div>
     <nav class="nav" aria-label="Mục lục">
-      <a href="#cach-lam"><span class="l-vi">Năng lực</span><span class="l-en">Skills</span></a>
-      <a href="#ket-qua"><span class="l-vi">Thuần Việt</span><span class="l-en">Thuan Viet</span></a>
-      <a href="#san-pham"><span class="l-vi">Công cụ</span><span class="l-en">Tool</span></a>
-      <a href="#hanh-trinh"><span class="l-vi">Hành trình</span><span class="l-en">Career</span></a>
-      <a href="#lien-he"><span class="l-vi">Liên hệ</span><span class="l-en">Contact</span></a>
+      <a href="#nhanh" data-sec="nhanh"><i>01</i><span class="l-vi">Tuyển nhanh</span><span class="l-en">Hire fast</span></a>
+      <a href="#dung" data-sec="dung"><i>02</i><span class="l-vi">Tuyển đúng</span><span class="l-en">Hire right</span></a>
+      <a href="#cong-cu" data-sec="cong-cu"><i>03</i><span class="l-vi">Công cụ AI</span><span class="l-en">AI tools</span></a>
+      <a href="#hanh-trinh" data-sec="hanh-trinh"><i>04</i><span class="l-vi">Hành trình</span><span class="l-en">Career</span></a>
+      <a href="#khu-vuc" data-sec="khu-vuc"><i>05</i><span class="l-vi">Khu vực</span><span class="l-en">Regions</span></a>
+      <a href="#lien-he" data-sec="lien-he"><i>06</i><span class="l-vi">Liên hệ</span><span class="l-en">Contact</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Ngôn ngữ / Language">
       <button type="button" id="btn-vi" aria-pressed="true">VI</button>
@@ -735,22 +1174,24 @@ dialog.lb .lb-mock .scr{border-radius:12px}
   <div class="wrap">
     <div class="pill"><i></i><span class="l-vi">Trưởng nhóm Tuyển dụng · 6 năm kinh nghiệm</span><span class="l-en">Talent Acquisition Lead · 6 years</span></div>
     <h1 class="mega"><span class="l-vi">Số liệu để tuyển nhanh.<br><span class="grad">Hiểu con người để tuyển đúng.</span></span><span class="l-en">Data to hire faster.<br><span class="grad">Knowing people to hire right.</span></span></h1>
-    <p class="h-lede"><span class="l-vi">6 năm tuyển dụng tại doanh nghiệp và công ty cung ứng nhân sự, qua bán lẻ, TMĐT, sản xuất, FMCG và giáo dục. Hiện là Trưởng nhóm Tuyển dụng tại Thuần Việt Group, đồng thời số hóa quy trình bằng công cụ xây cùng AI.</span><span class="l-en">6 years of in-house and agency recruitment across retail, e-commerce, manufacturing, FMCG and education. Now Talent Acquisition Lead at Thuan Viet Group, also digitizing the hiring process with a tool built with AI.</span></p>
+    <p class="h-lede"><span class="l-vi">6 năm tuyển dụng ở doanh nghiệp và công ty cung ứng nhân sự, từ cửa hàng, nhà máy đến khối văn phòng và cấp quản lý. Hiện là Trưởng nhóm Tuyển dụng tại Thuần Việt Group, dùng AI để số hóa các khâu lặp lại trong tuyển dụng.</span><span class="l-en">6 years of in-house and agency recruitment, from stores and factories to office teams and managers. Now Talent Acquisition Lead at Thuan Viet Group, using AI to digitize the repetitive parts of hiring.</span></p>
+
     <div class="ctas">
-      <a class="btn pri" href="#ket-qua"><span class="l-vi">Xem kết quả</span><span class="l-en">See the results</span></a>
-      <a class="btn ghost" href="#san-pham"><span class="l-vi">Xem công cụ</span><span class="l-en">See the tool</span></a>
+      <a class="btn pri" href="#nhanh"><span class="l-vi">01 · Tuyển nhanh</span><span class="l-en">01 · Hire fast</span></a>
+      <a class="btn ghost" href="#dung"><span class="l-vi">02 · Tuyển đúng</span><span class="l-en">02 · Hire right</span></a>
+      <a class="btn ghost" href="#cong-cu"><span class="l-vi">03 · Công cụ AI</span><span class="l-en">03 · AI tools</span></a>
     </div>
 
-    <div class="sc-cap"><span class="l-vi">Công cụ và kết quả tại Thuần Việt Group · 2025–2026</span><span class="l-en">Tool and results at Thuan Viet Group · 2025–2026</span></div>
     <div class="showcase">
-      <div class="tilt" id="tilt"><div class="scr"><div class="in"><header class="m-top"><div class="m-logo"><i>TV</i><div>Thuần Việt Home<small>Người Thuần Việt</small></div></div><div class="m-search">⌕&nbsp; Tìm người, việc, đề xuất, ứng viên…</div><div class="sp"></div><span class="m-ic">◔<em>3</em></span><span class="m-remind">✦ Nhắc việc</span><span class="m-av">K</span></header><nav class="m-side"><div class="m-app"><i>TD</i><div><b>Tuyển dụng</b><small>Frappe HR</small></div></div><a class="on">Tổng quan</a><div class="grp">1 · HOẠCH ĐỊNH</div><a>Đề xuất tuyển dụng</a><div class="grp">2 · THU HÚT</div><a>Jobsite tuyển dụng</a><a>Ứng viên</a><div class="grp">3 · TUYỂN CHỌN</div><a>Quy trình tuyển chọn</a><a>Lịch phỏng vấn</a><a>Đánh giá ứng viên</a><div class="grp">4 · TIẾP NHẬN</div><a>Offer</a><a>Onboarding</a></nav><main class="m-main"><div class="m-ban"><div><small>NHÂN SỰ · TUYỂN DỤNG</small><b>Tổng quan</b><p>Việc hôm nay, việc trễ hạn và phễu tuyển dụng của cả nhóm</p></div><div class="m-row"><span class="m-pill">⟳ Cập nhật 10:00</span><span class="m-seg"><i class="on">Cả nhóm</i><i>Của tôi</i></span><span class="m-btn">⇪ Tải CV lên</span></div></div><div class="m-kpis"><div class="m-card m-kpi"><small>Việc trễ hạn</small><b class="c-or">3</b><span>trên 24 hồ sơ đang xử lý</span></div><div class="m-card m-kpi"><small>CV mới cần đọc</small><b class="c-cr">12</b><span>đã tự lọc trùng</span></div><div class="m-card m-kpi"><small>Phỏng vấn hôm nay</small><b class="c-vi">4</b><span>2 sơ vấn · 2 vòng 1</span></div><div class="m-card m-kpi"><small>Thư mời chờ trả lời</small><b class="c-bl">2</b><span>hạn trả lời 7 ngày</span></div><div class="m-card m-kpi"><small>Nhận việc tuần này</small><b class="c-gr">5</b><span>3 cửa hàng · 2 kho</span></div></div><div class="m-two"><div class="m-card"><div class="m-h">Việc chờ xử lý <span class="m-cnt">6 việc</span><span class="m-leg"><i class="d-hot"></i>Cần làm ngay <i class="d-wait"></i>Đang chờ <i class="d-soon"></i>Sắp tới</span></div><div class="m-tbl"><div class="th"><span>Việc</span><span>Ai làm</span><span>SL</span><span>Trạng thái</span></div><div class="tr"><span class="lk">Hồ sơ quá hạn ở giai đoạn →</span><span>Người phụ trách hồ sơ</span><span class="n">3</span><span><em class="m-chip ch-hot">Cần làm ngay</em></span></div><div class="tr"><span class="lk">Buổi phỏng vấn chưa có phiếu chấm →</span><span>Hội đồng phỏng vấn</span><span class="n">2</span><span><em class="m-chip ch-hot">Cần làm ngay</em></span></div><div class="tr"><span class="lk">CV mới cần đọc →</span><span>Chuyên viên TA</span><span class="n">12</span><span><em class="m-chip ch-hot">Cần làm ngay</em></span></div><div class="tr"><span class="lk">Đồng ý offer, chưa có phiếu tiếp nhận →</span><span>Chuyên viên TA</span><span class="n">1</span><span><em class="m-chip ch-wait">Đang chờ</em></span></div><div class="tr"><span class="lk">Thư mời chờ ứng viên trả lời →</span><span>Chuyên viên TA</span><span class="n">2</span><span><em class="m-chip ch-wait">Đang chờ</em></span></div><div class="tr"><span class="lk">Phỏng vấn 7 ngày tới →</span><span>Chuyên viên TA</span><span class="n">6</span><span><em class="m-chip ch-soon">Sắp tới</em></span></div></div></div><div class="m-card"><div class="m-h">Phễu tuyển dụng <span class="m-cnt">30 ngày</span></div><div class="m-fun"><div class="fr"><span>CV nhận</span><div class="ft"><i style="width:100%"></i></div></div><div class="fr"><span>Đạt sàng lọc</span><div class="ft"><i style="width:62%"></i></div></div><div class="fr"><span>Phỏng vấn</span><div class="ft"><i style="width:36%"></i></div></div><div class="fr"><span>Offer</span><div class="ft"><i style="width:17%"></i></div></div><div class="fr"><span>Nhận việc</span><div class="ft"><i style="width:14%"></i></div></div></div><div class="m-h" style="margin-top:.9em">Nguồn ứng viên</div><div class="m-src"><span><i style="background:#c2185b"></i>TopCV</span><span><i style="background:#6d4bd8"></i>CareerViet</span><span><i style="background:#1f7ae0"></i>Giới thiệu nội bộ</span><span><i style="background:#13a06a"></i>Facebook · Zalo</span></div><div class="m-stack"><i style="flex:34;background:#c2185b"></i><i style="flex:22;background:#6d4bd8"></i><i style="flex:18;background:#1f7ae0"></i><i style="flex:26;background:#13a06a"></i></div></div></div></main></div></div></div>
+      <div class="tilt" id="tilt"><div class="scr wa"><div class="in wa-in"><aside class="wa-side"><div><small class="wa-kick">TALENT OPERATIONS</small><b class="wa-brand">Tuyển dụng</b><p>Web app chạy trên Google Sheets, Apps Script, Drive và Gmail.</p></div><div class="wa-sm"><div><small>Vị trí đang tuyển</small><b>18</b></div><div><small>Ứng viên</small><b>426</b></div><div><small>Phỏng vấn tuần này</small><b>23</b></div></div><nav class="wa-nav"><a class=on><i class="wa-ic"></i>Trang chủ</a><a><i class="wa-ic"></i>Nguồn CV</a><a><i class="wa-ic"></i>Nhập CV</a><a><i class="wa-ic"></i>Lọc CV trùng</a><a><i class="wa-ic"></i>Thư mời PV</a><a><i class="wa-ic"></i>Vị trí tuyển</a></nav></aside><main class="wa-main"><header class="wa-top"><div><small class="wa-kick2">TRANG CHỦ</small><b>Bảng điều hành tuyển dụng</b><span>Dữ liệu mẫu · cập nhật 10:00</span></div><div class="wa-acts"><span class="wa-live"><i></i>TỰ ĐỘNG</span><span class="wa-btn pri">⇪ Nhập CV</span></div></header><div class="wa-stats"><div class="wa-stat hl"><small>Vị trí đang tuyển</small><b>18</b><span>4 vị trí gấp</span></div><div class="wa-stat "><small>CV mới tuần này</small><b><span class="wa-cnt" data-k="cv">64</span></b><span>từ 5 nguồn</span></div><div class="wa-stat "><small>CV trùng đã lọc</small><b><span class="wa-cnt" data-k="dup">37</span></b><span>tự động</span></div><div class="wa-stat "><small>Thư mời đã gửi</small><b><span class="wa-cnt" data-k="inv">29</span></b><span>qua Gmail</span></div></div><div class="wa-grid"><section class="wa-card"><div class="wa-h"><b>Vị trí đang tuyển</b><span class="wa-btn">Mở bảng</span></div><table><tr><th>Mã</th><th>Vị trí</th><th>Bộ phận</th><th>Hạn</th></tr><tr><td class="c">TD-118</td><td>Nhân viên bán hàng</td><td class="m">Cửa hàng Biên Hòa</td><td>15/11</td></tr><tr><td class="c">TD-121</td><td>Kế toán tổng hợp</td><td class="m">Tài chính</td><td>22/11</td></tr><tr><td class="c">TD-124</td><td>Công nhân may</td><td class="m">Nhà máy</td><td>18/11</td></tr><tr><td class="c">TD-126</td><td>Chuyên viên TMĐT</td><td class="m">Kinh doanh online</td><td>30/11</td></tr></table></section><section class="wa-card scan"><div class="wa-h"><b>Ứng viên mới</b><span class="wa-btn">Mở bảng</span></div><table><tr><th>Ứng viên</th><th>Vị trí</th><th>Nguồn</th><th>Trạng thái</th></tr><tr><td>Ứng viên A</td><td>Nhân viên bán hàng</td><td class="m">Jobsite</td><td><em class="wa-tag g">Mời PV</em></td></tr><tr><td>Ứng viên B</td><td>Kế toán tổng hợp</td><td class="m">Giới thiệu</td><td><em class="wa-tag b">Đạt V1</em></td></tr><tr><td>Ứng viên C</td><td>Công nhân may</td><td class="m">Facebook</td><td><em class="wa-tag o">CV trùng</em></td></tr><tr><td>Ứng viên D</td><td>Chuyên viên TMĐT</td><td class="m">TopCV</td><td><em class="wa-tag y">Offer</em></td></tr></table></section></div><section class="wa-card"><div class="wa-h"><b>Chức năng thao tác</b><span class="m">Mỗi khâu lặp lại là một nút bấm</span></div><div class="wa-mods"><div class="wa-mod"><i class="g"></i>Nhập CV hàng loạt</div><div class="wa-mod"><i class="o"></i>Lọc CV trùng</div><div class="wa-mod"><i class="b"></i>Thư mời phỏng vấn</div><div class="wa-mod"><i class="y"></i>Hồ sơ offer</div><div class="wa-mod"><i class="g"></i>Onboarding</div></div></section><div class="wa-toasts"></div></main></div></div></div>
       <div class="floats">
-        <div class="fc fc1"><b class="hot">−42–55%</b><span class="l-vi">chi phí đăng tuyển so với 2024</span><span class="l-en">job-board spend vs 2024</span></div>
-        <div class="fc fc2"><b class="gold">42% → 75%</b><span class="l-vi">còn làm sau 180 ngày</span><span class="l-en">retained at 180 days</span></div>
-        <div class="fc fc3"><b class="vio">−75–80%</b><span class="l-vi">thời gian nhập liệu hồ sơ</span><span class="l-en">CV data-entry time</span></div>
-        <div class="fc fc4"><b class="mint">95%</b><span class="l-vi">nhận việc đúng hạn, kể cả ở tỉnh</span><span class="l-en">started on time, provinces too</span></div>
+        <div class="fc fc1"><b class="hot"><small class="dir"><span class="l-vi">Giảm</span><span class="l-en">Cut</span></small>42–55%</b><span class="l-vi">chi phí đăng tuyển so với 2024</span><span class="l-en">job-board spend vs 2024</span><small class="fc-src">Thuần Việt Group</small></div>
+        <div class="fc fc2"><b class="gold">130%</b><span class="l-vi">KPI tuyển dụng</span><span class="l-en">of hiring KPI</span><small class="fc-src">ManpowerGroup</small></div>
+        <div class="fc fc3"><b class="vio">20–50</b><span class="l-vi">nhân sự mỗi tháng</span><span class="l-en">hires a month</span><small class="fc-src">Marathon Education</small></div>
+        <div class="fc fc4"><b class="mint">90%</b><span class="l-vi">ứng viên nhận offer</span><span class="l-en">offer acceptance</span><small class="fc-src"><span class="l-vi">Tư vấn tuyển dụng</span><span class="l-en">Recruitment consulting</span></small></div>
       </div>
     </div>
+    <div class="sc-cap2"><span class="l-vi">Ảnh mô phỏng: web app tuyển dụng trên Google Workspace, xây cùng AI · dữ liệu mẫu</span><span class="l-en">Mock-up: recruitment web app on Google Workspace, built with AI · sample data</span></div>
 
     <ul class="trust">
       <li><b>6</b> <span class="l-vi">năm</span><span class="l-en">years</span></li>
@@ -759,116 +1200,228 @@ dialog.lb .lb-mock .scr{border-radius:12px}
       <li><span class="l-vi">Sản xuất</span><span class="l-en">Manufacturing</span></li>
       <li>FMCG</li>
       <li><span class="l-vi">Giáo dục</span><span class="l-en">Education</span></li>
+      <li><span class="l-vi">Thẩm mỹ</span><span class="l-en">Aesthetics</span></li>
       <li><span class="l-vi">Từ Vinh trở vào Nam</span><span class="l-en">Vinh southward</span></li>
     </ul>
+
+    <div class="qidx-k"><span class="l-vi">Trang này trả lời 3 câu hỏi quản lý hay đặt ra</span><span class="l-en">This page answers 3 questions managers ask</span></div>
+    <nav class="qidx">
+      <a class="q q1" href="#nhanh">
+        <span class="q-n">01</span>
+        <span class="q-k"><span class="l-vi">Tuyển nhanh</span><span class="l-en">Hire fast</span></span>
+        <span class="q-q"><span class="l-vi">“Cần người gấp, có kịp không?”</span><span class="l-en">“We need people now. Will they arrive on time?”</span></span>
+        <span class="q-a"><b>95%</b><span class="l-vi">nhận việc đúng hạn</span><span class="l-en">started on time</span></span>
+      </a>
+      <a class="q q2" href="#dung">
+        <span class="q-n">02</span>
+        <span class="q-k"><span class="l-vi">Tuyển đúng</span><span class="l-en">Hire right</span></span>
+        <span class="q-q"><span class="l-vi">“Tuyển về rồi, người có ở lại không?”</span><span class="l-en">“They’re hired. Will they stay?”</span></span>
+        <span class="q-a"><b><span class="l-vi">Tăng từ 42% lên 75%</span><span class="l-en">Up from 42% to 75%</span></b><span class="l-vi">tỷ lệ còn làm sau 180 ngày</span><span class="l-en">180-day retention</span></span>
+      </a>
+      <a class="q q3" href="#cong-cu">
+        <span class="q-n">03</span>
+        <span class="q-k"><span class="l-vi">Công cụ AI</span><span class="l-en">AI tools</span></span>
+        <span class="q-q"><span class="l-vi">“Hồ sơ nhiều, việc tay chân có ngốn hết thời gian?”</span><span class="l-en">“So many CVs. Does admin eat all the time?”</span></span>
+        <span class="q-a"><b><span class="l-vi">Giảm</span><span class="l-en">Cut</span> 75–80%</b><span class="l-vi">thời gian nhập liệu</span><span class="l-en">data-entry time</span></span>
+      </a>
+    </nav>
   </div>
 </section>
 
-<!-- HOW I WORK -->
-<section id="cach-lam" class="stage how-sec">
+<!-- PILLAR 1 -->
+<section id="nhanh" class="stage zone z1">
   <div class="wrap">
-    <div class="s-head rv">
-      <div class="eyebrow s-eb"><span class="l-vi">Năng lực qua 6 năm</span><span class="l-en">Skills built over 6 years</span></div>
-      <h2><span class="l-vi">Hiểu đúng trước khi tuyển</span><span class="l-en">Understand first, then hire</span></h2>
-      <p><span class="l-vi">Kết quả tốt bắt đầu từ việc hiểu rõ công việc, thị trường và con người, rồi chốt offer cân bằng cho cả hai bên.</span><span class="l-en">Good results start with understanding the job, the market and the people, then closing an offer that works for both sides.</span></p>
+    <header class="z-head rv">
+      <div class="z-num">01</div>
+      <div class="z-txt">
+        <div class="z-k"><span class="l-vi">Tuyển nhanh</span><span class="l-en">Hire fast</span></div>
+        <h2 class="z-q"><span class="l-vi">“Cần người gấp,<br>có kịp không?”</span><span class="l-en">“We need people now.<br>Will they arrive on time?”</span></h2>
+        <p class="z-a"><span class="l-vi">Lên kế hoạch tuyển từ sớm, chọn kênh đăng tuyển dựa trên số liệu thực tế. Nhờ vậy nhân sự về kịp lúc, đủ số lượng, với chi phí tối ưu.</span><span class="l-en">Hiring is planned early and channels are chosen from real data, so people arrive on time, in the numbers needed, at an optimized cost.</span></p>
+      </div>
+    </header>
+
+    <div class="sig sig-board rv">
+      <div class="sb-h"><b><span class="l-vi">Kết quả đáp ứng nhân sự tại từng công ty</span><span class="l-en">Hiring delivery at each company</span></b></div>
+      <div class="sb-g">
+        <div><i>95<small>%</small></i><span><span class="l-vi">nhân sự nhận việc đúng hạn cam kết, kể cả cửa hàng ở Biên Hòa, Long Xuyên, Rạch Giá</span><span class="l-en">of hires started on the committed date, including stores in Bien Hoa, Long Xuyen and Rach Gia</span></span><em>Thuần Việt Group</em></div>
+        <div><i>100<small>%</small></i><span><span class="l-vi">nhu cầu tuyển kho vận được đáp ứng</span><span class="l-en">of warehouse and logistics needs filled</span></span><em>Thuần Việt Group</em></div>
+        <div><i>130<small>%</small></i><span><span class="l-vi">KPI tuyển dụng quý 1–2/2022 ở các dự án khách hàng</span><span class="l-en">of hiring KPI in Q1–Q2 2022 on client projects</span></span><em>ManpowerGroup</em></div>
+        <div><i>80<small>%</small></i><span><span class="l-vi">nhu cầu khối văn phòng hoàn thành trước hạn</span><span class="l-en">of office hiring needs filled ahead of deadline</span></span><em>Marathon Education</em></div>
+      </div>
     </div>
-    <div class="how4">
-      <article class="hw rv"><span class="hw-n">01</span><h3><span class="l-vi">Hiểu đúng công việc</span><span class="l-en">Understand the job</span></h3><p><span class="l-vi">Ngồi cùng trưởng bộ phận để chốt việc thật cần làm, chân dung ứng viên, định biên và JD trước khi đăng tuyển.</span><span class="l-en">Sit with the hiring manager to pin down the real work, candidate profile, headcount and JD before posting.</span></p></article>
-      <article class="hw rv"><span class="hw-n">02</span><h3><span class="l-vi">Hiểu thị trường</span><span class="l-en">Understand the market</span></h3><p><span class="l-vi">Nắm mặt bằng lương, nguồn ứng viên và kênh hiệu quả theo từng ngành, từng vùng; tư vấn khung lương sát thực tế.</span><span class="l-en">Know pay levels, talent pools and the channels that work by industry and region; advise on realistic salary bands.</span></p></article>
-      <article class="hw rv"><span class="hw-n">03</span><h3><span class="l-vi">Hiểu con người</span><span class="l-en">Understand people</span></h3><p><span class="l-vi">Phỏng vấn hành vi, bài test và khung chấm điểm; DISC, MBTI, HEXACO để thấy ứng viên hợp với đội nào.</span><span class="l-en">Behavioral interviews, tests and scorecards; DISC, MBTI and HEXACO to see which team a candidate fits.</span></p></article>
-      <article class="hw rv"><span class="hw-n">04</span><h3><span class="l-vi">Đàm phán cân bằng</span><span class="l-en">Balanced negotiation</span></h3><p><span class="l-vi">Nắm đúng điều ứng viên thật sự cần và giới hạn công ty giữ được, chốt offer để cả hai bên cùng thấy hợp lý.</span><span class="l-en">Find what the candidate really needs and what the company can hold, then close an offer both sides find fair.</span></p></article>
+
+    <div class="pgrid">
+      <article class="pc rv">
+        <div class="pc-k"><span class="l-vi">Tuyển số lượng lớn</span><span class="l-en">Volume hiring</span></div>
+        <div class="pc-n">10+</div>
+        <div class="pc-w"><span class="l-vi">dự án khách hàng cho nhà máy, khu công nghiệp, xây dựng và FMCG, 70% là tuyển số lượng lớn</span><span class="l-en">client projects for factories, industrial parks, construction and FMCG, 70% of them volume hiring</span></div>
+        <div class="pc-s">ManpowerGroup</div>
+        <ul class="pc-sub">
+          <li><b>20–50</b><span><span class="l-vi">nhân sự mỗi tháng cho kinh doanh, IT, văn phòng, quản lý</span><span class="l-en">hires a month across sales, IT, office and management</span> · Marathon Education</span></li>
+          <li><b>10–20</b><span><span class="l-vi">nhân sự mỗi tháng, gồm bác sĩ, kỹ thuật viên ở Vinh, Đà Lạt</span><span class="l-en">hires a month, incl. doctors and technicians in Vinh and Da Lat</span> · MSC Group</span></li>
+          <li><b><span class="l-vi">Chuỗi</span><span class="l-en">Chain</span></b><span><span class="l-vi">cửa hàng ở TP.HCM và các tỉnh, kho vận, nhà máy</span><span class="l-en">stores in HCMC and provinces, logistics, factory</span> · Thuần Việt Group</span></li>
+        </ul>
+      </article>
+      <article class="pc rv">
+        <div class="pc-k"><span class="l-vi">Chi phí tối ưu</span><span class="l-en">Optimized cost</span></div>
+        <div class="pc-n"><small class="dir"><span class="l-vi">Giảm</span><span class="l-en">Cut</span></small>42–55<small>%</small></div>
+        <div class="pc-w"><span class="l-vi">chi phí đăng tuyển so với năm 2024</span><span class="l-en">job-board spend versus 2024</span></div>
+        <div class="pc-s">Thuần Việt Group</div>
+        <ul class="pc-sub">
+          <li><b><span class="l-vi">Giảm 23%</span><span class="l-en">Cut 23%</span></b><span><span class="l-vi">chi phí tuyển trên mỗi nhân sự</span><span class="l-en">cost per hire</span> · Thuần Việt Group</span></li>
+          <li><b>70–90%</b><span><span class="l-vi">ngân sách dự án, mức chi phí giữ được nhờ khảo sát lương từng dự án</span><span class="l-en">of project budget, kept there with pay surveys per project</span> · ManpowerGroup</span></li>
+          <li><b><span class="l-vi">11–15 tr</span><span class="l-en">11–15M VND</span></b><span><span class="l-vi">tổng chi phí đăng tin cả giai đoạn, chủ yếu tuyển qua kênh miễn phí</span><span class="l-en">total job-ad spend for the whole period, mostly via free channels</span> · MSC Group</span></li>
+        </ul>
+      </article>
+      <article class="pc rv">
+        <div class="pc-k"><span class="l-vi">Kế hoạch và thời gian</span><span class="l-en">Planning and speed</span></div>
+        <div class="pc-n"><small class="dir"><span class="l-vi">Giảm</span><span class="l-en">Cut</span></small>20<small>%</small></div>
+        <div class="pc-w"><span class="l-vi">thời gian tuyển một vị trí</span><span class="l-en">time to fill</span></div>
+        <div class="pc-s">Thuần Việt Group</div>
+        <p class="pc-how"><span class="l-vi">Kế hoạch theo quý, cập nhật thị trường lao động hằng tháng; mỗi giai đoạn có hạn và người phụ trách.</span><span class="l-en">Quarterly plans and monthly labour-market updates; every stage has a deadline and an owner.</span></p>
+        <ul class="pc-sub">
+          <li><b><span class="l-vi">2 tháng</span><span class="l-en">2 months</span></b><span><span class="l-vi">xây xong quy trình, biểu mẫu, chính sách tuyển dụng</span><span class="l-en">to set up the hiring process, forms and policy</span> · Marathon Education</span></li>
+        </ul>
+      </article>
     </div>
+    <a class="next-z rv" href="#dung"><small><span class="l-vi">Tiếp theo</span><span class="l-en">Next</span></small><b><i>02</i><span class="l-vi">Tuyển đúng</span><span class="l-en">Hire right</span></b><span class="ar">↓</span></a>
   </div>
 </section>
 
-<!-- IMPACT WALL -->
-<section id="ket-qua" class="stage wall-sec">
+<!-- PILLAR 2 -->
+<section id="dung" class="zone z2">
   <div class="wrap">
-    <div class="s-head rv">
-      <div class="eyebrow s-eb"><span class="l-vi">Hiện tại · Thuần Việt Group · 12/2024 – nay</span><span class="l-en">Now · Thuan Viet Group · Dec 2024 – present</span></div>
-      <h2><span class="l-vi">Trưởng nhóm Tuyển dụng</span><span class="l-en">Talent Acquisition Lead</span></h2>
-      <p><span class="l-vi">Phụ trách tuyển dụng 4 công ty trong hệ sinh thái nệm, gồm bán lẻ, TMĐT, sản xuất và phân phối: Nệm Thuần Việt, Thuần Việt Global, Thuần Việt Digital, Nệm Thành Công.</span><span class="l-en">Handling recruitment for 4 companies in a mattress group spanning retail, e-commerce, manufacturing and distribution: Nem Thuan Viet, Thuan Viet Global, Thuan Viet Digital, Nem Thanh Cong.</span></p>
-    </div>
-    <ul class="tv-does rv">
-      <li><span class="l-vi">Lập kế hoạch tuyển theo quý, báo cáo tiến độ và chi phí cho Ban giám đốc</span><span class="l-en">Quarterly hiring plans, progress and cost reported to the Board</span></li>
-      <li><span class="l-vi">Tư vấn quản lý về định biên, JD, khung lương và mức offer</span><span class="l-en">Advise managers on headcount, JDs, salary bands and offers</span></li>
-      <li><span class="l-vi">Phân bổ ngân sách tuyển dụng theo hiệu quả từng kênh</span><span class="l-en">Allocate hiring budget by channel performance</span></li>
-      <li><span class="l-vi">Tuyển, đào tạo và kèm cặp nhân viên, thực tập sinh trong nhóm</span><span class="l-en">Hire, train and coach recruiters and interns on the team</span></li>
-    </ul>
-    <div class="wall-lab rv"><span class="l-vi">Kết quả 2025–2026</span><span class="l-en">Results 2025–2026</span></div>
-    <div class="wall">
-      <article class="tile t-feature rv">
-        <div class="t-top"><span class="t-tag"><span class="l-vi">Chi phí</span><span class="l-en">Cost</span></span></div>
-        <div class="big">−42–55<small>%</small></div>
-        <div class="what"><span class="l-vi">chi phí đăng tuyển so với năm 2024</span><span class="l-en">job-board spend versus 2024</span></div>
-        <div class="how"><span class="l-vi">Phân bổ ngân sách theo hiệu quả từng kênh.</span><span class="l-en">Budget moved to the channels that perform.</span></div>
-        <div class="yr">
-          <div class="yr-r"><span>2024</span><div class="yr-t"><i class="old" style="--w:100%"></i></div><em>100</em></div>
-          <div class="yr-r"><span>2025</span><div class="yr-t"><i class="fill" style="--w:58%"></i></div><em>58</em></div>
-          <div class="yr-r"><span>2026</span><div class="yr-t"><i class="fill" style="--w:45%"></i></div><em>45</em></div>
+    <header class="z-head rv">
+      <div class="z-num">02</div>
+      <div class="z-txt">
+        <div class="z-k"><span class="l-vi">Tuyển đúng</span><span class="l-en">Hire right</span></div>
+        <h2 class="z-q"><span class="l-vi">“Tuyển về rồi,<br>người có ở lại không?”</span><span class="l-en">“They’re hired.<br>Will they stay?”</span></h2>
+        <p class="z-a"><span class="l-vi">Chọn kỹ trước khi nhận, offer để hai bên cùng thấy hợp lý, và đồng hành cả sau ngày đầu đi làm.</span><span class="l-en">Assess carefully before hiring, make offers both sides find fair, and stay close after day one.</span></p>
+      </div>
+    </header>
+
+    <div class="sig sig-ba rv">
+      <div class="sig-n"><small class="dir dir-l"><span class="l-vi">Tăng từ 42% lên</span><span class="l-en">Up from 42% to</span></small>75<small>%</small></div>
+      <div class="sig-t">
+        <b><span class="l-vi">nhân sự mới còn làm sau 180 ngày</span><span class="l-en">of new hires still in role at 180 days</span></b>
+        <div class="bars">
+          <div class="bar"><span class="bl"><span class="l-vi">Trước</span><span class="l-en">Before</span></span><div class="ba-track"><i class="o" style="--w:42%"></i></div><span class="bv">42%</span></div>
+          <div class="bar"><span class="bl"><span class="l-vi">Sau</span><span class="l-en">After</span></span><div class="ba-track"><i class="n fill" style="--w:75%"></i></div><span class="bv">75%</span></div>
         </div>
+        <span><span class="l-vi">Tỷ lệ còn làm sau 60 ngày cũng tăng từ 65% lên 77%. Hội nhập về văn hóa, nội quy, cách làm việc; cẩm nang thử việc 60 ngày; giữ liên lạc định kỳ để sớm nhận ra nguy cơ nghỉ việc.</span><span class="l-en">60-day retention also rose from 65% to 77%. Onboarding on culture, rules and ways of working; a 60-day probation playbook; regular check-ins to spot early signs someone may leave.</span></span>
+        <em>Thuần Việt Group</em>
+      </div>
+    </div>
+
+    <div class="pgrid">
+      <article class="pc rv">
+        <div class="pc-k"><span class="l-vi">Hiểu đúng việc, đúng người</span><span class="l-en">Understand the job and the person</span></div>
+        <div class="pc-n"><small class="dir dir-l"><span class="l-vi">Tăng từ 24% lên</span><span class="l-en">Up from 24% to</span></small>41<small>%</small></div>
+        <div class="pc-w"><span class="l-vi">tỷ lệ ứng viên qua vòng 1</span><span class="l-en">round-1 pass rate</span></div>
+        <div class="pc-s">Thuần Việt Group</div>
+        <div class="chipline"><span><span class="l-vi">Phỏng vấn hành vi</span><span class="l-en">Behavioral interview</span></span><span><span class="l-vi">Bài test</span><span class="l-en">Tests</span></span><span><span class="l-vi">Khung chấm điểm</span><span class="l-en">Scorecards</span></span><span>DISC</span><span>MBTI</span><span>HEXACO</span></div>
+        <ul class="pc-sub">
+          <li><b>15+</b><span><span class="l-vi">vị trí quan trọng trong ngành cạnh tranh</span><span class="l-en">key roles in competitive industries</span> · <span class="l-vi">Tư vấn tuyển dụng</span><span class="l-en">Recruitment consulting</span></span></li>
+        </ul>
       </article>
-      <article class="tile rv">
-        <div class="t-top"><span class="t-tag"><span class="l-vi">Giữ chân</span><span class="l-en">Retention</span></span></div>
-        <div class="big"><span class="was">42%</span> → 75<small>%</small></div>
-        <div class="what"><span class="l-vi">nhân sự mới còn làm sau 180 ngày</span><span class="l-en">of new hires still in role at 180 days</span></div>
-        <div class="how"><span class="l-vi">Hội nhập, cẩm nang thử việc 60 ngày, theo dõi định kỳ. Sau 60 ngày: 65% → 77%.</span><span class="l-en">Onboarding, a 60-day probation playbook and check-ins. At 60 days: 65% → 77%.</span></div>
+      <article class="pc rv">
+        <div class="pc-k"><span class="l-vi">Đàm phán cân bằng</span><span class="l-en">Balanced negotiation</span></div>
+        <div class="pc-n">90<small>%</small></div>
+        <div class="pc-w"><span class="l-vi">ứng viên nhận offer ở IT, FMCG, marketing F&amp;B, quản lý sales</span><span class="l-en">offer acceptance in IT, FMCG, F&amp;B marketing and sales management</span></div>
+        <div class="pc-s"><span class="l-vi">Tư vấn tuyển dụng</span><span class="l-en">Recruitment consulting</span></div>
+        <p class="pc-how"><span class="l-vi">Nắm điều ứng viên thật sự cần và giới hạn công ty giữ được, tư vấn mức offer sát thị trường.</span><span class="l-en">Know what the candidate needs and what the company can hold; advise offers close to the market.</span></p>
+        <ul class="pc-sub">
+          <li><b><span class="l-vi">Tăng từ 35% lên 42%</span><span class="l-en">Up from 35% to 42%</span></b><span><span class="l-vi">tỷ lệ phỏng vấn ra offer</span><span class="l-en">interview-to-offer rate</span> · Thuần Việt Group</span></li>
+        </ul>
       </article>
-      <article class="tile rv">
-        <div class="t-top"><span class="t-tag t-ai">AI</span></div>
-        <div class="big">−75–80<small>%</small></div>
-        <div class="what"><span class="l-vi">thời gian nhập liệu hồ sơ</span><span class="l-en">CV data-entry time</span></div>
-        <div class="how"><span class="l-vi">ERP tự đọc CV, điền thông tin, lưu Drive và lọc trùng.</span><span class="l-en">The ERP reads each CV, fills the record, files it to Drive and removes duplicates.</span></div>
-      </article>
-      <article class="tile rv">
-        <div class="t-top"><span class="t-tag"><span class="l-vi">Chất lượng</span><span class="l-en">Quality</span></span></div>
-        <div class="big"><span class="was">24%</span> → 41<small>%</small></div>
-        <div class="what"><span class="l-vi">ứng viên qua vòng 1</span><span class="l-en">round-1 pass rate</span></div>
-        <div class="how"><span class="l-vi">Chân dung ứng viên, bài test, khung đánh giá thay cho phỏng vấn cảm tính.</span><span class="l-en">Candidate personas, tests and scorecards instead of gut feel.</span></div>
-      </article>
-      <article class="tile rv">
-        <div class="t-top"><span class="t-tag"><span class="l-vi">Đáp ứng</span><span class="l-en">Fulfillment</span></span></div>
-        <div class="big">95<small>%</small></div>
-        <div class="what"><span class="l-vi">nhân sự nhận việc đúng hạn cam kết</span><span class="l-en">of hires started on the committed date</span></div>
-        <div class="how"><span class="l-vi">Kể cả cửa hàng ở Biên Hòa, Long Xuyên, Rạch Giá. Kho vận đáp ứng 100%.</span><span class="l-en">Including stores in Bien Hoa, Long Xuyen and Rach Gia. Warehouse roles 100% filled.</span></div>
-      </article>
-      <article class="tile rv">
-        <div class="t-top"><span class="t-tag"><span class="l-vi">Hiệu quả</span><span class="l-en">Efficiency</span></span></div>
-        <div class="big">−23<small>%</small></div>
-        <div class="what"><span class="l-vi">chi phí tuyển trên mỗi nhân sự</span><span class="l-en">cost per hire</span></div>
-        <div class="how"><span class="l-vi">Thời gian tuyển rút ngắn 20%. Từ phỏng vấn đến offer: 35% → 42%.</span><span class="l-en">Time to fill down 20%. Interview to offer: 35% → 42%.</span></div>
+      <article class="pc rv">
+        <div class="pc-k"><span class="l-vi">Trải nghiệm của ứng viên và trưởng bộ phận</span><span class="l-en">Candidate and hiring-manager experience</span></div>
+        <div class="pc-n">95<small>%</small></div>
+        <div class="pc-w"><span class="l-vi">khách hàng hài lòng với dịch vụ tuyển dụng</span><span class="l-en">client satisfaction</span></div>
+        <div class="pc-s"><span class="l-vi">Tư vấn tuyển dụng</span><span class="l-en">Recruitment consulting</span></div>
+        <p class="pc-how"><span class="l-vi">Phản hồi ứng viên đúng hẹn; với trưởng bộ phận, giới thiệu ứng viên đúng hẹn và báo cáo tiến độ rõ ràng.</span><span class="l-en">Reply to candidates on time; for hiring managers, present candidates on schedule and report progress clearly.</span></p>
+        <ul class="pc-sub">
+          <li><b><span class="l-vi">Tăng 20%</span><span class="l-en">Up 20%</span></b><span><span class="l-vi">hài lòng của ứng viên, phản hồi nhanh hơn 2 ngày</span><span class="l-en">candidate satisfaction, replies 2 days faster</span> · ManpowerGroup</span></li>
+        </ul>
       </article>
     </div>
+    <a class="next-z rv" href="#cong-cu"><small><span class="l-vi">Tiếp theo</span><span class="l-en">Next</span></small><b><i>03</i><span class="l-vi">Công cụ AI</span><span class="l-en">AI tools</span></b><span class="ar">↓</span></a>
   </div>
 </section>
 
-<!-- BEFORE / AFTER -->
-<section id="truoc-sau" class="ba-sec">
+<!-- PILLAR 3 -->
+<section id="cong-cu" class="stage zone z3">
   <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow"><span class="l-vi">Thuần Việt Group · Trước và sau</span><span class="l-en">Thuan Viet Group · Before and after</span></div>
-      <h2><span class="l-vi">Tuyển đúng người hơn, giữ người lâu hơn</span><span class="l-en">Better hires who stay longer</span></h2>
+    <header class="z-head rv">
+      <div class="z-num">03</div>
+      <div class="z-txt">
+        <div class="z-k"><span class="l-vi">Công cụ xây cùng AI</span><span class="l-en">Tools built with AI</span></div>
+        <h2 class="z-q"><span class="l-vi">“Hồ sơ nhiều, việc tay chân<br>có ngốn hết thời gian?”</span><span class="l-en">“So many CVs.<br>Does admin eat all the time?”</span></h2>
+        <p class="z-a"><span class="l-vi">Các việc lặp lại như nhập CV, lọc trùng, gửi thư mời, nhắc hạn và cập nhật dashboard được giao cho công cụ. Nhờ vậy, đội tuyển dụng có thời gian để tuyển nhanh và đúng người hơn.</span><span class="l-en">Repetitive work such as CV entry, de-duplication, invites, reminders and dashboard updates goes to tools, so the recruiting team has the time to hire faster and hire the right people.</span></p>
+      </div>
+    </header>
+
+    <div class="sig rv">
+      <div class="sig-n"><small class="dir"><span class="l-vi">Giảm</span><span class="l-en">Cut</span></small>75–80<small>%</small></div>
+      <div class="sig-t">
+        <b><span class="l-vi">thời gian nhập liệu hồ sơ</span><span class="l-en">CV data-entry time</span></b>
+        <span><span class="l-vi">nhờ hai công cụ xây cùng AI (Claude, Codex): một chạy miễn phí trên Google Workspace, một trên ERP của công ty</span><span class="l-en">thanks to two tools built with AI (Claude, Codex): one free on Google Workspace, one on the company ERP</span></span>
+        <em>Thuần Việt Group</em>
+      </div>
     </div>
-    <div class="ba-grid">
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Qua vòng 1</span><span class="l-en">Round-1 pass</span></div><div class="ba-num"><span class="o">24%</span><span class="ar">→</span><span class="n">41%</span><span class="d">+17</span></div><div class="ba-track"><i class="o" style="--w:24%"></i><i class="n fill" style="--w:41%"></i></div></div>
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Phỏng vấn → offer</span><span class="l-en">Interview → offer</span></div><div class="ba-num"><span class="o">35%</span><span class="ar">→</span><span class="n">42%</span><span class="d">+7</span></div><div class="ba-track"><i class="o" style="--w:35%"></i><i class="n fill" style="--w:42%"></i></div></div>
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Còn làm sau 60 ngày</span><span class="l-en">60-day retention</span></div><div class="ba-num"><span class="o">65%</span><span class="ar">→</span><span class="n">77%</span><span class="d">+12</span></div><div class="ba-track"><i class="o" style="--w:65%"></i><i class="n fill" style="--w:77%"></i></div></div>
-      <div class="ba-card rv"><div class="ba-lab"><span class="l-vi">Còn làm sau 180 ngày</span><span class="l-en">180-day retention</span></div><div class="ba-num"><span class="o">42%</span><span class="ar">→</span><span class="n">75%</span><span class="d">+33</span></div><div class="ba-track"><i class="o" style="--w:42%"></i><i class="n fill" style="--w:75%"></i></div></div>
+
+    <div class="prods">
+      <article class="prod rv">
+        <div class="prod-k free"><span class="l-vi">Miễn phí phần mềm</span><span class="l-en">No software cost</span></div>
+        <h3><span class="l-vi">Web app tuyển dụng trên Google Workspace</span><span class="l-en">Recruitment web app on Google Workspace</span></h3>
+        <p><span class="l-vi">Chạy trên Google Sheets, Apps Script, Drive và Gmail sẵn có, không mua thêm phần mềm. Công ty chưa có ERP vẫn dùng được.</span><span class="l-en">Runs on the Google Sheets, Apps Script, Drive and Gmail a company already has, with no extra software to buy. Works even without an ERP.</span></p>
+        <div class="chipline"><span><span class="l-vi">Nguồn CV</span><span class="l-en">CV sources</span></span><span><span class="l-vi">Nhập CV hàng loạt</span><span class="l-en">Bulk CV import</span></span><span><span class="l-vi">Lọc CV trùng</span><span class="l-en">Duplicate check</span></span><span><span class="l-vi">Thư mời phỏng vấn</span><span class="l-en">Interview invites</span></span><span>Dashboard</span></div>
+        <a class="prod-go" href="#web-app"><span class="l-vi">Xem 5 bước trên web app ↓</span><span class="l-en">See the 5 steps ↓</span></a>
+      </article>
+      <article class="prod rv">
+        <div class="prod-k low"><span class="l-vi">Chi phí tối ưu</span><span class="l-en">Optimized cost</span></div>
+        <h3><span class="l-vi">Quy trình tuyển dụng trên ERP Thuần Việt Home</span><span class="l-en">Hiring workflow on the Thuan Viet Home ERP</span></h3>
+        <p><span class="l-vi">Cấu hình cùng AI trên nền ERP sẵn có của công ty, phối hợp với đội ERP, thay vì mua một phần mềm tuyển dụng riêng.</span><span class="l-en">Configured with AI on the company’s existing ERP, together with the ERP team, instead of buying a separate hiring system.</span></p>
+        <div class="chipline"><span><span class="l-vi">Đề xuất tuyển dụng</span><span class="l-en">Hiring requests</span></span><span>Jobsite</span><span><span class="l-vi">Lịch phỏng vấn</span><span class="l-en">Interview calendar</span></span><span><span class="l-vi">Phiếu đánh giá</span><span class="l-en">Scorecards</span></span><span>Offer</span></div>
+        <a class="prod-go" href="#san-pham"><span class="l-vi">Xem một vòng tuyển dụng trên ERP ↓</span><span class="l-en">See one hiring cycle on the ERP ↓</span></a>
+      </article>
     </div>
-    <p class="ba-note"><span class="l-vi">Vạch xám: trước khi thay quy trình. Vạch màu: sau. Số bên phải là mức tăng (điểm %).</span><span class="l-en">Grey mark: before the new process. Colour: after. The figure on the right is the gain in percentage points.</span></p>
+
+    <div id="web-app" class="wsx rv">
+      <div class="wsx-h">
+        <div class="eyebrow s-eb"><span class="l-vi">Web app · mô phỏng · dữ liệu mẫu</span><span class="l-en">Web app · mock-up · sample data</span></div>
+        <h3><span class="l-vi">5 bước xử lý một hồ sơ</span><span class="l-en">5 steps for every CV</span></h3>
+        <p><span class="l-vi">Bấm từng bước để xem màn hình tương ứng.</span><span class="l-en">Tap a step to see its screen.</span></p>
+      </div>
+      <div class="pflow">
+        <div class="fl-row">
+          <div class="fl-line"><i></i><i></i><i></i></div>
+          <button type="button" class="fl-n cur" data-i="0"><i>01</i><b><span class="l-vi">Nguồn CV</span><span class="l-en">CV sources</span></b><span><span class="l-vi">gom CV từ nhiều kênh, lưu Drive theo mã</span><span class="l-en">CVs from many channels in one sheet, filed on Drive</span></span></button>
+          <button type="button" class="fl-n" data-i="1"><i>02</i><b><span class="l-vi">Nhập hàng loạt</span><span class="l-en">Bulk import</span></b><span><span class="l-vi">đọc PDF, Word, ảnh và điền vào bảng</span><span class="l-en">reads PDF, Word, photos into the sheet</span></span></button>
+          <button type="button" class="fl-n" data-i="2"><i>03</i><b><span class="l-vi">Lọc CV trùng</span><span class="l-en">De-duplicate</span></b><span><span class="l-vi">so khớp điện thoại, email giữa các kênh</span><span class="l-en">matches phone and email across channels</span></span></button>
+          <button type="button" class="fl-n" data-i="3"><i>04</i><b><span class="l-vi">Gửi thư mời</span><span class="l-en">Send invites</span></b><span><span class="l-vi">thư mời phỏng vấn qua Gmail theo mẫu</span><span class="l-en">templated interview invites via Gmail</span></span></button>
+          <button type="button" class="fl-n" data-i="4"><i>05</i><b>Dashboard</b><span><span class="l-vi">tiến độ, nguồn, chi phí cập nhật</span><span class="l-en">progress, sources and cost kept current</span></span></button>
+        </div>
+      </div>
+      <div class="wsx-frame"><div class="wsx-stack" id="wsx"><div class="scr wa on"><div class="in wa-in"><aside class="wa-side"><div><small class="wa-kick">TALENT OPERATIONS</small><b class="wa-brand">Tuyển dụng</b><p>Web app chạy trên Google Sheets, Apps Script, Drive và Gmail.</p></div><div class="wa-sm"><div><small>Vị trí đang tuyển</small><b>18</b></div><div><small>Ứng viên</small><b>426</b></div><div><small>Phỏng vấn tuần này</small><b>23</b></div></div><nav class="wa-nav"><a><i class="wa-ic"></i>Trang chủ</a><a class=on><i class="wa-ic"></i>Nguồn CV</a><a><i class="wa-ic"></i>Nhập CV</a><a><i class="wa-ic"></i>Lọc CV trùng</a><a><i class="wa-ic"></i>Thư mời PV</a><a><i class="wa-ic"></i>Vị trí tuyển</a></nav></aside><main class="wa-main"><header class="wa-top"><div><small class="wa-kick2">BƯỚC 01</small><b>Nguồn CV tuần này</b><span>Gom CV từ nhiều kênh về một bảng · dữ liệu mẫu</span></div><div class="wa-acts"><span class="wa-live"><i></i>TỰ ĐỘNG</span><span class="wa-btn pri">＋ Thêm nguồn</span></div></header><div class="wa-stats"><div class="wa-stat hl"><small>Tổng CV mới</small><b>64</b><span>5 kênh</span></div><div class="wa-stat "><small>Kênh miễn phí</small><b>3/5</b><span>chiếm 42% CV</span></div><div class="wa-stat "><small>Đạt sàng lọc</small><b>42%</b><span>trung bình</span></div><div class="wa-stat "><small>Lưu Drive</small><b>64/64</b><span>đúng thư mục</span></div></div><div class="wa-grid g2"><section class="wa-card"><div class="wa-h"><b>Theo kênh</b><span class="m">CV · tỷ lệ đạt</span></div><div class="wa-src"><span>Jobsite</span><i style="--w:100%"></i><b>22</b><em class="wa-tag b">Trả phí</em><small>41% đạt</small></div><div class="wa-src"><span>TopCV</span><i style="--w:68%"></i><b>15</b><em class="wa-tag b">Trả phí</em><small>33% đạt</small></div><div class="wa-src"><span>Nhóm Facebook</span><i style="--w:55%"></i><b>12</b><em class="wa-tag g">Miễn phí</em><small>38% đạt</small></div><div class="wa-src"><span>Giới thiệu nội bộ</span><i style="--w:41%"></i><b>9</b><em class="wa-tag g">Miễn phí</em><small>56% đạt</small></div><div class="wa-src"><span>Trang tuyển dụng</span><i style="--w:27%"></i><b>6</b><em class="wa-tag g">Miễn phí</em><small>50% đạt</small></div></section><section class="wa-card"><div class="wa-h"><b>Thư mục Drive</b><span class="m">tự tạo theo mã</span></div><div class="wa-tree"><div>▾ Tuyển dụng 2026</div><div class="t1">▾ TD-118 · Nhân viên bán hàng</div><div class="t2">▸ CV gốc <em>22</em></div><div class="t2">▸ Phiếu đánh giá <em>6</em></div><div class="t1">▸ TD-121 · Kế toán tổng hợp</div><div class="t1">▸ TD-124 · Công nhân may</div><div class="t1">▸ TD-126 · Chuyên viên TMĐT</div></div></section></div></main></div></div><div class="scr wa"><div class="in wa-in"><aside class="wa-side"><div><small class="wa-kick">TALENT OPERATIONS</small><b class="wa-brand">Tuyển dụng</b><p>Web app chạy trên Google Sheets, Apps Script, Drive và Gmail.</p></div><div class="wa-sm"><div><small>Vị trí đang tuyển</small><b>18</b></div><div><small>Ứng viên</small><b>426</b></div><div><small>Phỏng vấn tuần này</small><b>23</b></div></div><nav class="wa-nav"><a><i class="wa-ic"></i>Trang chủ</a><a><i class="wa-ic"></i>Nguồn CV</a><a class=on><i class="wa-ic"></i>Nhập CV</a><a><i class="wa-ic"></i>Lọc CV trùng</a><a><i class="wa-ic"></i>Thư mời PV</a><a><i class="wa-ic"></i>Vị trí tuyển</a></nav></aside><main class="wa-main"><header class="wa-top"><div><small class="wa-kick2">BƯỚC 02</small><b>Nhập CV hàng loạt</b><span>Đọc PDF, Word, ảnh chụp (OCR) và điền vào bảng theo lô</span></div><div class="wa-acts"><span class="wa-live"><i></i>TỰ ĐỘNG</span><span class="wa-btn pri">⇪ Chọn tệp</span></div></header><div class="wa-grid g2"><section class="wa-card"><div class="wa-h"><b>Lô 14/11 · 12 tệp</b><span class="m">9 xong · 3 đang xử lý</span></div><div class="wa-file"><span class="fi">PDF</span><div><b>CV_ung_vien_A.pdf</b><i style="--w:100%"></i></div><em class="wa-tag g">Đã nhập</em></div><div class="wa-file"><span class="fi">Ảnh · OCR</span><div><b>CV_ung_vien_B.jpg</b><i style="--w:100%"></i></div><em class="wa-tag g">Đã nhập</em></div><div class="wa-file"><span class="fi">PDF</span><div><b>CV_ung_vien_C.pdf</b><i style="--w:100%"></i></div><em class="wa-tag o">Nghi trùng</em></div><div class="wa-file"><span class="fi">Word</span><div><b>CV_ung_vien_D.docx</b><i style="--w:72%"></i></div><em class="wa-tag b">Đang đọc</em></div><div class="wa-file"><span class="fi">PDF</span><div><b>CV_ung_vien_E.pdf</b><i style="--w:0%"></i></div><em class="wa-tag y">Chờ</em></div></section><section class="wa-card"><div class="wa-h"><b>Thông tin đọc được</b><em class="wa-tag g">CV_ung_vien_A.pdf</em></div><dl class="wa-dl"><dt>Họ tên</dt><dd>Ứng viên A</dd><dt>Điện thoại</dt><dd>09•• ••• 123</dd><dt>Email</dt><dd>ungvien.a@•••.com</dd><dt>Vị trí</dt><dd>Nhân viên bán hàng</dd><dt>Nguồn</dt><dd>Jobsite</dd><dt>Mã ứng viên</dt><dd class="c">UV-1411-018</dd><dt>Lưu Drive</dt><dd>TD-118 / CV gốc ✓</dd></dl></section></div></main></div></div><div class="scr wa"><div class="in wa-in"><aside class="wa-side"><div><small class="wa-kick">TALENT OPERATIONS</small><b class="wa-brand">Tuyển dụng</b><p>Web app chạy trên Google Sheets, Apps Script, Drive và Gmail.</p></div><div class="wa-sm"><div><small>Vị trí đang tuyển</small><b>18</b></div><div><small>Ứng viên</small><b>426</b></div><div><small>Phỏng vấn tuần này</small><b>23</b></div></div><nav class="wa-nav"><a><i class="wa-ic"></i>Trang chủ</a><a><i class="wa-ic"></i>Nguồn CV</a><a><i class="wa-ic"></i>Nhập CV</a><a class=on><i class="wa-ic"></i>Lọc CV trùng</a><a><i class="wa-ic"></i>Thư mời PV</a><a><i class="wa-ic"></i>Vị trí tuyển</a></nav></aside><main class="wa-main"><header class="wa-top"><div><small class="wa-kick2">BƯỚC 03</small><b>Lọc CV trùng</b><span>So khớp điện thoại, email, họ tên giữa các kênh</span></div><div class="wa-acts"><span class="wa-live"><i></i>TỰ ĐỘNG</span><span class="wa-btn pri">⧉ Gộp tất cả</span></div></header><div class="wa-stats"><div class="wa-stat "><small>CV kiểm tra</small><b>64</b><span>lô tuần này</span></div><div class="wa-stat hl"><small>Cặp trùng</small><b>3</b><span>cần gộp</span></div><div class="wa-stat "><small>Đã gộp</small><b>37</b><span>từ đầu tháng</span></div><div class="wa-stat "><small>Giữ lại</small><b>Mới nhất</b><span>kèm lịch sử nguồn</span></div></div><section class="wa-card"><div class="wa-h"><b>Cặp hồ sơ nghi trùng</b><span class="m">giữ hồ sơ mới, ghi lại nguồn cũ</span></div><div class="wa-pair"><div><b>Ứng viên C</b><small>Facebook · 10/11</small></div><span class="lk">⇄</span><div><b>Ứng viên C</b><small>Jobsite · 12/11</small></div><em class="wa-tag o">Trùng số điện thoại</em><span class="wa-btn">Gộp</span></div><div class="wa-pair"><div><b>Ứng viên E</b><small>TopCV · 08/11</small></div><span class="lk">⇄</span><div><b>Ứng viên E</b><small>Giới thiệu · 13/11</small></div><em class="wa-tag o">Trùng email</em><span class="wa-btn">Gộp</span></div><div class="wa-pair"><div><b>Ứng viên G</b><small>Trang tuyển dụng · 05/11</small></div><span class="lk">⇄</span><div><b>Ứng viên G</b><small>Nhóm Facebook · 11/11</small></div><em class="wa-tag o">Trùng SĐT + họ tên</em><span class="wa-btn">Gộp</span></div></section></main></div></div><div class="scr wa"><div class="in wa-in"><aside class="wa-side"><div><small class="wa-kick">TALENT OPERATIONS</small><b class="wa-brand">Tuyển dụng</b><p>Web app chạy trên Google Sheets, Apps Script, Drive và Gmail.</p></div><div class="wa-sm"><div><small>Vị trí đang tuyển</small><b>18</b></div><div><small>Ứng viên</small><b>426</b></div><div><small>Phỏng vấn tuần này</small><b>23</b></div></div><nav class="wa-nav"><a><i class="wa-ic"></i>Trang chủ</a><a><i class="wa-ic"></i>Nguồn CV</a><a><i class="wa-ic"></i>Nhập CV</a><a><i class="wa-ic"></i>Lọc CV trùng</a><a class=on><i class="wa-ic"></i>Thư mời PV</a><a><i class="wa-ic"></i>Vị trí tuyển</a></nav></aside><main class="wa-main"><header class="wa-top"><div><small class="wa-kick2">BƯỚC 04</small><b>Gửi thư mời phỏng vấn</b><span>Soạn từ mẫu, gửi qua Gmail, ghi lịch vào bảng</span></div><div class="wa-acts"><span class="wa-live"><i></i>TỰ ĐỘNG</span><span class="wa-btn pri">✉ Gửi 5 thư</span></div></header><div class="wa-grid g4"><section class="wa-card"><div class="wa-h"><b>Người nhận</b><span class="m">TD-118</span></div><div class="wa-rc"><i>✓</i><b>Ứng viên A</b><small>09:00 · 14/11</small></div><div class="wa-rc"><i>✓</i><b>Ứng viên F</b><small>09:30 · 14/11</small></div><div class="wa-rc"><i>✓</i><b>Ứng viên H</b><small>10:00 · 14/11</small></div><div class="wa-rc"><i>✓</i><b>Ứng viên K</b><small>14:00 · 14/11</small></div><div class="wa-rc"><i>✓</i><b>Ứng viên M</b><small>14:30 · 14/11</small></div></section><section class="wa-card wa-mail"><div class="wa-h"><b>Xem trước thư</b><em class="wa-tag b">Mẫu: Mời phỏng vấn V1</em></div><div class="ml"><small>Tiêu đề</small><b>[Mời phỏng vấn] Nhân viên bán hàng · Cửa hàng Biên Hòa</b></div><div class="mb">Chào <u>{Tên ứng viên}</u>,<br>Cảm ơn bạn đã ứng tuyển. Mời bạn tham gia phỏng vấn:<ul><li>Thời gian: <u>{Giờ phỏng vấn}</u></li><li>Địa điểm: <u>{Cửa hàng}</u></li><li>Người phỏng vấn: Quản lý cửa hàng</li></ul>Bạn vui lòng xác nhận bằng cách trả lời thư này.</div><div class="mf"><span class="wa-tag g">Tự ghi lịch vào bảng</span><span class="wa-tag y">Nhắc lại trước 1 ngày</span></div></section></div></main></div></div><div class="scr wa"><div class="in wa-in"><aside class="wa-side"><div><small class="wa-kick">TALENT OPERATIONS</small><b class="wa-brand">Tuyển dụng</b><p>Web app chạy trên Google Sheets, Apps Script, Drive và Gmail.</p></div><div class="wa-sm"><div><small>Vị trí đang tuyển</small><b>18</b></div><div><small>Ứng viên</small><b>426</b></div><div><small>Phỏng vấn tuần này</small><b>23</b></div></div><nav class="wa-nav"><a class=on><i class="wa-ic"></i>Trang chủ</a><a><i class="wa-ic"></i>Nguồn CV</a><a><i class="wa-ic"></i>Nhập CV</a><a><i class="wa-ic"></i>Lọc CV trùng</a><a><i class="wa-ic"></i>Thư mời PV</a><a><i class="wa-ic"></i>Vị trí tuyển</a></nav></aside><main class="wa-main"><header class="wa-top"><div><small class="wa-kick2">TRANG CHỦ</small><b>Bảng điều hành tuyển dụng</b><span>Dữ liệu mẫu · cập nhật 10:00</span></div><div class="wa-acts"><span class="wa-live"><i></i>TỰ ĐỘNG</span><span class="wa-btn pri">⇪ Nhập CV</span></div></header><div class="wa-stats"><div class="wa-stat hl"><small>Vị trí đang tuyển</small><b>18</b><span>4 vị trí gấp</span></div><div class="wa-stat "><small>CV mới tuần này</small><b><span class="wa-cnt" data-k="cv">64</span></b><span>từ 5 nguồn</span></div><div class="wa-stat "><small>CV trùng đã lọc</small><b><span class="wa-cnt" data-k="dup">37</span></b><span>tự động</span></div><div class="wa-stat "><small>Thư mời đã gửi</small><b><span class="wa-cnt" data-k="inv">29</span></b><span>qua Gmail</span></div></div><div class="wa-grid"><section class="wa-card"><div class="wa-h"><b>Vị trí đang tuyển</b><span class="wa-btn">Mở bảng</span></div><table><tr><th>Mã</th><th>Vị trí</th><th>Bộ phận</th><th>Hạn</th></tr><tr><td class="c">TD-118</td><td>Nhân viên bán hàng</td><td class="m">Cửa hàng Biên Hòa</td><td>15/11</td></tr><tr><td class="c">TD-121</td><td>Kế toán tổng hợp</td><td class="m">Tài chính</td><td>22/11</td></tr><tr><td class="c">TD-124</td><td>Công nhân may</td><td class="m">Nhà máy</td><td>18/11</td></tr><tr><td class="c">TD-126</td><td>Chuyên viên TMĐT</td><td class="m">Kinh doanh online</td><td>30/11</td></tr></table></section><section class="wa-card scan"><div class="wa-h"><b>Ứng viên mới</b><span class="wa-btn">Mở bảng</span></div><table><tr><th>Ứng viên</th><th>Vị trí</th><th>Nguồn</th><th>Trạng thái</th></tr><tr><td>Ứng viên A</td><td>Nhân viên bán hàng</td><td class="m">Jobsite</td><td><em class="wa-tag g">Mời PV</em></td></tr><tr><td>Ứng viên B</td><td>Kế toán tổng hợp</td><td class="m">Giới thiệu</td><td><em class="wa-tag b">Đạt V1</em></td></tr><tr><td>Ứng viên C</td><td>Công nhân may</td><td class="m">Facebook</td><td><em class="wa-tag o">CV trùng</em></td></tr><tr><td>Ứng viên D</td><td>Chuyên viên TMĐT</td><td class="m">TopCV</td><td><em class="wa-tag y">Offer</em></td></tr></table></section></div><section class="wa-card"><div class="wa-h"><b>Chức năng thao tác</b><span class="m">Mỗi khâu lặp lại là một nút bấm</span></div><div class="wa-mods"><div class="wa-mod"><i class="g"></i>Nhập CV hàng loạt</div><div class="wa-mod"><i class="o"></i>Lọc CV trùng</div><div class="wa-mod"><i class="b"></i>Thư mời phỏng vấn</div><div class="wa-mod"><i class="y"></i>Hồ sơ offer</div><div class="wa-mod"><i class="g"></i>Onboarding</div></div></section><div class="wa-toasts"></div></main></div></div></div></div>
+      <div class="wsx-bar"><i id="wsx-bar"></i></div>
+    </div>
   </div>
 </section>
 
 <!-- PRODUCT STORY -->
-<section id="san-pham" class="stage story-sec">
+<section id="san-pham" class="stage story-sec z3-story">
   <div class="wrap">
-    <div class="s-head rv">
-      <div class="eyebrow s-eb"><span class="l-vi">Thuần Việt Group · Số hóa bằng AI</span><span class="l-en">Thuan Viet Group · Digitized with AI</span></div>
-      <h2><span class="l-vi">Công cụ tuyển dụng<br>xây cùng AI</span><span class="l-en">A hiring tool<br>built with AI</span></h2>
-      <p><span class="l-vi">Công cụ lo phần việc lặp lại: nhập CV, lọc trùng, nhắc hạn, gửi lịch phỏng vấn và cập nhật dashboard. Nhờ vậy đội có thêm thời gian cho phần cần con người: hiểu công việc, gặp ứng viên và đàm phán.</span><span class="l-en">The tool handles the repetitive work: CV entry, de-duplication, deadline reminders, interview invites and the dashboard. That leaves the team more time for what needs people: understanding roles, meeting candidates and negotiating.</span></p>
-      <div class="chipline sc-tools"><span>Claude</span><span>Codex</span><span>Google Apps Script</span><span>ERP</span><span>Google Drive</span></div>
+    <div class="s-head s-sub rv">
+      <div class="eyebrow s-eb"><span class="l-vi">ERP Thuần Việt Home · mô phỏng · dữ liệu mẫu</span><span class="l-en">Thuan Viet Home ERP · mock-up · sample data</span></div>
+      <h2><span class="l-vi">Trên ERP, cùng cách làm đó<br>nối dài cả vòng tuyển dụng</span><span class="l-en">On the ERP, the same approach<br>covers the whole hiring cycle</span></h2>
+      <p><span class="l-vi">Ở Thuần Việt, việc nhập CV, lọc trùng và thư mời chạy ngay trên ERP, thêm các khâu trước và sau. Cuộn xuống để xem từng bước.</span><span class="l-en">At Thuan Viet, CV import, de-duplication and invites run inside the ERP, along with the steps before and after. Scroll to see each one.</span></p>
     </div>
-
+    <div class="bridge rv">
+      <div><small><span class="l-vi">Giống web app</span><span class="l-en">Same as the web app</span></small><div class="chipline"><span><span class="l-vi">Nhập CV</span><span class="l-en">CV import</span></span><span><span class="l-vi">Lọc trùng</span><span class="l-en">De-dupe</span></span><span><span class="l-vi">Thư mời</span><span class="l-en">Invites</span></span><span>Dashboard</span></div></div>
+      <span class="ar">→</span>
+      <div><small><span class="l-vi">ERP có thêm</span><span class="l-en">The ERP adds</span></small><div class="chipline"><span><span class="l-vi">Đề xuất tuyển dụng</span><span class="l-en">Hiring requests</span></span><span>Jobsite</span><span><span class="l-vi">Quy trình tuyển chọn</span><span class="l-en">Pipeline</span></span><span><span class="l-vi">Lịch phỏng vấn</span><span class="l-en">Interviews</span></span><span><span class="l-vi">Phiếu đánh giá</span><span class="l-en">Scorecards</span></span><span><span class="l-vi">Điện thoại</span><span class="l-en">Mobile</span></span></div></div>
+    </div>
     <div class="story">
       <div class="steps">
         <article class="st3 on" data-i="0">
@@ -889,7 +1442,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
           <span class="st-n">03</span>
           <h3><span class="l-vi">Thu hút ứng viên</span><span class="l-en">Sourcing</span></h3>
           <p><span class="l-vi">Một cửa vào chung cho TopCV, CareerViet, Vieclam24h, JobsGO. Tải CV lên là ERP tự đọc file, điền họ tên, email, số điện thoại, nguồn và lọc trùng.</span><span class="l-en">One entry point for every job board. Upload a CV and the ERP reads it, fills in name, email, phone and source, and removes duplicates.</span></p>
-          <div class="res3"><b>−75–80%</b><span class="l-vi">thời gian nhập liệu</span><span class="l-en">data-entry time</span></div>
+          <div class="res3"><b><span class="l-vi">Giảm 75–80%</span><span class="l-en">Cut 75–80%</span></b><span class="l-vi">thời gian nhập liệu</span><span class="l-en">data-entry time</span></div>
           <div class="m-slot"></div>
         </article>
         <article class="st3" data-i="3">
@@ -937,16 +1490,125 @@ dialog.lb .lb-mock .scr{border-radius:12px}
         <button class="zoom" type="button" data-src="img/lich-pv.jpg" aria-label="Phóng to"><img src="img/lich-pv.jpg" alt="Ảnh thật: Lịch phỏng vấn" width="1568" height="778"></button>
       </div>
     </div>
+    <a class="next-z rv" href="#hanh-trinh"><small><span class="l-vi">Tiếp theo</span><span class="l-en">Next</span></small><b><i>04</i><span class="l-vi">Hành trình</span><span class="l-en">Career</span></b><span class="ar">↓</span></a>
   </div>
 </section>
 
+<!-- STORY END -->
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // navigation: scroll-spy on menu + dock, reading progress, back to top, mobile section menu
+  function navInit(){
+    var ids = ['nhanh','dung','cong-cu','hanh-trinh','khu-vuc','lien-he'];
+    var alias = {'san-pham':'cong-cu','vai-tro':'hanh-trinh'};
+    var top = document.querySelector('.top'), dock = document.getElementById('dock'), menu = document.getElementById('dock-menu'), cur = document.getElementById('dock-cur');
+    var links = [].slice.call(document.querySelectorAll('.nav a[data-sec], .dock-menu a[data-sec]'));
+    var secs = [].slice.call(document.querySelectorAll('section[id]')).filter(function(x){ return ids.indexOf(x.id) > -1 || alias[x.id]; });
+    var last = null, tick = false;
+    function upd(){
+      tick = false;
+      var y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+      if (top) top.style.setProperty('--p', (h > 0 ? Math.min(100, y / h * 100) : 0).toFixed(1) + '%');
+      var act = null, line = innerHeight * .35;
+      secs.forEach(function(x){ if (x.getBoundingClientRect().top <= line) act = alias[x.id] || x.id; });
+      if (innerHeight + y >= document.documentElement.scrollHeight - 4) act = 'lien-he';
+      if (act !== last) {
+        last = act;
+        links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('data-sec') === act); if (a.getAttribute('data-sec') === act) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
+        var k = ids.indexOf(act), m = menu && menu.querySelectorAll('a')[k];
+        if (m) { document.getElementById('dock-n').textContent = m.querySelector('i').textContent; document.getElementById('dock-t').innerHTML = m.querySelector('.l-vi').outerHTML + m.querySelector('.l-en').outerHTML; }
+      }
+      if (dock) dock.classList.toggle('show', y > innerHeight * .6);
+    }
+    addEventListener('scroll', function(){ if (!tick) { tick = true; requestAnimationFrame(upd); } }, {passive:true});
+    addEventListener('resize', upd); upd();
+    function closeMenu(){ if (menu) { menu.hidden = true; cur.setAttribute('aria-expanded','false'); } }
+    if (cur) cur.addEventListener('click', function(e){ e.stopPropagation(); var o = menu.hidden; menu.hidden = !o; cur.setAttribute('aria-expanded', String(o)); });
+    if (menu) menu.addEventListener('click', function(e){ if (e.target.closest('a')) closeMenu(); });
+    document.addEventListener('click', function(e){ if (menu && !menu.hidden && !e.target.closest('#dock')) closeMenu(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+    var tb = document.getElementById('dock-top'); if (tb) tb.addEventListener('click', function(){ scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'}); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', navInit); else navInit();
+  // web-app showcase: 5 steps, auto-advance, click to pick
+  var ws = document.getElementById('wsx');
+  if (ws) {
+    var scr = [].slice.call(ws.querySelectorAll('.scr')), btn = [].slice.call(document.querySelectorAll('#web-app .fl-n')), bar = document.getElementById('wsx-bar'), cur = 0, timer = null, seen = false;
+    function show(i){
+      cur = i;
+      scr.forEach(function(x,k){ x.classList.toggle('on', k === i); });
+      btn.forEach(function(x,k){ x.classList.toggle('cur', k === i); x.setAttribute('aria-pressed', k === i); });
+      if (bar) { bar.classList.remove('run'); void bar.offsetWidth; bar.classList.add('run'); }
+    }
+    function start(){ stop(); if (reduce) return; timer = setInterval(function(){ if (!document.hidden) show((cur + 1) % scr.length); }, 5000); }
+    function stop(){ if (timer) clearInterval(timer); timer = null; }
+    btn.forEach(function(b,k){ b.addEventListener('click', function(){ show(k); start(); }); });
+    ws.addEventListener('click', function(){ var m = ws.querySelector('.scr.on'); if (m && window.openMock) openMock(m); });
+    new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { if (!seen) { seen = true; show(0); } start(); } else stop(); }); }, {threshold: .35}).observe(ws);
+  }
+  if (reduce) return;
+  // hero screen follows the mouse while it is still tilted
+  var tilt = document.getElementById('tilt'), hero = document.querySelector('.hero3');
+  if (tilt && hero && matchMedia('(hover: hover)').matches) {
+    hero.addEventListener('mousemove', function(e){
+      var r = hero.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      tilt.style.setProperty('--tx', (x * 10).toFixed(2) + 'deg');
+      tilt.style.setProperty('--ty', (-y * 6).toFixed(2) + 'deg');
+    });
+    hero.addEventListener('mouseleave', function(){ tilt.style.setProperty('--tx','0deg'); tilt.style.setProperty('--ty','0deg'); });
+  }
+  // live web app mock: rotating notifications + ticking counters
+  var tw = document.querySelector('#tilt .wa-toasts');
+  if (tw) {
+    var msgs = [['✓','Nhập xong 12 CV mới','Jobsite'],['⧉','Lọc 3 CV trùng','tự động'],['✉','Gửi 5 thư mời phỏng vấn','Gmail'],['▤','Dashboard đã cập nhật','10:00'],['✓','Ứng viên B: đạt vòng 1','phiếu chấm']];
+    var bump = {0:['cv',12],1:['dup',3],2:['inv',5]}, k = 0;
+    setInterval(function(){
+      if (document.hidden) return;
+      var m = msgs[k % msgs.length], d = document.createElement('div');
+      d.className = 'wa-toast'; d.innerHTML = '<b>' + m[0] + '</b>' + m[1] + ' <small>· ' + m[2] + '</small>';
+      tw.appendChild(d);
+      var old = tw.querySelectorAll('.wa-toast:not(.out)');
+      if (old.length > 2) { var o = old[0]; o.classList.add('out'); setTimeout(function(){ o.remove(); }, 420); }
+      var b = bump[k % msgs.length];
+      if (b) { var c = document.querySelector('#tilt .wa-cnt[data-k="' + b[0] + '"]'); if (c) { c.textContent = (+c.textContent + b[1]); var p = c.parentNode; p.classList.remove('tick'); void p.offsetWidth; p.classList.add('tick'); } }
+      if (k % msgs.length === 0) { var tr = document.querySelector('#tilt .wa-card.scan tr:nth-child(2)'); if (tr) { tr.classList.remove('wa-new'); void tr.offsetWidth; tr.classList.add('wa-new'); } }
+      k++;
+    }, 2300);
+  }
+  // big numbers count up when they scroll into view
+  var els = document.querySelectorAll('.sig-n, .pc-n, .q-a b');
+  if (!('IntersectionObserver' in window)) return;
+  function run(el){
+    var nodes = [], w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    while (w.nextNode()) if (/\d/.test(w.currentNode.nodeValue)) nodes.push([w.currentNode, w.currentNode.nodeValue]);
+    var t0 = null;
+    function f(t){
+      if (!t0) t0 = t;
+      var p = Math.min(1, (t - t0) / 1400), e = 1 - Math.pow(1 - p, 3);
+      nodes.forEach(function(n){ n[0].nodeValue = n[1].replace(/\d+/g, function(m){ return Math.round(+m * e); }); });
+      if (p < 1) requestAnimationFrame(f);
+    }
+    requestAnimationFrame(f);
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if (en.isIntersecting) { io.unobserve(en.target); run(en.target); } });
+  }, {threshold: .6});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
 <!-- TIMELINE -->
-<section id="hanh-trinh" style="padding-top:8px">
+<section id="hanh-trinh" class="z2 tail">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow"><span class="l-vi">Hành trình</span><span class="l-en">Career</span></div>
-      <h2><span class="l-vi">6 năm, từ cung ứng nhân sự đến tuyển dụng nội bộ</span><span class="l-en">6 years, from agency to in-house</span></h2>
-    </div>
+    <header class="z-head rv">
+      <div class="z-num">04</div>
+      <div class="z-txt">
+        <div class="z-k"><span class="l-vi">Hành trình</span><span class="l-en">Career</span></div>
+        <h2 class="z-q"><span class="l-vi">Từ cung ứng nhân sự<br>đến tuyển dụng nội bộ</span><span class="l-en">From agency<br>to in-house</span></h2>
+        <p class="z-a"><span class="l-vi">Sáu năm qua ManpowerGroup, Marathon Education, MSC Group, tư vấn tuyển dụng và Thuần Việt Group.</span><span class="l-en">Six years across ManpowerGroup, Marathon Education, MSC Group, recruitment consulting and Thuan Viet Group.</span></p>
+      </div>
+    </header>
     <div class="tl-scroll">
       <div class="tl">
         <svg viewBox="0 0 760 210" role="img" aria-label="Dòng thời gian công việc 2020 đến 2026">
@@ -980,27 +1642,42 @@ dialog.lb .lb-mock .scr{border-radius:12px}
   </div>
 </section>
 
-<!-- MAP -->
-<section style="padding-top:8px">
-  <div class="wrap map-grid">
-    <div>
-      <div class="sec-head" style="margin-bottom:0">
-        <div class="eyebrow"><span class="l-vi">Khu vực tuyển dụng</span><span class="l-en">Hiring regions</span></div>
-        <h2><span class="l-vi">Từ Vinh trở vào Nam</span><span class="l-en">From Vinh southward</span></h2>
-        <p><span class="l-vi">Đã tuyển dụng trên cả nước, nhiều nhất từ Vinh trở vào Nam; miền Bắc ít hơn.</span><span class="l-en">Hiring experience nationwide, mostly from Vinh southward, with less in the North.</span></p>
-      </div>
-      <div class="roles">
-        <span><span class="l-vi">Bán hàng cửa hàng</span><span class="l-en">Store sales</span></span>
-        <span><span class="l-vi">Kinh doanh online</span><span class="l-en">Online sales</span></span>
-        <span><span class="l-vi">CSKH · vận hành TMĐT</span><span class="l-en">CS · e-com ops</span></span>
-        <span><span class="l-vi">Kho vận · giao hàng</span><span class="l-en">Warehouse · delivery</span></span>
-        <span><span class="l-vi">Công nhân nhà máy</span><span class="l-en">Factory workers</span></span>
-        <span><span class="l-vi">Kế toán</span><span class="l-en">Accounting</span></span>
-        <span><span class="l-vi">Trưởng phòng</span><span class="l-en">Department heads</span></span>
+<!-- ROLE -->
+<section id="vai-tro" class="tv-now">
+  <div class="wrap">
+    <div class="role-band">
+      <div class="eyebrow"><span class="l-vi">Hiện tại · 12/2024 – nay</span><span class="l-en">Now · Dec 2024 – present</span></div>
+      <div class="role-grid">
+        <div>
+          <h2><span class="l-vi">Trưởng nhóm Tuyển dụng<br>tại Thuần Việt Group</span><span class="l-en">Talent Acquisition Lead<br>at Thuan Viet Group</span></h2>
+          <p style="margin-top:12px"><span class="l-vi">Phụ trách tuyển dụng 4 công ty trong hệ sinh thái nệm, gồm bán lẻ, TMĐT, sản xuất và phân phối: Nệm Thuần Việt, Thuần Việt Global, Thuần Việt Digital, Nệm Thành Công.</span><span class="l-en">Handling recruitment for 4 companies in a mattress group spanning retail, e-commerce, manufacturing and distribution: Nem Thuan Viet, Thuan Viet Global, Thuan Viet Digital, Nem Thanh Cong.</span></p>
+        </div>
+        <ul class="does">
+          <li><span><span class="l-vi">Lập kế hoạch tuyển theo quý, báo cáo tiến độ và chi phí cho Ban giám đốc</span><span class="l-en">Quarterly hiring plans, progress and cost reported to the Board</span></span></li>
+          <li><span><span class="l-vi">Tư vấn quản lý về định biên, JD, khung lương và mức offer</span><span class="l-en">Advise managers on headcount, JDs, salary bands and offers</span></span></li>
+          <li><span><span class="l-vi">Phân bổ ngân sách tuyển dụng theo hiệu quả từng kênh</span><span class="l-en">Allocate hiring budget by channel performance</span></span></li>
+          <li><span><span class="l-vi">Tuyển, đào tạo và kèm cặp nhân viên, thực tập sinh trong nhóm</span><span class="l-en">Hire, train and coach recruiters and interns on the team</span></span></li>
+        </ul>
       </div>
     </div>
-    <div class="map">
-      <svg class="vn" viewBox="0 0 320 540" role="img" aria-label="Sơ đồ khu vực tuyển dụng: từ Vinh trở vào Nam, miền Bắc ít hơn">
+    <a class="next-z rv" href="#khu-vuc"><small><span class="l-vi">Tiếp theo</span><span class="l-en">Next</span></small><b><i>05</i><span class="l-vi">Khu vực</span><span class="l-en">Regions</span></b><span class="ar">↓</span></a>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="khu-vuc" class="z2 tail">
+  <div class="wrap">
+    <header class="z-head rv">
+      <div class="z-num">05</div>
+      <div class="z-txt">
+        <div class="z-k"><span class="l-vi">Khu vực và vị trí</span><span class="l-en">Regions and roles</span></div>
+        <h2 class="z-q"><span class="l-vi">Từ Vinh trở vào Nam,<br>từ công nhân đến quản lý</span><span class="l-en">From Vinh southward,<br>from workers to managers</span></h2>
+        <p class="z-a"><span class="l-vi">Đã tuyển trên cả nước, nhiều nhất từ Vinh trở vào Nam, miền Bắc ít hơn. Tuyển dụng đa dạng ngành nghề và cấp bậc, từ lao động phổ thông đến quản lý.</span><span class="l-en">Hiring nationwide, mostly from Vinh southward, less in the North. Diverse industries and levels, from entry-level workers to managers.</span></p>
+      </div>
+    </header>
+    <div class="rg-wrap">
+      <div class="rg-grid"><article class="rg rv"><div class="rg-h"><i>01</i><b><span class="l-vi">Bán lẻ · TMĐT</span><span class="l-en">Retail · e-commerce</span></b></div><div class="chipline"><span><span class="l-vi">Bán hàng cửa hàng</span><span class="l-en">Store sales</span></span><span><span class="l-vi">Kinh doanh online</span><span class="l-en">Online sales</span></span><span><span class="l-vi">CSKH · vận hành TMĐT</span><span class="l-en">CS · e-com ops</span></span><span><span class="l-vi">Content · digital</span><span class="l-en">Content · digital</span></span><span><span class="l-vi">Sales TMĐT</span><span class="l-en">E-com sales</span></span></div><small>Thuần Việt Group · Yes4All</small></article><article class="rg rv"><div class="rg-h"><i>02</i><b><span class="l-vi">Sản xuất · khu công nghiệp</span><span class="l-en">Manufacturing · industrial parks</span></b></div><div class="chipline"><span><span class="l-vi">Công nhân sản xuất</span><span class="l-en">Factory workers</span></span><span><span class="l-vi">Lao động dự án KCN</span><span class="l-en">Industrial-park project staff</span></span><span><span class="l-vi">Dự án xây dựng</span><span class="l-en">Construction projects</span></span><span><span class="l-vi">Kỹ sư hóa</span><span class="l-en">Chemical engineers</span></span></div><small>ManpowerGroup · Thuần Việt Group · Innopack</small></article><article class="rg rv"><div class="rg-h"><i>03</i><b><span class="l-vi">Kho vận · giao hàng</span><span class="l-en">Logistics · delivery</span></b></div><div class="chipline"><span><span class="l-vi">Nhân viên kho</span><span class="l-en">Warehouse staff</span></span><span><span class="l-vi">Giao hàng</span><span class="l-en">Delivery</span></span><span><span class="l-vi">Tài xế</span><span class="l-en">Drivers</span></span><span><span class="l-vi">Trưởng phòng kho vận</span><span class="l-en">Head of logistics</span></span></div><small>Thuần Việt Group</small></article><article class="rg rv"><div class="rg-h"><i>04</i><b><span class="l-vi">FMCG · F&B</span><span class="l-en">FMCG · F&B</span></b></div><div class="chipline"><span><span class="l-vi">Dự án FMCG số lượng lớn</span><span class="l-en">Volume FMCG projects</span></span><span><span class="l-vi">Marketing F&B</span><span class="l-en">F&B marketing</span></span><span><span class="l-vi">Quản lý sales</span><span class="l-en">Sales managers</span></span></div><small>ManpowerGroup · Tư vấn tuyển dụng</small></article><article class="rg rv"><div class="rg-h"><i>05</i><b><span class="l-vi">Giáo dục · IT · văn phòng</span><span class="l-en">Education · IT · office</span></b></div><div class="chipline"><span><span class="l-vi">Kinh doanh</span><span class="l-en">Sales</span></span><span><span class="l-vi">IT</span><span class="l-en">IT</span></span><span><span class="l-vi">Kế toán</span><span class="l-en">Accounting</span></span><span><span class="l-vi">Hành chính · nhân sự</span><span class="l-en">Admin · HR</span></span><span><span class="l-vi">Thực tập sinh</span><span class="l-en">Interns</span></span></div><small>Marathon Education · Thuần Việt Group</small></article><article class="rg rv"><div class="rg-h"><i>06</i><b><span class="l-vi">Thẩm mỹ · y tế</span><span class="l-en">Aesthetics · medical</span></b></div><div class="chipline"><span><span class="l-vi">Bác sĩ</span><span class="l-en">Doctors</span></span><span><span class="l-vi">Kỹ thuật viên</span><span class="l-en">Technicians</span></span><span><span class="l-vi">Sales · CSKH · marketing</span><span class="l-en">Sales · CS · marketing</span></span></div><small>MSC Group</small></article></div>
+      <div class="map rv"><svg class="vn" viewBox="0 0 320 540" role="img" aria-label="Sơ đồ khu vực tuyển dụng: từ Vinh trở vào Nam, miền Bắc ít hơn">
         <defs><linearGradient id="vng" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--signal)" stop-opacity=".55"/><stop offset="1" stop-color="var(--signal)"/></linearGradient></defs>
         <path class="vn-n" d="M62 46 C92 60 122 66 150 78 M150 78 C150 100 152 128 160 156"/>
         <path class="vn-band" d="M160 156 C176 182 196 214 216 240 C236 266 252 302 256 342 C260 382 240 412 202 428 C170 442 140 466 116 508"/>
@@ -1026,19 +1703,26 @@ dialog.lb .lb-mock .scr{border-radius:12px}
         </g>
         <text class="city-s" x="18" y="372"><tspan class="l-vi">Sơ đồ minh họa,</tspan><tspan class="l-en">Illustrative,</tspan></text>
         <text class="city-s" x="18" y="386"><tspan class="l-vi">không theo tỷ lệ</tspan><tspan class="l-en">not to scale</tspan></text>
-      </svg>
+      </svg></div>
     </div>
+    <div class="lv rv"><small><span class="l-vi">Cấp bậc đã tuyển</span><span class="l-en">Levels hired</span></small><ol><li><span><span class="l-vi">Lao động phổ thông</span><span class="l-en">Entry-level workers</span></span></li><li><span><span class="l-vi">Nhân viên</span><span class="l-en">Staff</span></span></li><li><span><span class="l-vi">Chuyên môn</span><span class="l-en">Specialists</span></span></li><li><span><span class="l-vi">Trưởng phòng</span><span class="l-en">Department heads</span></span></li><li><span><span class="l-vi">Quản lý cấp cao</span><span class="l-en">Senior managers</span></span></li></ol></div>
+    <a class="next-z rv" href="#lien-he"><small><span class="l-vi">Tiếp theo</span><span class="l-en">Next</span></small><b><i>06</i><span class="l-vi">Liên hệ</span><span class="l-en">Contact</span></b><span class="ar">↓</span></a>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="lien-he">
+<section id="lien-he" class="z2 tail">
+  <div class="wrap">
+    <header class="z-head rv">
+      <div class="z-num">06</div>
+      <div class="z-txt">
+        <div class="z-k"><span class="l-vi">Liên hệ</span><span class="l-en">Contact</span></div>
+        <h2 class="z-q"><span class="l-vi">Cần người tuyển nhanh<br>và tuyển đúng?</span><span class="l-en">Need someone who hires fast<br>and hires right?</span></h2>
+        <p class="z-a"><span class="l-vi">TP. Hồ Chí Minh · gọi, nhắn Zalo hoặc gửi email.</span><span class="l-en">Ho Chi Minh City · call, Zalo or email.</span></p>
+      </div>
+    </header>
+  </div>
   <div class="wrap contact">
-    <div>
-      <div class="eyebrow"><span class="l-vi">Liên hệ</span><span class="l-en">Contact</span></div>
-      <h2 style="margin-top:10px"><span class="l-vi">Cần người tuyển nhanh<br>và đo được kết quả?</span><span class="l-en">Need someone who hires fast<br>and measures it?</span></h2>
-      <p class="muted" style="margin-top:10px">TP. Hồ Chí Minh</p>
-    </div>
     <div class="cards">
       <div class="cbox"><div class="t"><small><span class="l-vi">Gọi / Zalo</span><span class="l-en">Call / Zalo</span></small><b id="v-phone">079 4226 459</b></div><div class="cbtns"><a class="copy" href="https://zalo.me/0794226459" target="_blank" rel="noopener"><span class="l-vi">Nhắn Zalo</span><span class="l-en">Zalo chat</span></a><button class="copy" type="button" data-copy="v-phone"><span class="l-vi">Sao chép</span><span class="l-en">Copy</span></button></div></div>
       <div class="cbox"><div class="t"><small>Email</small><b id="v-mail">kieukt.30@gmail.com</b></div><button class="copy" type="button" data-copy="v-mail"><span class="l-vi">Sao chép</span><span class="l-en">Copy</span></button></div>
@@ -1046,6 +1730,11 @@ dialog.lb .lb-mock .scr{border-radius:12px}
     </div>
   </div>
 </section>
+<div class="dock" id="dock">
+  <nav class="dock-menu" id="dock-menu" aria-label="Mục lục" hidden><a href="#nhanh" data-sec="nhanh"><i>01</i><span class="l-vi">Tuyển nhanh</span><span class="l-en">Hire fast</span></a><a href="#dung" data-sec="dung"><i>02</i><span class="l-vi">Tuyển đúng</span><span class="l-en">Hire right</span></a><a href="#cong-cu" data-sec="cong-cu"><i>03</i><span class="l-vi">Công cụ AI</span><span class="l-en">AI tools</span></a><a href="#hanh-trinh" data-sec="hanh-trinh"><i>04</i><span class="l-vi">Hành trình</span><span class="l-en">Career</span></a><a href="#khu-vuc" data-sec="khu-vuc"><i>05</i><span class="l-vi">Khu vực</span><span class="l-en">Regions</span></a><a href="#lien-he" data-sec="lien-he"><i>06</i><span class="l-vi">Liên hệ</span><span class="l-en">Contact</span></a></nav>
+  <button type="button" class="dock-cur" id="dock-cur" aria-expanded="false" aria-controls="dock-menu"><i id="dock-n">01</i><span id="dock-t">Tuyển nhanh</span><em>☰</em></button>
+  <button type="button" class="dock-top" id="dock-top" aria-label="Về đầu trang / Back to top">↑</button>
+</div>
 </main>
 
 <script>
@@ -1072,6 +1761,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
   lb.querySelector('button').addEventListener('click',function(){lb.close()});
   lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
   function openImg(src,alt){ clearMock(); lbImg.hidden=false; lbImg.src=src; lbImg.alt=alt||''; if(lb.showModal) lb.showModal(); }
+  window.openMock=function(n){openMock(n)};
   function openMock(node){ clearMock(); lbImg.hidden=true; var w=document.createElement('div'); w.className='lb-mock'; var c=node.cloneNode(true); c.classList.remove('on'); w.appendChild(c); lb.insertBefore(w,lb.firstChild); if(lb.showModal) lb.showModal(); }
   document.querySelectorAll('.zoom').forEach(function(z){
     z.addEventListener('click',function(){ openImg(z.dataset.src, z.querySelector('img')&&z.querySelector('img').alt); });
