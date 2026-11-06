@@ -1194,17 +1194,23 @@ h1.mega{letter-spacing:-.03em}
 .z-q,.s-head h2,.sec-head h2{letter-spacing:-.025em}
 .z-num{letter-spacing:-.05em}
 
-/* round 12b: levels as an even path — same size for every level, so nothing reads as "hired more of this" */
-.lv{margin-top:36px;gap:14px}
-.lv ol{grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;align-items:stretch;padding:0;border:0;counter-reset:lv}
-.lv li{opacity:1!important;position:relative;counter-increment:lv;display:flex;flex-direction:column;gap:6px;justify-content:center;
-  padding:14px 16px;border-radius:12px;background:var(--card);border:1px solid color-mix(in srgb,var(--signal) 22%,var(--line));
-  font:700 var(--t-sm)/1.3 var(--f-body)!important;color:var(--ink)}
-.lv li::before{content:counter(lv,decimal-leading-zero);font:700 var(--t-label)/1 var(--f-mono);color:var(--signal)}
-.lv li+li::after{content:"→";position:absolute;left:-21px;top:50%;transform:translateY(-50%);font:700 16px/1 var(--f-body);color:var(--muted)}
+/* round 12c: levels as a track — equal dots on one line (no level looks "bigger"), example roles under each */
+.lv{margin-top:44px;gap:20px}
+.lv ol{position:relative;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;padding:0;border:0}
+.lv ol::before{content:"";position:absolute;left:8px;right:calc((100% - 84px) / 4 - 8px);top:7px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--signal) 30%,transparent),var(--signal))}
+.lv li{opacity:1!important;position:relative;display:grid;gap:6px;align-content:start;padding:32px 0 0;height:auto;width:auto;
+  background:none!important;border:0!important;border-radius:0;box-shadow:none;color:var(--muted);font:400 var(--t-sm)/1.55 var(--f-body)!important}
+.lv li::before{content:"";position:absolute;left:0;top:0;width:16px;height:16px;border-radius:50%;box-sizing:border-box;
+  background:var(--card);border:3px solid var(--signal);box-shadow:0 0 0 5px color-mix(in srgb,var(--signal) 12%,transparent)}
+.lv li::after{display:none!important}
+.lv li b{font:800 var(--t-h4)/1.25 var(--f-display);letter-spacing:-.01em;color:var(--ink)}
 @media (max-width:640px){
-  .lv ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .lv li+li::after{display:none}
+  .lv ol{grid-template-columns:1fr;gap:22px;padding-left:32px}
+  .lv ol::before{left:7px;right:auto;top:8px;bottom:8px;width:2px;height:auto;
+    background:linear-gradient(180deg,color-mix(in srgb,var(--signal) 30%,transparent),var(--signal))}
+  .lv li{padding:0}
+  .lv li::before{left:-32px;top:3px}
 }
 
 /* round 13: phone pass — motion on the hero, no broken numbers, dock out of the way */
@@ -1825,7 +1831,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
         <text class="city-s" x="18" y="386"><tspan class="l-vi">không theo tỷ lệ</tspan><tspan class="l-en">not to scale</tspan></text>
       </svg></div>
     </div>
-    <div class="lv rv"><small><span class="l-vi">Cấp bậc đã tuyển</span><span class="l-en">Levels hired</span></small><ol><li><span><span class="l-vi">Lao động phổ thông</span><span class="l-en">Entry-level workers</span></span></li><li><span><span class="l-vi">Nhân viên</span><span class="l-en">Staff</span></span></li><li><span><span class="l-vi">Chuyên môn</span><span class="l-en">Specialists</span></span></li><li><span><span class="l-vi">Quản lý</span><span class="l-en">Managers</span></span></li></ol></div>
+    <div class="lv rv"><small><span class="l-vi">Cấp bậc đã tuyển</span><span class="l-en">Levels hired</span></small><ol><li><b><span><span class="l-vi">Lao động phổ thông</span><span class="l-en">Entry-level workers</span></span></b><span><span class="l-vi">Công nhân sản xuất, kho, giao hàng, bán hàng cửa hàng</span><span class="l-en">Factory, warehouse, delivery and store staff</span></span></li><li><b><span><span class="l-vi">Nhân viên</span><span class="l-en">Staff</span></span></b><span><span class="l-vi">Sales, chăm sóc khách hàng, kế toán, hành chính</span><span class="l-en">Sales, customer service, accounting, admin</span></span></li><li><b><span><span class="l-vi">Chuyên môn</span><span class="l-en">Specialists</span></span></b><span><span class="l-vi">Content, digital, IT, kỹ thuật viên, bác sĩ thẩm mỹ</span><span class="l-en">Content, digital, IT, technicians, aesthetic doctors</span></span></li><li><b><span><span class="l-vi">Quản lý</span><span class="l-en">Managers</span></span></b><span><span class="l-vi">Trưởng phòng kho vận, kinh doanh, quản lý sales</span><span class="l-en">Heads of logistics and sales, sales managers</span></span></li></ol></div>
   </div>
 </section>
 
