@@ -1194,24 +1194,35 @@ h1.mega{letter-spacing:-.03em}
 .z-q,.s-head h2,.sec-head h2{letter-spacing:-.025em}
 .z-num{letter-spacing:-.05em}
 
-/* round 12d: levels as one card split in four equal cells, icon + level + example roles */
+/* round 12e: levels as a dark "tech" panel — same language as the hero and zones 01/03 */
 .lv{margin-top:44px;gap:16px}
-.lv ol{position:relative;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;padding:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;
-  background:var(--line);box-shadow:var(--shadow)}
-.lv ol::before{content:none}
-.lv li{opacity:1!important;position:relative;display:grid;gap:8px;align-content:start;padding:22px 22px 24px;height:auto;width:auto;
-  background:var(--card)!important;border:0!important;border-radius:0;box-shadow:none;color:var(--muted);font:400 var(--t-sm)/1.55 var(--f-body)!important}
-.lv li::before,.lv li::after{content:none!important;display:none!important}
-.lv-ic{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;margin-bottom:4px;
-  background:color-mix(in srgb,var(--signal) 10%,var(--card));color:var(--signal)}
+.lv ol{position:relative;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding:6px;border:0;border-radius:20px;overflow:hidden;counter-reset:lv;
+  background:radial-gradient(120% 160% at 0% 0%,rgba(255,61,139,.24),transparent 55%),radial-gradient(120% 160% at 100% 100%,rgba(164,147,255,.24),transparent 55%),#0b0a20;
+  box-shadow:0 30px 70px -30px rgba(11,10,32,.6),inset 0 0 0 1px rgba(255,255,255,.08)}
+.lv ol::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,#ff3d8b,#a493ff 55%,#5fe3ad)}
+.lv ol::after{content:"";position:absolute;top:0;bottom:0;width:28%;left:-30%;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);animation:lvscan 7s ease-in-out infinite}
+@keyframes lvscan{0%{left:-30%}55%,100%{left:110%}}
+.lv li{opacity:1!important;position:relative;display:grid;gap:8px;align-content:start;padding:22px 22px 24px;height:auto;width:auto;counter-increment:lv;
+  background:transparent!important;border:0!important;border-radius:14px;box-shadow:none;color:#a9a6c4;font:400 var(--t-sm)/1.55 var(--f-body)!important;transition:background .3s}
+.lv li+li{box-shadow:inset 1px 0 0 rgba(255,255,255,.08)}
+.lv li:hover{background:rgba(255,255,255,.045)!important}
+.lv li::after{content:none!important;display:none!important}
+.lv li::before{content:"LV." counter(lv,decimal-leading-zero)!important;display:block!important;position:absolute;top:24px;right:22px;
+  width:auto;height:auto;border:0;background:none;box-shadow:none;font:700 var(--t-label)/1 var(--f-mono);letter-spacing:.08em;color:#5fe3ad}
+.lv-ic{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;margin-bottom:6px;color:#fff;
+  background:linear-gradient(135deg,rgba(255,61,139,.45),rgba(164,147,255,.4));border:1px solid rgba(255,255,255,.2);box-shadow:0 0 26px -6px rgba(255,61,139,.75)}
 .lv-ic svg{width:22px;height:22px}
-.lv li b{font:800 var(--t-h4)/1.25 var(--f-display);letter-spacing:-.01em;color:var(--ink)}
-@media (max-width:900px){.lv ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lv li b{font:800 var(--t-h4)/1.25 var(--f-display);letter-spacing:-.01em;color:#fff}
+@media (max-width:900px){.lv ol{grid-template-columns:repeat(2,minmax(0,1fr))}.lv li:nth-child(3){box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}.lv li:nth-child(4){box-shadow:inset 1px 0 0 rgba(255,255,255,.08),inset 0 1px 0 rgba(255,255,255,.08)}}
 @media (max-width:640px){
-  .lv ol{grid-template-columns:1fr;padding:0}
-  .lv li{grid-template-columns:42px minmax(0,1fr);column-gap:14px;row-gap:2px;padding:16px 18px}
+  .lv ol{grid-template-columns:1fr}
+  .lv li,.lv li:nth-child(n){grid-template-columns:44px minmax(0,1fr);column-gap:14px;row-gap:2px;padding:16px 18px}
+  .lv li+li,.lv li:nth-child(4){box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
   .lv-ic{grid-row:span 2;margin:0}
+  .lv li::before{display:none!important}
 }
+@media (prefers-reduced-motion:reduce){.lv ol::after{animation:none;display:none}}
 
 /* round 13: phone pass — motion on the hero, no broken numbers, dock out of the way */
 .dock.tuck{opacity:0;transform:translateY(24px);pointer-events:none}
