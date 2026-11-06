@@ -1188,7 +1188,7 @@ h1.mega{line-height:1.12}
 .lv li{font-size:var(--t-sm)}
 .btn{font-size:var(--t-base)}
 .st3 h3{font-size:clamp(26px,2.8vw,var(--t-h2s));line-height:1.2}
-.st3 p{font-size:var(--t-base)}
+.st3>p{font-size:var(--t-base)}
 /* round 11: Be Vietnam Pro for headings — slightly looser tracking than the old display font */
 h1.mega{letter-spacing:-.03em}
 .z-q,.s-head h2,.sec-head h2{letter-spacing:-.025em}
@@ -1208,6 +1208,38 @@ h1.mega{letter-spacing:-.03em}
   .lv ol{grid-template-columns:1fr;gap:6px;border-bottom:0;border-left:2px solid var(--line);padding-left:0}
   .lv li{height:auto;border-radius:0 10px 10px 0;border:1px solid color-mix(in srgb,var(--signal) calc(14% + var(--k)*10%),var(--line));border-left:0;
     width:calc(60% + var(--k)*10%);padding:10px 14px}
+}
+
+/* round 13: phone pass — motion on the hero, no broken numbers, dock out of the way */
+.dock.tuck{opacity:0;transform:translateY(24px);pointer-events:none}
+@media (max-width:980px) and (prefers-reduced-motion:no-preference){
+  .showcase{perspective:1100px}
+  .tilt{transform-origin:50% 60%;animation:sway 9s ease-in-out infinite}
+  @keyframes sway{0%,100%{transform:rotateX(9deg) rotateY(-8deg) rotateZ(.6deg)}50%{transform:rotateX(5deg) rotateY(8deg) rotateZ(-.6deg)}}
+  .fc{animation:bob 6s ease-in-out infinite!important}
+  .fc2{animation-delay:-1.5s!important}.fc3{animation-delay:-3s!important}.fc4{animation-delay:-4.5s!important}
+  .js .floats .fc{opacity:0;translate:0 18px;transition:opacity .7s ease,translate .7s cubic-bezier(.2,.7,.2,1)}
+  .js .floats.in .fc{opacity:1;translate:0 0}
+  .js .floats.in .fc2{transition-delay:.12s}.js .floats.in .fc3{transition-delay:.24s}.js .floats.in .fc4{transition-delay:.36s}
+}
+@media (max-width:980px){
+  .fc .dir{display:table;margin:0 0 6px;vertical-align:0}
+  .fc b{white-space:nowrap;font-size:26px}
+}
+@media (max-width:640px){
+  .ctas{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:400px;margin-left:auto;margin-right:auto}
+  .ctas .btn{justify-content:center;padding-left:10px;padding-right:10px;white-space:nowrap;font-size:var(--t-sm)}
+  .ctas .btn.pri{grid-column:1/-1}
+  .trust{gap:8px;margin-top:36px}
+  .trust li{padding:6px 12px;border:1px solid rgba(255,255,255,.14);border-radius:99px;background:rgba(255,255,255,.04);font-size:13px}
+  .trust b{font-size:15px}
+  .sig-n{white-space:nowrap;font-size:clamp(44px,13vw,60px)}
+  .sig-n .dir{display:table;margin:0 0 10px;vertical-align:0}
+  .pc-n{white-space:nowrap}
+  .pc-n .dir{display:table;margin:0 0 8px;vertical-align:0}
+  .pc-sub li{grid-template-columns:1fr;gap:2px}
+  .pc-sub b{white-space:nowrap}
+  main,.tail{padding-bottom:12px}
 }
 
 .real{margin-top:80px}
@@ -1259,7 +1291,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
 
     <div class="showcase">
       <div class="tilt" id="tilt"><div class="scr wa"><div class="in wa-in"><aside class="wa-side"><div><small class="wa-kick">TALENT OPERATIONS</small><b class="wa-brand">Tuyển dụng</b><p>Web app chạy trên Google Sheets, Apps Script, Drive và Gmail.</p></div><div class="wa-sm"><div><small>Vị trí đang tuyển</small><b>18</b></div><div><small>Ứng viên</small><b>426</b></div><div><small>Phỏng vấn tuần này</small><b>23</b></div></div><nav class="wa-nav"><a class=on><i class="wa-ic"></i>Trang chủ</a><a><i class="wa-ic"></i>Nguồn CV</a><a><i class="wa-ic"></i>Nhập CV</a><a><i class="wa-ic"></i>Lọc CV trùng</a><a><i class="wa-ic"></i>Thư mời PV</a><a><i class="wa-ic"></i>Vị trí tuyển</a></nav></aside><main class="wa-main"><header class="wa-top"><div><small class="wa-kick2">TRANG CHỦ</small><b>Bảng điều hành tuyển dụng</b><span>Dữ liệu mẫu · cập nhật 10:00</span></div><div class="wa-acts"><span class="wa-live"><i></i>TỰ ĐỘNG</span><span class="wa-btn pri">⇪ Nhập CV</span></div></header><div class="wa-stats"><div class="wa-stat hl"><small>Vị trí đang tuyển</small><b>18</b><span>4 vị trí gấp</span></div><div class="wa-stat "><small>CV mới tuần này</small><b><span class="wa-cnt" data-k="cv">64</span></b><span>từ 5 nguồn</span></div><div class="wa-stat "><small>CV trùng đã lọc</small><b><span class="wa-cnt" data-k="dup">37</span></b><span>tự động</span></div><div class="wa-stat "><small>Thư mời đã gửi</small><b><span class="wa-cnt" data-k="inv">29</span></b><span>qua Gmail</span></div></div><div class="wa-grid"><section class="wa-card"><div class="wa-h"><b>Vị trí đang tuyển</b><span class="wa-btn">Mở bảng</span></div><table><tr><th>Mã</th><th>Vị trí</th><th>Bộ phận</th><th>Hạn</th></tr><tr><td class="c">TD-118</td><td>Nhân viên bán hàng</td><td class="m">Cửa hàng Biên Hòa</td><td>15/11</td></tr><tr><td class="c">TD-121</td><td>Kế toán tổng hợp</td><td class="m">Tài chính</td><td>22/11</td></tr><tr><td class="c">TD-124</td><td>Công nhân may</td><td class="m">Nhà máy</td><td>18/11</td></tr><tr><td class="c">TD-126</td><td>Chuyên viên TMĐT</td><td class="m">Kinh doanh online</td><td>30/11</td></tr></table></section><section class="wa-card scan"><div class="wa-h"><b>Ứng viên mới</b><span class="wa-btn">Mở bảng</span></div><table><tr><th>Ứng viên</th><th>Vị trí</th><th>Nguồn</th><th>Trạng thái</th></tr><tr><td>Ứng viên A</td><td>Nhân viên bán hàng</td><td class="m">Jobsite</td><td><em class="wa-tag g">Mời PV</em></td></tr><tr><td>Ứng viên B</td><td>Kế toán tổng hợp</td><td class="m">Giới thiệu</td><td><em class="wa-tag b">Đạt V1</em></td></tr><tr><td>Ứng viên C</td><td>Công nhân may</td><td class="m">Facebook</td><td><em class="wa-tag o">CV trùng</em></td></tr><tr><td>Ứng viên D</td><td>Chuyên viên TMĐT</td><td class="m">TopCV</td><td><em class="wa-tag y">Offer</em></td></tr></table></section></div><section class="wa-card"><div class="wa-h"><b>Chức năng thao tác</b><span class="m">Mỗi khâu lặp lại là một nút bấm</span></div><div class="wa-mods"><div class="wa-mod"><i class="g"></i>Nhập CV hàng loạt</div><div class="wa-mod"><i class="o"></i>Lọc CV trùng</div><div class="wa-mod"><i class="b"></i>Thư mời phỏng vấn</div><div class="wa-mod"><i class="y"></i>Hồ sơ offer</div><div class="wa-mod"><i class="g"></i>Onboarding</div></div></section><div class="wa-toasts"></div></main></div></div></div>
-      <div class="floats">
+      <div class="floats rv">
         <div class="fc fc1"><b class="hot"><small class="dir"><span class="l-vi">Giảm</span><span class="l-en">Cut</span></small>42–55%</b><span class="l-vi">chi phí đăng tuyển so với 2024</span><span class="l-en">job-board spend vs 2024</span><small class="fc-src">Thuần Việt Group</small></div>
         <div class="fc fc2"><b class="gold">130%</b><span class="l-vi">KPI tuyển dụng</span><span class="l-en">of hiring KPI</span><small class="fc-src">ManpowerGroup</small></div>
         <div class="fc fc3"><b class="vio">20–50</b><span class="l-vi">nhân sự mỗi tháng</span><span class="l-en">hires a month</span><small class="fc-src">Marathon Education</small></div>
@@ -1580,7 +1612,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
     var top = document.querySelector('.top'), dock = document.getElementById('dock'), menu = document.getElementById('dock-menu'), cur = document.getElementById('dock-cur');
     var links = [].slice.call(document.querySelectorAll('.nav a[data-sec], .dock-menu a[data-sec]'));
     var secs = [].slice.call(document.querySelectorAll('section[id]')).filter(function(x){ return ids.indexOf(x.id) > -1 || alias[x.id]; });
-    var last = null, tick = false;
+    var last = null, tick = false, lastY = scrollY;
     function upd(){
       tick = false;
       var y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
@@ -1594,7 +1626,13 @@ dialog.lb .lb-mock .scr{border-radius:12px}
         var k = ids.indexOf(act), m = menu && menu.querySelectorAll('a')[k];
         if (m) { document.getElementById('dock-n').textContent = m.querySelector('i').textContent; document.getElementById('dock-t').innerHTML = m.querySelector('.l-vi').outerHTML + m.querySelector('.l-en').outerHTML; }
       }
-      if (dock) dock.classList.toggle('show', y > innerHeight * .6);
+      if (dock) {
+        dock.classList.toggle('show', y > innerHeight * .6);
+        // phones: tuck the dock away while reading down, bring it back on any scroll up
+        if (innerWidth <= 760 && (!menu || menu.hidden)) { if (y > lastY + 6) dock.classList.add('tuck'); else if (y < lastY - 6) dock.classList.remove('tuck'); }
+        else dock.classList.remove('tuck');
+        if (Math.abs(y - lastY) > 6) lastY = y;
+      }
     }
     addEventListener('scroll', function(){ if (!tick) { tick = true; requestAnimationFrame(upd); } }, {passive:true});
     addEventListener('resize', upd); upd();
