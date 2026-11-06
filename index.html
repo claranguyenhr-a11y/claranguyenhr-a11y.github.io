@@ -1194,20 +1194,17 @@ h1.mega{letter-spacing:-.03em}
 .z-q,.s-head h2,.sec-head h2{letter-spacing:-.025em}
 .z-num{letter-spacing:-.05em}
 
-/* round 12: levels as a staircase — rising height, deepening tint, one baseline */
+/* round 12b: levels as an even path — same size for every level, so nothing reads as "hired more of this" */
 .lv{margin-top:36px;gap:14px}
-.lv ol{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;align-items:end;padding-bottom:0;border-bottom:2px solid var(--line)}
-.lv li{opacity:1!important;background:none;border-radius:12px 12px 0 0;padding:12px 14px;display:flex;align-items:flex-end;
-  font:700 var(--t-sm)/1.3 var(--f-body)!important;color:var(--ink);
-  background:color-mix(in srgb,var(--signal) calc(8% + var(--k)*9%),var(--card));
-  border:1px solid color-mix(in srgb,var(--signal) calc(14% + var(--k)*10%),var(--line));border-bottom:0;
-  height:calc(52px + var(--k)*22px)}
-.lv li:nth-child(1){--k:0}.lv li:nth-child(2){--k:1}.lv li:nth-child(3){--k:2}.lv li:nth-child(4){--k:3}
-.lv li:nth-child(5){--k:4;background:var(--signal);border-color:var(--signal);color:#fff}
+.lv ol{grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;align-items:stretch;padding:0;border:0;counter-reset:lv}
+.lv li{opacity:1!important;position:relative;counter-increment:lv;display:flex;flex-direction:column;gap:6px;justify-content:center;
+  padding:14px 16px;border-radius:12px;background:var(--card);border:1px solid color-mix(in srgb,var(--signal) 22%,var(--line));
+  font:700 var(--t-sm)/1.3 var(--f-body)!important;color:var(--ink)}
+.lv li::before{content:counter(lv,decimal-leading-zero);font:700 var(--t-label)/1 var(--f-mono);color:var(--signal)}
+.lv li+li::after{content:"→";position:absolute;left:-21px;top:50%;transform:translateY(-50%);font:700 16px/1 var(--f-body);color:var(--muted)}
 @media (max-width:640px){
-  .lv ol{grid-template-columns:1fr;gap:6px;border-bottom:0;border-left:2px solid var(--line);padding-left:0}
-  .lv li{height:auto;border-radius:0 10px 10px 0;border:1px solid color-mix(in srgb,var(--signal) calc(14% + var(--k)*10%),var(--line));border-left:0;
-    width:calc(60% + var(--k)*10%);padding:10px 14px}
+  .lv ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .lv li+li::after{display:none}
 }
 
 /* round 13: phone pass — motion on the hero, no broken numbers, dock out of the way */
@@ -1814,7 +1811,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
         <text class="city-s" x="18" y="386"><tspan class="l-vi">không theo tỷ lệ</tspan><tspan class="l-en">not to scale</tspan></text>
       </svg></div>
     </div>
-    <div class="lv rv"><small><span class="l-vi">Cấp bậc đã tuyển</span><span class="l-en">Levels hired</span></small><ol><li><span><span class="l-vi">Lao động phổ thông</span><span class="l-en">Entry-level workers</span></span></li><li><span><span class="l-vi">Nhân viên</span><span class="l-en">Staff</span></span></li><li><span><span class="l-vi">Chuyên môn</span><span class="l-en">Specialists</span></span></li><li><span><span class="l-vi">Trưởng phòng</span><span class="l-en">Department heads</span></span></li><li><span><span class="l-vi">Quản lý cấp cao</span><span class="l-en">Senior managers</span></span></li></ol></div>
+    <div class="lv rv"><small><span class="l-vi">Cấp bậc đã tuyển</span><span class="l-en">Levels hired</span></small><ol><li><span><span class="l-vi">Lao động phổ thông</span><span class="l-en">Entry-level workers</span></span></li><li><span><span class="l-vi">Nhân viên</span><span class="l-en">Staff</span></span></li><li><span><span class="l-vi">Chuyên môn</span><span class="l-en">Specialists</span></span></li><li><span><span class="l-vi">Quản lý</span><span class="l-en">Managers</span></span></li></ol></div>
   </div>
 </section>
 
