@@ -12,7 +12,7 @@
 <meta name="description" content="Portfolio tuyển dụng của Nguyễn Kiều: hệ thống tự động hóa tuyển dụng bằng AI và kết quả tại Thuần Việt Group.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
 <script>document.documentElement.classList.add("js")</script>
 <style>
 /* Layout: một "bàn làm việc tuyển dụng" — hero là cửa sổ sản phẩm đang chạy, các phần sau là màn hình, biểu đồ và bản đồ thay cho chữ */
@@ -32,7 +32,7 @@
   --on-ink:#ffffff;
   --ink-2:#34479a;
   --shadow:0 1px 2px rgba(27,42,94,.06),0 12px 32px -12px rgba(27,42,94,.22);
-  --f-display:"Bricolage Grotesque","Be Vietnam Pro",system-ui,sans-serif;
+  --f-display:"Be Vietnam Pro",system-ui,sans-serif;
   --f-body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
 }
@@ -973,7 +973,7 @@ dialog.lb .lb-mock{width:min(1400px,94vw)}
 @keyframes spin{to{--ang:360deg}}
 
 /* code-style labels */
-.z-k,.pc-k,.pc-s,.sig-t em,.q-n,.q-k,.fc-src,.qidx-k,.prod-k,.sc-cap2,.s-eb,.fl-n i,.fl-k{font-family:var(--f-mono)!important;letter-spacing:.06em!important}
+.q-n,.fl-n i{font-family:var(--f-mono)!important;letter-spacing:.06em!important}
 .z-k::before{content:"// ";opacity:.6}
 .qidx-k::before{content:"> ";color:#5fe3ad}
 .sc-cap2::before{content:"● ";color:#5fe3ad;animation:blink 1.6s steps(2) infinite}
@@ -1134,6 +1134,81 @@ section[id]{scroll-margin-top:64px}
 .z2 .dir{background:color-mix(in srgb,var(--signal) 12%,transparent);color:var(--signal)}
 .pc-sub li{grid-template-columns:auto minmax(0,1fr)}
 .pc-sub b{white-space:normal}
+
+
+/* round 10: typography clean-up
+   - code font only for numbers and symbols, Vietnamese labels back to Be Vietnam Pro
+   - one scale: 12 label · 14 small · 16 body · 18 lead · 20/24 card titles · 36 sub-heads · display
+   - looser line-height for Vietnamese headings (stacked diacritics) */
+:root{--t-label:12px;--t-sm:14px;--t-base:16px;--t-lead:18px;--t-h4:20px;--t-h3:24px;--t-h2s:36px}
+
+/* labels: uppercase kickers */
+.z-k,.pc-k,.q-k,.prod-k,.eyebrow,.s-eb,.qidx-k,.fl-k,.lv small,.bridge small,.next-z small,.p-lab{
+  font-family:var(--f-body)!important;font-size:var(--t-label)!important;font-weight:700!important;letter-spacing:.08em!important;line-height:1.4;text-transform:uppercase}
+/* source names under numbers */
+.pc-s,.sb-g em,.sig-t em,.fc-src,.pf-s{
+  font-family:var(--f-body)!important;font-size:var(--t-label)!important;font-weight:600!important;letter-spacing:.04em!important;text-transform:uppercase;font-style:normal}
+.rg small{font-family:var(--f-body)!important;font-size:var(--t-label)!important;font-weight:500;letter-spacing:0}
+.sc-cap2{font-family:var(--f-body)!important;font-size:13px!important;letter-spacing:0!important}
+.z-k::before{content:none}
+.qidx-k::before{content:none}
+/* chips */
+.chipline>span,.pc .chipline>span,.rg .chipline>span{font-size:13px}
+
+/* small / secondary text */
+.pc-how,.pc-sub li,.sb-g span,.fl-n>span,.wsx-h p,.znote{font-size:var(--t-sm)!important;line-height:1.55}
+/* body */
+.pc-w,.sig-t>span,.prod p,.bridge,.s-head p{font-size:var(--t-base)!important;line-height:1.55}
+.pc-w{font-weight:600}
+/* lead */
+.z-a,.h-lede{font-size:var(--t-lead)!important;line-height:1.6}
+/* card titles */
+.q-q,.rg-h b,.fl-n b,.next-z b{font-size:var(--t-h4)!important;line-height:1.3}
+.sig-t b,.sb-h b,.prod h3{font-size:var(--t-h3)!important;line-height:1.3}
+/* sub-heads */
+.s-sub h2,.wsx-h h3{font-size:clamp(28px,3.2vw,var(--t-h2s))!important;line-height:1.2}
+/* display headings: room for Vietnamese diacritics */
+h1.mega{line-height:1.12}
+.z-q{font-size:clamp(32px,4.6vw,58px);line-height:1.15}
+.s-head h2,.sec-head h2{line-height:1.15}
+.sb-g i{font-size:clamp(40px,4.4vw,56px)}
+.pc-n{font-size:clamp(40px,4.2vw,52px)}
+/* numbers in the nav / dock stay in code font but readable */
+.nav a i,.dock-cur i,.dock-menu a i{font-size:11px}
+@media (max-width:640px){
+  .z-q{line-height:1.18}
+  .q-q,.rg-h b,.fl-n b{font-size:18px!important}
+  .sig-t b,.sb-h b,.prod h3{font-size:20px!important}
+}
+/* round 10b: last stragglers onto the scale */
+.smp{font-size:var(--t-label)!important;letter-spacing:.04em}
+.cbox .t small{font-size:var(--t-label)}
+.pill{font-size:var(--t-sm)}
+.fc span{font-size:var(--t-sm)}
+.lv li{font-size:var(--t-sm)}
+.btn{font-size:var(--t-base)}
+.st3 h3{font-size:clamp(26px,2.8vw,var(--t-h2s));line-height:1.2}
+.st3 p{font-size:var(--t-base)}
+/* round 11: Be Vietnam Pro for headings — slightly looser tracking than the old display font */
+h1.mega{letter-spacing:-.03em}
+.z-q,.s-head h2,.sec-head h2{letter-spacing:-.025em}
+.z-num{letter-spacing:-.05em}
+
+/* round 12: levels as a staircase — rising height, deepening tint, one baseline */
+.lv{margin-top:36px;gap:14px}
+.lv ol{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;align-items:end;padding-bottom:0;border-bottom:2px solid var(--line)}
+.lv li{opacity:1!important;background:none;border-radius:12px 12px 0 0;padding:12px 14px;display:flex;align-items:flex-end;
+  font:700 var(--t-sm)/1.3 var(--f-body)!important;color:var(--ink);
+  background:color-mix(in srgb,var(--signal) calc(8% + var(--k)*9%),var(--card));
+  border:1px solid color-mix(in srgb,var(--signal) calc(14% + var(--k)*10%),var(--line));border-bottom:0;
+  height:calc(52px + var(--k)*22px)}
+.lv li:nth-child(1){--k:0}.lv li:nth-child(2){--k:1}.lv li:nth-child(3){--k:2}.lv li:nth-child(4){--k:3}
+.lv li:nth-child(5){--k:4;background:var(--signal);border-color:var(--signal);color:#fff}
+@media (max-width:640px){
+  .lv ol{grid-template-columns:1fr;gap:6px;border-bottom:0;border-left:2px solid var(--line);padding-left:0}
+  .lv li{height:auto;border-radius:0 10px 10px 0;border:1px solid color-mix(in srgb,var(--signal) calc(14% + var(--k)*10%),var(--line));border-left:0;
+    width:calc(60% + var(--k)*10%);padding:10px 14px}
+}
 
 .real{margin-top:80px}
 .real-h{display:flex;gap:12px;align-items:baseline;justify-content:center;flex-wrap:wrap;font:700 15px var(--f-body);color:#e4e1f3;margin-bottom:16px}
