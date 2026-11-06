@@ -1239,6 +1239,20 @@ h1.mega{letter-spacing:-.03em}
   main,.tail{padding-bottom:12px}
 }
 
+/* round 14: wide screens — roomier frame, bigger product mocks, text columns stay readable */
+@media (min-width:1440px){
+  .wrap{max-width:1280px}
+  .showcase{max-width:1200px}
+  .wsx-frame,.wsx-bar{max-width:1120px}
+  .story{grid-template-columns:minmax(340px,.66fr) minmax(0,1.7fr);gap:56px}
+}
+@media (min-width:1760px){
+  .wrap{max-width:1360px}
+  .showcase{max-width:1260px}
+  .wsx-frame,.wsx-bar{max-width:1200px}
+  .story{grid-template-columns:minmax(350px,.62fr) minmax(0,1.7fr);gap:64px}
+}
+
 .real{margin-top:80px}
 .real-h{display:flex;gap:12px;align-items:baseline;justify-content:center;flex-wrap:wrap;font:700 15px var(--f-body);color:#e4e1f3;margin-bottom:16px}
 .real-h small{color:var(--s-mut);font-weight:500;font-size:13px}
