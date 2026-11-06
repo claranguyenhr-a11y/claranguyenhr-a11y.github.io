@@ -1194,23 +1194,23 @@ h1.mega{letter-spacing:-.03em}
 .z-q,.s-head h2,.sec-head h2{letter-spacing:-.025em}
 .z-num{letter-spacing:-.05em}
 
-/* round 12c: levels as a track — equal dots on one line (no level looks "bigger"), example roles under each */
-.lv{margin-top:44px;gap:20px}
-.lv ol{position:relative;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;padding:0;border:0}
-.lv ol::before{content:"";position:absolute;left:8px;right:calc((100% - 84px) / 4 - 8px);top:7px;height:2px;border-radius:2px;
-  background:linear-gradient(90deg,color-mix(in srgb,var(--signal) 30%,transparent),var(--signal))}
-.lv li{opacity:1!important;position:relative;display:grid;gap:6px;align-content:start;padding:32px 0 0;height:auto;width:auto;
-  background:none!important;border:0!important;border-radius:0;box-shadow:none;color:var(--muted);font:400 var(--t-sm)/1.55 var(--f-body)!important}
-.lv li::before{content:"";position:absolute;left:0;top:0;width:16px;height:16px;border-radius:50%;box-sizing:border-box;
-  background:var(--card);border:3px solid var(--signal);box-shadow:0 0 0 5px color-mix(in srgb,var(--signal) 12%,transparent)}
-.lv li::after{display:none!important}
+/* round 12d: levels as one card split in four equal cells, icon + level + example roles */
+.lv{margin-top:44px;gap:16px}
+.lv ol{position:relative;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;padding:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  background:var(--line);box-shadow:var(--shadow)}
+.lv ol::before{content:none}
+.lv li{opacity:1!important;position:relative;display:grid;gap:8px;align-content:start;padding:22px 22px 24px;height:auto;width:auto;
+  background:var(--card)!important;border:0!important;border-radius:0;box-shadow:none;color:var(--muted);font:400 var(--t-sm)/1.55 var(--f-body)!important}
+.lv li::before,.lv li::after{content:none!important;display:none!important}
+.lv-ic{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;margin-bottom:4px;
+  background:color-mix(in srgb,var(--signal) 10%,var(--card));color:var(--signal)}
+.lv-ic svg{width:22px;height:22px}
 .lv li b{font:800 var(--t-h4)/1.25 var(--f-display);letter-spacing:-.01em;color:var(--ink)}
+@media (max-width:900px){.lv ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){
-  .lv ol{grid-template-columns:1fr;gap:22px;padding-left:32px}
-  .lv ol::before{left:7px;right:auto;top:8px;bottom:8px;width:2px;height:auto;
-    background:linear-gradient(180deg,color-mix(in srgb,var(--signal) 30%,transparent),var(--signal))}
-  .lv li{padding:0}
-  .lv li::before{left:-32px;top:3px}
+  .lv ol{grid-template-columns:1fr;padding:0}
+  .lv li{grid-template-columns:42px minmax(0,1fr);column-gap:14px;row-gap:2px;padding:16px 18px}
+  .lv-ic{grid-row:span 2;margin:0}
 }
 
 /* round 13: phone pass — motion on the hero, no broken numbers, dock out of the way */
@@ -1831,7 +1831,7 @@ dialog.lb .lb-mock .scr{border-radius:12px}
         <text class="city-s" x="18" y="386"><tspan class="l-vi">không theo tỷ lệ</tspan><tspan class="l-en">not to scale</tspan></text>
       </svg></div>
     </div>
-    <div class="lv rv"><small><span class="l-vi">Cấp bậc đã tuyển</span><span class="l-en">Levels hired</span></small><ol><li><b><span><span class="l-vi">Lao động phổ thông</span><span class="l-en">Entry-level workers</span></span></b><span><span class="l-vi">Công nhân sản xuất, kho, giao hàng, bán hàng cửa hàng</span><span class="l-en">Factory, warehouse, delivery and store staff</span></span></li><li><b><span><span class="l-vi">Nhân viên</span><span class="l-en">Staff</span></span></b><span><span class="l-vi">Sales, chăm sóc khách hàng, kế toán, hành chính</span><span class="l-en">Sales, customer service, accounting, admin</span></span></li><li><b><span><span class="l-vi">Chuyên môn</span><span class="l-en">Specialists</span></span></b><span><span class="l-vi">Content, digital, IT, kỹ thuật viên, bác sĩ thẩm mỹ</span><span class="l-en">Content, digital, IT, technicians, aesthetic doctors</span></span></li><li><b><span><span class="l-vi">Quản lý</span><span class="l-en">Managers</span></span></b><span><span class="l-vi">Trưởng phòng kho vận, kinh doanh, quản lý sales</span><span class="l-en">Heads of logistics and sales, sales managers</span></span></li></ol></div>
+    <div class="lv rv"><small><span class="l-vi">Cấp bậc đã tuyển</span><span class="l-en">Levels hired</span></small><ol><li><i class="lv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></i><b><span><span class="l-vi">Lao động phổ thông</span><span class="l-en">Entry-level workers</span></span></b><span><span class="l-vi">Công nhân sản xuất, kho, giao hàng, bán hàng cửa hàng</span><span class="l-en">Factory, warehouse, delivery and store staff</span></span></li><li><i class="lv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></i><b><span><span class="l-vi">Nhân viên</span><span class="l-en">Staff</span></span></b><span><span class="l-vi">Sales, chăm sóc khách hàng, kế toán, hành chính</span><span class="l-en">Sales, customer service, accounting, admin</span></span></li><li><i class="lv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></i><b><span><span class="l-vi">Chuyên môn</span><span class="l-en">Specialists</span></span></b><span><span class="l-vi">Content, digital, IT, kỹ thuật viên, bác sĩ thẩm mỹ</span><span class="l-en">Content, digital, IT, technicians, aesthetic doctors</span></span></li><li><i class="lv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><b><span><span class="l-vi">Quản lý</span><span class="l-en">Managers</span></span></b><span><span class="l-vi">Trưởng phòng kho vận, kinh doanh, quản lý sales</span><span class="l-en">Heads of logistics and sales, sales managers</span></span></li></ol></div>
   </div>
 </section>
 
